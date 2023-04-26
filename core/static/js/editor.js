@@ -66,7 +66,6 @@ for (let key in pieces) {
     }
 }
 
-
 var startCellIdG = null;
 
 // Add a click event listener to each cell on the chessboard
@@ -76,6 +75,13 @@ $(".cell").click(function () {
 
     // If a piece is already selected
     if (startCellIdG !== null) {
+        if (startCellIdG === cellId) {
+            // If the same piece is clicked, deselect the piece
+            $(this).removeClass("selected");
+            startCellIdG = null;
+            return;
+        }        
+
         movePiece(cellId);
     }
     // If no piece is selected, select the clicked piece (if there is one)
@@ -84,6 +90,12 @@ $(".cell").click(function () {
             startCellIdG = cellId;
             // Add the selected class to the cell
             $(this).addClass("selected");
+
+            // TODO
+            // if (cellId === "g0") {
+            //     // change the cursor to not-allowed in all the page
+            //     $("body").css("cursor", "not-allowed");
+            // }
         }
     }
 });
@@ -97,6 +109,10 @@ function movePiece(endCellId) {
             $("#" + endCellId).html("");
             // Remove the piece from the pieces array
             delete pieces[endCellId];
+        } else {
+            $("#" + startCellIdG).removeClass("selected");
+            startCellIdG = endCellId;
+            $("#" + startCellIdG).addClass("selected");
         }
     } else {
         let startCell = $("#" + startCellIdG);
@@ -135,3 +151,24 @@ $(document).keyup(function (e) {
         startCellIdG = null;
     }
 });
+
+// TODO
+// Deselect the piece if I click not in the chessboard or in the other rows
+// $(document).click(function (e) {
+//     if (startCellIdG === null)
+//         return;
+//     if ($(e.target).closest(".containerr").length === 0 || $(e.target).closest(".row").length !== 0) {
+//         $("#" + startCellIdG).removeClass("selected");
+//         startCellIdG = null;
+//     }
+// });
+
+/* TODO
+possibilita' di settare delle aperture, magari con fen perche' servira' convertire fen in posizione e il contrario
+nel profilo personale per rivedere una partita ogni mossa direi di modificarla in un fen cosi' che possiamo scorrere mossa per mossa
+turno del giocatore
+selezionare chi ha arroccato
+flip board
+posizione iniziale
+stampare fen
+*/
