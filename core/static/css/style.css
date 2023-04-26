@@ -1,0 +1,47 @@
+body {
+    background-color: #212529;
+    color: white;
+}
+
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* the elements in containerr display vertically */
+    flex-direction: column;
+    /* all the elements distanciate 50px */
+    gap: 30px;
+}
+
+.chessboard {
+    width: 512px;
+    height: 512px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.chessboard > .row, .containerr > .row {
+    height: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
+    background-color: #F0D9B5;
+    box-sizing: border-box;
+}
+
+.cell.black {
+    background-color: #B58863;
+}
+
+.cell.selected {
+    background-color: #ff0000;
+}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+
+{% if current_user.is_authenticated %}
+{% if current_user.username == username %}
+<h1>My profile</h1>
+{% endif %}
+{% endif %}
+
+<table class="table table-striped" style="color: white">
+    <thead>
+        <tr>
+            <th scope="col">White</th>
+            <th scope="col">Black</th>
+            <th scope="col">Result</th>
+            <th scope="col">Date</th>
+            <th scope="col">White Elo</th>
+            <th scope="col">Black Elo</th>
+        </tr>
+    </thead>
+    {% for game in games %}
+    <tbody>
+        <tr>
+            <td>{{ game.white }}</td>
+            <td>{{ game.black }}</td>
+            <td>{{ game.result }}</td>
+            {% if game.date %}
+            <td>{{ game.date.strftime('%d-%m-%Y') }}</td>
+            {% else %}
+            <td>Unknown</td>
+            {% endif %}
+            {% if game.white_elo %}
+            <td>{{ game.white_elo }}</td>
+            {% else %}
+            <td>Unknown</td>
+            {% endif %}
+            {% if game.black_elo %}
+            <td>{{ game.black_elo }}</td>
+            {% else %}
+            <td>Unknown</td>
+            {% endif %}
+        </tr>
+    </tbody>
+
+    {% endfor %}
+</table>
+
+
+{% endblock %}
