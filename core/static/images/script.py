@@ -1,10 +1,13 @@
 import os
 
-# each file with name b*.png will be renamed to *.png
-# each file with name w*.png will be renamed to *.png but with * in lowercase
+with open('tmp.txt', 'r') as f:
+    lines = f.readlines()
 
-for filename in os.listdir('.'):
-    if filename.startswith('b'):
-        os.rename(filename, filename[1:])
-    elif filename.startswith('w'):
-        os.rename(filename, filename[1:].lower())
+for i in range(len(lines)):
+    if lines[i][0] == '/':
+        continue
+    # toggle upper lower case
+    lines[i] = lines[i][:-4] + lines[i][-4].swapcase() + lines[i][-3:]
+
+with open('tmp.txt', 'w') as f:
+    f.writelines(lines)

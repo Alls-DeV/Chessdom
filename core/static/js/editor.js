@@ -1,44 +1,44 @@
 // Dict of pieces, key is the position of the piece, value is the type of the piece
 var pieces = {
-    "a8" : "R",
-    "b8" : "N",
-    "c8" : "B",
-    "d8" : "Q",
-    "e8" : "K",
-    "f8" : "B",
-    "g8" : "N",
-    "h8" : "R",
-    "a1" : "r",
-    "b1" : "n",
-    "c1" : "b",
-    "d1" : "q",
-    "e1" : "k",
-    "f1" : "b",
-    "g1" : "n",
-    "h1" : "r",
+    "a8" : "r",
+    "b8" : "n",
+    "c8" : "b",
+    "d8" : "q",
+    "e8" : "k",
+    "f8" : "b",
+    "g8" : "n",
+    "h8" : "r",
+    "a1" : "R",
+    "b1" : "N",
+    "c1" : "B",
+    "d1" : "Q",
+    "e1" : "K",
+    "f1" : "B",
+    "g1" : "N",
+    "h1" : "R",
     // top row for add black pieces
-    "a9" : "P",
-    "b9" : "N",
-    "c9" : "B",
-    "d9" : "R",
-    "e9" : "Q",
-    "f9" : "K",
-     // bottom row for add white pieces
-    "a0" : "p", 
-    "b0" : "n", 
-    "c0" : "b", 
-    "d0" : "r", 
-    "e0" : "q", 
-    "f0" : "k",
-    "g0" : "trash"
+    "a9" : "p",
+    "b9" : "n",
+    "c9" : "b",
+    "d9" : "r",
+    "e9" : "q",
+    "f9" : "k",
+    // bottom row for add white pieces
+    "a0" : "P", 
+    "b0" : "N", 
+    "c0" : "B", 
+    "d0" : "R", 
+    "e0" : "Q", 
+    "f0" : "K",
+    "g0" : "trash",
 };
 
 // add pawns to the pieces array
 for (let i = 0; i < 16; i++) {
     if (i < 8)
-        pieces[String.fromCharCode(97 + i) + "7"] = "P";
+        pieces[String.fromCharCode(97 + i) + "7"] = "p";
     else
-        pieces[String.fromCharCode(97 + i - 8) + "2"] = "p";
+        pieces[String.fromCharCode(97 + i - 8) + "2"] = "P";
 }
 
 // deep copy of pieces array
