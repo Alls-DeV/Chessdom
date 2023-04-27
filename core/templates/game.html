@@ -88,11 +88,22 @@
             <div id="h1"></div>
         </div>
     </div>
+    <!-- add 4 button in a line, first move, previous move, next move, last move -->
+    <div class="button">
+        <button id="first" class="btn btn-primary" onclick="firstFen()">First Move</button>
+        <button id="previous" class="btn btn-primary" onclick="prevFen()">Previous Move</button>
+        <button id="next" class="btn btn-primary" onclick="nextFen()">Next Move</button>
+        <button id="last" class="btn btn-primary" onclick="lastFen()">Last Move</button>
+    </div>
 </div>
 
 {% endblock %}
 
 {% block scripts %}
+<script>
+    var fenList = {{ fen_list| tojson }};
+    var checkList = {{ check_list| tojson }};
+</script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 <script src="{{ url_for('static', filename='js/game.js') }}"></script>
 {% endblock %}

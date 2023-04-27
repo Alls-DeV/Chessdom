@@ -195,15 +195,19 @@ def import_page():
 
 @app.route('/game/<id>')
 def game_page(id):
-    # if not User.query.filter_by(username=username).first():
-    #     flash('User not found!', category='danger')
-    #     return redirect(url_for('home_page'))
-    # editable = current_user.is_authenticated and current_user.username == username
-    # games = Game.query.filter_by(id_player=User.query.filter_by(username=username).first().id).all()
-    # return render_template('profile.html', username=username, editable=editable, games=games)
-
     if not Game.query.filter_by(id=id).first():
         flash('Game not found!', category='danger')
         return redirect(url_for('home_page'))
     game = Game.query.filter_by(id=id).first()
-    return render_template('game.html', game=game)
+    fen_list = []
+    check_list = []
+    board = chess.Board()
+    fen_list.append(board.fen())
+    check_list.append(board.is_check())
+    for move in game.moves.split(' '):
+        if move[-1] == '.' and move[:-1].isdigit():
+            continue
+        board.push_san(move)
+        fen_list.append(board.fen())
+        check_list.append(board.is_check())
+    return render_template('game.html', game=game, fen_list=fen_list, check_list=check_list)
