@@ -112,7 +112,21 @@ Editor
             </div>
         </div>
         <div class="col-md-2 text-center containerr">
-            <button class="btn btn-primary">Centered Button</button>
+            <form class="form-editboard" style="color:white">
+                {{ form.turn(class="form-control") }}
+                <h3>Castling</h3>
+                <h5>White:</h5>
+                {{ form.castling_w_k.label() }}
+                {{ form.castling_w_k(class=" form-control") }} {{ form.castling_w_q.label() }} {{
+                form.castling_w_q(class="form-control" ) }} <h5>Black:</h5>
+                {{ form.castling_b_k.label() }}
+                {{ form.castling_b_k(class="form-control") }}
+                {{ form.castling_b_q.label() }}
+                {{ form.castling_b_q(class="form-control") }}
+                {{ form.position(id="fen", class="form-control", onclick="resetBoard()") }}
+                <button type="button" class="btn btn-danger" onclick="resetBoard()">Reset position</button>
+                <button type="button" class="btn btn-danger" onclick="clearBoard()">Clear board</button>
+            </form>
         </div>
     </div>
 </div>

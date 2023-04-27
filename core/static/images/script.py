@@ -1,13 +1,17 @@
 import os
 
 with open('tmp.txt', 'r') as f:
-    lines = f.readlines()
+    miao = f.read()
 
-for i in range(len(lines)):
-    if lines[i][0] == '/':
-        continue
-    # toggle upper lower case
-    lines[i] = lines[i][:-4] + lines[i][-4].swapcase() + lines[i][-3:]
+f = open('openings.txt', 'w')
 
-with open('tmp.txt', 'w') as f:
-    f.writelines(lines)
+miao = miao[1:-1].split('},{')
+for a in miao:
+    a = a.split(',')
+    for i in range(len(a)):
+        a[i] = a[i].split(':')
+        for j in range(len(a[i])):
+            a[i][j] = a[i][j][1:-1]
+        a[i] = a[i][1]
+    a = a[0] + " " + a[1] + ":" + a[2]
+    f.write(a + '\n')

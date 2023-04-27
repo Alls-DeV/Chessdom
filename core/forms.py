@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, DateField, IntegerField, SelectField, TextAreaField, validators
+from wtforms import StringField, PasswordField, SubmitField, DateField, IntegerField, SelectField, TextAreaField, validators, BooleanField
 from wtforms.validators import DataRequired, Email, EqualTo, Length, ValidationError, Regexp
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from core.models import User
@@ -47,5 +47,17 @@ class GameForm(FlaskForm):
     white_elo = IntegerField(label='White Elo', validators=[validators.optional()])
     black_elo = IntegerField(label='Black Elo', validators=[validators.optional()])
     file = FileField(label='', validators=[FileAllowed(['pgn'], 'Only PGN files are allowed.')])
-    # validators.optional(),
     submit = SubmitField(label='Import')
+
+class EditorForm(FlaskForm):
+    turn = SelectField(choices=[('w', 'White to play'), ('b', 'Black to play')])
+    castling_w_k = BooleanField(label='O-O', default=True)
+    castling_w_q = BooleanField(label='O-O-O', default=True)
+    castling_b_k = BooleanField(label='O-O', default=True)
+    castling_b_q = BooleanField(label='O-O-O', default=True)
+    choices = [('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -', 'Set the board')]
+    with open('core/static/games/openings.txt', 'r') as f:
+        for line in f:
+            choices.append((line.split(':')[1][:-1], line.split(':')[0]))
+    position = SelectField(choices=choices)
+    reset = SubmitField(label='Reset board')

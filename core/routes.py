@@ -5,7 +5,7 @@ from core import app
 from flask import render_template, redirect, send_from_directory, url_for, flash, request
 from core import db
 from core.models import User, Game
-from core.forms import RegisterForm, LoginForm, SearchForm, GameForm
+from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.utils import secure_filename
 
@@ -16,7 +16,7 @@ def home_page():
 
 @app.route('/editor')
 def editor_page():
-    return render_template('editor.html')
+    return render_template('editor.html', form=EditorForm())
     
 @app.route('/register', methods=['GET', 'POST'])
 def register_page():

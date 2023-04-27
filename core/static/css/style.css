@@ -24,7 +24,8 @@ body {
     justify-content: center;
 }
 
-.chessboard > .row, .containerr > .row {
+.chessboard>.row,
+.containerr>.row {
     height: 64px;
     display: flex;
     flex-wrap: wrap;

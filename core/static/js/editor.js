@@ -1,51 +1,6 @@
-// Dict of pieces, key is the position of the piece, value is the type of the piece
-var pieces = {
-    "a8" : "r",
-    "b8" : "n",
-    "c8" : "b",
-    "d8" : "q",
-    "e8" : "k",
-    "f8" : "b",
-    "g8" : "n",
-    "h8" : "r",
-    "a1" : "R",
-    "b1" : "N",
-    "c1" : "B",
-    "d1" : "Q",
-    "e1" : "K",
-    "f1" : "B",
-    "g1" : "N",
-    "h1" : "R",
-    // top row for add black pieces
-    "a9" : "p",
-    "b9" : "n",
-    "c9" : "b",
-    "d9" : "r",
-    "e9" : "q",
-    "f9" : "k",
-    // bottom row for add white pieces
-    "a0" : "P", 
-    "b0" : "N", 
-    "c0" : "B", 
-    "d0" : "R", 
-    "e0" : "Q", 
-    "f0" : "K",
-    "g0" : "trash",
-};
-
-// add pawns to the pieces array
-for (let i = 0; i < 16; i++) {
-    if (i < 8)
-        pieces[String.fromCharCode(97 + i) + "7"] = "p";
-    else
-        pieces[String.fromCharCode(97 + i - 8) + "2"] = "P";
-}
-
-// deep copy of pieces array
-var default_pieces = JSON.parse(JSON.stringify(pieces));
-
 // Loop through all the div in the chessboard
 $(".containerr div").each(function (index, value) {
+
     // Get the ID of the cell
     let cellId = $(this).attr("id");
     if (cellId !== undefined && cellId.length === 2) {
@@ -57,14 +12,6 @@ $(".containerr div").each(function (index, value) {
         }
     }
 });
-
-// Loop through the pieces array and add them to the chessboard
-for (let key in pieces) {
-    if (pieces.hasOwnProperty(key)) {
-        let piece = pieces[key];
-        $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
-    }
-}
 
 var startCellIdG = null;
 
@@ -80,7 +27,7 @@ $(".cell").click(function () {
             $(this).removeClass("selected");
             startCellIdG = null;
             return;
-        }        
+        }
 
         movePiece(cellId);
     }
@@ -99,6 +46,76 @@ $(".cell").click(function () {
         }
     }
 });
+
+// Dict of pieces, key is the position of the piece, value is the type of the piece
+var pieces = {};
+var extra = {
+    // top row for add black pieces
+    "a9": "p",
+    "b9": "n",
+    "c9": "b",
+    "d9": "r",
+    "e9": "q",
+    "f9": "k",
+    // bottom row for add white pieces
+    "a0": "P",
+    "b0": "N",
+    "c0": "B",
+    "d0": "R",
+    "e0": "Q",
+    "f0": "K",
+    "g0": "trash",
+};
+
+
+resetBoard();
+
+function resetBoard() {
+    clearBoard();
+
+    let fen = $("#fen").val()
+    let rows = fen.split(" ")[0].split("/");
+    for (let i = 0; i < rows.length; i++) {
+        let row = rows[i];
+        let j = 0;
+        for (let k = 0; k < row.length; k++) {
+            let c = row[k];
+            if (c >= '1' && c <= '8') {
+                j += parseInt(c);
+            } else {
+                pieces[String.fromCharCode(97 + j) + (8 - i)] = c;
+                j++;
+            }
+        }
+    }
+
+    // Loop through the pieces array and add them to the chessboard
+    for (let key in pieces) {
+        if (pieces.hasOwnProperty(key)) {
+            let piece = pieces[key];
+            $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
+        }
+    }
+}
+
+function clearBoard() {
+    if (startCellIdG !== null) {
+        $("#" + startCellIdG).removeClass("selected");
+        startCellIdG = null;
+    }
+
+    pieces = {};
+    $(".cell").html("");
+
+    // Loop through the extra array and add them to the chessboard
+    for (let key in extra) {
+        if (extra.hasOwnProperty(key)) {
+            let piece = extra[key];
+            $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
+        }
+    }
+}
+
 
 function movePiece(endCellId) {
     // Get the piece that is in the starting cell
@@ -141,7 +158,9 @@ function movePiece(endCellId) {
 
 // Function to get the piece in a cell (if there is one)
 function getPiece(cellId) {
-    return pieces.hasOwnProperty(cellId) ? pieces[cellId] : null;
+    if (cellId[1] !== "0" && cellId[1] !== "9")
+        return pieces.hasOwnProperty(cellId) ? pieces[cellId] : null;
+    return extra.hasOwnProperty(cellId) ? extra[cellId] : null;
 }
 
 // If I press esc key, TODO (or outside the board), deselect the piece
