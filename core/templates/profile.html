@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}
-
+{{ username }}'s profile
 {% endblock %}
 
 {% block content %}
@@ -20,6 +20,7 @@
             <th scope="col">Date</th>
             <th scope="col">White Elo</th>
             <th scope="col">Black Elo</th>
+            <th scope="col">Game</th>
         </tr>
     </thead>
     {% for game in games %}
@@ -43,6 +44,7 @@
             {% else %}
             <td>Unknown</td>
             {% endif %}
+            <td><a href="{{ url_for('game_page', id=game.id) }}">View</a></td>
         </tr>
     </tbody>
 

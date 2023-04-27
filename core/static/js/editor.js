@@ -1,15 +1,10 @@
-// Loop through all the div in the chessboard
-$(".containerr div").each(function (index, value) {
+initializeBoard();
 
-    // Get the ID of the cell
-    let cellId = $(this).attr("id");
-    if (cellId !== undefined && cellId.length === 2) {
-        $(this).addClass("cell");
-        // id is like "a7" or "b7". a = 0, b = 1, c = 2, etc. add the first character to the second digit to get the number of the cell
-        let cellNumber = cellId.charCodeAt(0) - 97 + parseInt(cellId[1]);
-        if (cellNumber % 2 === 1) {
-            $(this).addClass("black");
-        }
+// If I press esc key, TODO (or outside the board), deselect the piece
+$(document).keyup(function (e) {
+    if (e.keyCode === 27) {
+        $("#" + startCellIdG).removeClass("selected");
+        startCellIdG = null;
     }
 });
 
@@ -30,6 +25,7 @@ $(".cell").click(function () {
         }
 
         movePiece(cellId);
+        changeFen();
     }
     // If no piece is selected, select the clicked piece (if there is one)
     else {
@@ -96,6 +92,8 @@ function resetBoard() {
             $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
         }
     }
+
+    changeFen();
 }
 
 function clearBoard() {
@@ -114,8 +112,42 @@ function clearBoard() {
             $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
         }
     }
+    $("#realFen").val("8/8/8/8/8/8/8/8 w - - 0 1");
 }
 
+function changeFen() {
+    let fen = "";
+    for (let i = 8; i >= 1; i--) {
+        let empty = 0;
+        for (let j = 0; j < 8; j++) {
+            let key = String.fromCharCode(97 + j) + i;
+            if (pieces.hasOwnProperty(key)) {
+                if (empty > 0) {
+                    fen += empty;
+                    empty = 0;
+                }
+                fen += pieces[key];
+            } else {
+                empty++;
+            }
+        }
+        if (empty > 0) {
+            fen += empty;
+        }
+        if (i > 1) {
+            fen += "/";
+        }
+    }
+    let turn = $("#turn").val()
+    fen += " " + turn + " ";
+    let wk = (document.getElementById("wk").checked ? "K" : ""),
+        wq = (document.getElementById("wq").checked ? "Q" : ""),
+        bk = (document.getElementById("bk").checked ? "k" : ""),
+        bq = (document.getElementById("bq").checked ? "q" : "");
+    fen += (wk + wq + bk + bq).length > 0 ? (wk + wq + bk + bq) : "-";
+    fen += " - 0 1";
+    $("#realFen").val(fen);
+}
 
 function movePiece(endCellId) {
     // Get the piece that is in the starting cell
@@ -155,7 +187,6 @@ function movePiece(endCellId) {
     }
 }
 
-
 // Function to get the piece in a cell (if there is one)
 function getPiece(cellId) {
     if (cellId[1] !== "0" && cellId[1] !== "9")
@@ -163,13 +194,6 @@ function getPiece(cellId) {
     return extra.hasOwnProperty(cellId) ? extra[cellId] : null;
 }
 
-// If I press esc key, TODO (or outside the board), deselect the piece
-$(document).keyup(function (e) {
-    if (e.keyCode === 27) {
-        $("#" + startCellIdG).removeClass("selected");
-        startCellIdG = null;
-    }
-});
 
 // TODO
 // Deselect the piece if I click not in the chessboard or in the other rows
@@ -183,11 +207,6 @@ $(document).keyup(function (e) {
 // });
 
 /* TODO
-possibilita' di settare delle aperture, magari con fen perche' servira' convertire fen in posizione e il contrario
 nel profilo personale per rivedere una partita ogni mossa direi di modificarla in un fen cosi' che possiamo scorrere mossa per mossa
-turno del giocatore
-selezionare chi ha arroccato
 flip board
-posizione iniziale
-stampare fen
 */

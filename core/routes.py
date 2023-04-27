@@ -192,3 +192,18 @@ def import_page():
             form.file.errors.append('You must insert a file or fill the fields above')
 
     return render_template('import.html', form=form)
+
+@app.route('/game/<id>')
+def game_page(id):
+    # if not User.query.filter_by(username=username).first():
+    #     flash('User not found!', category='danger')
+    #     return redirect(url_for('home_page'))
+    # editable = current_user.is_authenticated and current_user.username == username
+    # games = Game.query.filter_by(id_player=User.query.filter_by(username=username).first().id).all()
+    # return render_template('profile.html', username=username, editable=editable, games=games)
+
+    if not Game.query.filter_by(id=id).first():
+        flash('Game not found!', category='danger')
+        return redirect(url_for('home_page'))
+    game = Game.query.filter_by(id=id).first()
+    return render_template('game.html', game=game)

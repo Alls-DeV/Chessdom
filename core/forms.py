@@ -51,7 +51,7 @@ class GameForm(FlaskForm):
 
 class EditorForm(FlaskForm):
     turn = SelectField(choices=[('w', 'White to play'), ('b', 'Black to play')])
-    castling_w_k = BooleanField(label='O-O', default=True)
+    castling_w_k = BooleanField(label='O-O')
     castling_w_q = BooleanField(label='O-O-O', default=True)
     castling_b_k = BooleanField(label='O-O', default=True)
     castling_b_q = BooleanField(label='O-O-O', default=True)

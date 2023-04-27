@@ -1,0 +1,2 @@
+initializeBoard();
+var pieces = {};

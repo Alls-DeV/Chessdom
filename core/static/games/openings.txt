@@ -92,12 +92,9 @@ A92 Dutch Defense Stonewall Variation:rnbq1rk1/ppp1b1pp/4pn2/3p1p2/2PP4/5NP1/PP2
 D80 Grunfeld Defense:rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -
 D82 Grunfeld Defense Brinckmann Attack:rnbqkb1r/ppp1pp1p/5np1/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq -
 D85 Grunfeld Defense Exchange Variation:rnbqkb1r/ppp1pp1p/6p1/3n4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq -
-D81 Grunfeld Defense Russian Variation Accelerated Variation:rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/1QN5/PP2PPPP/R1B1KBNR b KQkq -
-D91 Grunfeld Defense Three Knights Variation Petrosian System:rnbqk2r/ppp1ppbp/5np1/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq -
 E60 Indian Defense West Indian Defense:rnbqkb1r/pppppp1p/5np1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -
 E70 King's Indian Defense Normal Variation:rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq -
 E73 King's Indian Defense Averbakh Variation:rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N5/PP2BPPP/R2QK1NR b KQ -
-E62 King's Indian Defense Fianchetto Variation Delayed Fianchetto:rnbqk2r/ppp1ppbp/3p1np1/8/2PP4/2N2NP1/PP2PP1P/R1BQKB1R b KQkq -
 E76 King's Indian Defense Four Pawns Attack:rnbqk2r/ppp1ppbp/3p1np1/8/2PPPP2/2N5/PP4PP/R1BQKBNR b KQkq -
 E91 King's Indian Defense Orthodox Variation:rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R b KQ -
 E80 King's Indian Defense Samisch Variation:rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N2P2/PP4PP/R1BQKBNR b KQkq -
@@ -133,7 +130,6 @@ A09 Reti Opening:rnbqkbnr/ppp1pppp/8/3p4/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq -
 A10 English Opening:rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq -
 A20 English Opening King's English Variation:rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq -
 A30 English Opening Symmetrical Variation:rnbqkbnr/pp1ppppp/8/2p5/2P5/8/PP1PPPPP/RNBQKBNR w KQkq -
-A26 English Opening King's English Variation Closed System Full Symmetry:r1bqk1nr/ppp2pbp/2np2p1/4p3/2P5/2NP2P1/PP2PPBP/R1BQK1NR w KQkq -
 A01 Nimzo-Larsen Attack:rnbqkbnr/pppppppp/8/8/8/1P6/P1PPPPPP/RNBQKBNR b KQkq -
 A00 Polish Opening:rnbqkbnr/pppppppp/8/8/1P6/8/P1PPPPPP/RNBQKBNR b KQkq -
 A02 Bird Opening:rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq -

@@ -8,7 +8,6 @@ Editor
 <div class="container">
     <div class="row">
         <div class="col-md-10">
-
             <div class="containerr">
                 <div class="row">
                     <div id="a9"></div>
@@ -112,28 +111,34 @@ Editor
             </div>
         </div>
         <div class="col-md-2 text-center containerr">
-            <form class="form-editboard" style="color:white">
-                {{ form.turn(class="form-control") }}
+            <form id="form-editboard" class="form-editboard" style="color:rgb(255, 255, 255)" onchange="changeFen()">
+                {{ form.turn(id="turn", class="form-control") }}
                 <h3>Castling</h3>
                 <h5>White:</h5>
                 {{ form.castling_w_k.label() }}
-                {{ form.castling_w_k(class=" form-control") }} {{ form.castling_w_q.label() }} {{
-                form.castling_w_q(class="form-control" ) }} <h5>Black:</h5>
+                {{ form.castling_w_k(id="wk", class="form-control") }}
+                {{ form.castling_w_q.label() }}
+                {{ form.castling_w_q(id="wq", class="form-control" ) }}
+                <h5>Black:</h5>
                 {{ form.castling_b_k.label() }}
-                {{ form.castling_b_k(class="form-control") }}
+                {{ form.castling_b_k(id="bk", class="form-control") }}
                 {{ form.castling_b_q.label() }}
-                {{ form.castling_b_q(class="form-control") }}
-                {{ form.position(id="fen", class="form-control", onclick="resetBoard()") }}
+                {{ form.castling_b_q(id="bq", class="form-control") }}
+                {{ form.position(id="fen", class="form-control", onclick="resetBoard()", style="width: 30ch") }}
                 <button type="button" class="btn btn-danger" onclick="resetBoard()">Reset position</button>
                 <button type="button" class="btn btn-danger" onclick="clearBoard()">Clear board</button>
+                <br>
+                <br>
+                <br>
             </form>
+            <input type="text" id="realFen" readonly style="width: 62ch;">
         </div>
     </div>
 </div>
 
 {% endblock %}
 
-
 {% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
 {% endblock %}
