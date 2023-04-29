@@ -7,11 +7,28 @@
 
 {% if current_user.is_authenticated %}
 {% if current_user.username == username %}
-<h1>My profile</h1>
+<!-- my friend -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>{{ username }}</h1>
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+</div> -->
+<a href="{{ url_for('friend_page', username=username) }}">Friend</a>
+{% else %}
+<!-- add friend -->
+{% if not is_friend %}
+<a href="{{ url_for('add_friend_page', username=username) }}">Add friend</a>
+{% else %}
+<a href="{{ url_for('remove_friend_page', username=username) }}">Remove friend</a>
+{% endif %}
 {% endif %}
 {% endif %}
 
-<table class="table table-striped" style="color: white">
+<table class=" table table-striped" style="color: white">
     <thead>
         <tr>
             <th scope="col">White</th>
@@ -21,6 +38,11 @@
             <th scope="col">White Elo</th>
             <th scope="col">Black Elo</th>
             <th scope="col">Game</th>
+            {% if current_user.is_authenticated %}
+            {% if current_user.username == username %}
+            <th scope="col">Delete</th>
+            {% endif %}
+            {% endif %}
         </tr>
     </thead>
     {% for game in games %}
@@ -28,7 +50,14 @@
         <tr>
             <td>{{ game.white }}</td>
             <td>{{ game.black }}</td>
-            <td>{{ game.result }}</td>
+
+            {% if game.result == game.color %}
+            <td>Win</td>
+            {% elif game.result == 'draw' %}
+            <td>Draw</td>
+            {% else %}
+            <td>Lose</td>
+            {% endif %}
             {% if game.date %}
             <td>{{ game.date.strftime('%d-%m-%Y') }}</td>
             {% else %}
@@ -45,6 +74,15 @@
             <td>Unknown</td>
             {% endif %}
             <td><a href="{{ url_for('game_page', id=game.id) }}">View</a></td>
+            {% if current_user.is_authenticated %}
+            {% if current_user.username == username %}
+            <td>
+                <form action="{{ url_for('delete_page', id=game.id) }}" method="post">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+            {% endif %}
+            {% endif %}
         </tr>
     </tbody>
 

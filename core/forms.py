@@ -41,6 +41,7 @@ class GameForm(FlaskForm):
 
     white = StringField(label='White Player*')
     black = StringField(label='Black Player*')
+    color = SelectField(label='Your color*', choices=[(1, 'White'), (-1, 'Black')])
     result = SelectField(label='Result*', choices=[(1, 'White'), (0, 'Draw'), (-1, 'Black')])
     moves = TextAreaField(label='Moves*')
     date = DateField('Date', [validators.optional()])

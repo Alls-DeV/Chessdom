@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     /* the elements in containerr display vertically */
     flex-direction: column;
     /* all the elements distanciate 50px */
@@ -45,4 +45,17 @@ body {
 
 .cell.selected {
     background-color: #ff0000;
+}
+
+.player-name {
+    width: 100%;
+    text-align: center;
+}
+
+.player-name:first-child {
+    margin-top: auto;
+}
+
+.player-name:last-child {
+    margin-bottom: auto;
 }

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}
+{{ username }}' s friend list
+{% endblock %}
+
+{% block content %}
+<table class=" table table-striped" style="color: white">
+    <thead>
+        <tr>
+            <th scope="col">Username</th>
+            <!-- <th scope="col">Email</th> -->
+            <th scope="col">Winrate</th>
+            <th scope="col">Games imported</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+
+    {% for friend in users %}
+    <tbody>
+        <tr>
+            <td><a href="{{ url_for('profile_page', username=friend[0].username) }}">{{ friend[0].username }}</a></td>
+            <td>{{ friend[1] }}</td>
+            <td>{{ friend[2] }}</td>
+            <td>
+                <form action="{{ url_for('remove_friend_page', username=friend[0].username) }}" method="post">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+    </tbody>
+    {% endfor %}
+
+</table>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

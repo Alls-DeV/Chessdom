@@ -31,6 +31,13 @@ Import Games
                     <span style="color: red">{{ error }}</span>
                     {% endfor %}
                     <br>
+                    {{ form.color.label() }}
+                    {{ form.color(class="form-control", placeholder="Your color") }}
+                    {% for error in form.color.errors %}
+                    <span style="color: red">{{ error }}</span>
+                    {% endfor %}
+                    <br>
+                    <br>
                     {{ form.result.label() }}
                     {{ form.result(class="form-control", placeholder="Result") }}
                     {% for error in form.result.errors %}

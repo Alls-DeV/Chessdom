@@ -6,6 +6,7 @@
 {% block content %}
 
 <div class="containerr">
+    <div class="player-name">{{ game.black }}</div>
     <div class="chessboard">
         <div class="row">
             <div id="a8"></div>
@@ -88,10 +89,12 @@
             <div id="h1"></div>
         </div>
     </div>
+    <div class="player-name">{{ game.white }}</div>
     <!-- add 4 button in a line, first move, previous move, next move, last move -->
     <div class="button">
         <button id="first" class="btn btn-primary" onclick="firstFen()">First Move</button>
         <button id="previous" class="btn btn-primary" onclick="prevFen()">Previous Move</button>
+        <span id="text"></span>
         <button id="next" class="btn btn-primary" onclick="nextFen()">Next Move</button>
         <button id="last" class="btn btn-primary" onclick="lastFen()">Last Move</button>
     </div>

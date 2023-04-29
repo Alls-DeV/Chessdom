@@ -79,6 +79,7 @@ function loadFen() {
     } else {
         $(".cell").removeClass("selected");
     }
+    document.getElementById("text").textContent = "   " + (index + 1) + "/" + fenList.length + "   ";
 }
 
 function clearBoard() {

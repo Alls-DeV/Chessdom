@@ -34,6 +34,7 @@ class Game(db.Model):
     __tablename__ = 'games'
     id = db.Column(db.Integer(), primary_key=True)
     id_player = db.Column(db.Integer(), db.ForeignKey('users.id'))
+    color = db.Column(db.Integer())
     white = db.Column(db.String(length=30), nullable=False)    
     black = db.Column(db.String(length=30), nullable=False)
     result = db.Column(db.Integer(), nullable=False)
@@ -48,3 +49,9 @@ class Game(db.Model):
     
     def __str__(self) -> str:
         return f'Game {self.id}\nWhite: {self.white}\nBlack: {self.black}\nResult: {self.result}\nMoves: {self.moves}\nDate: {self.date}\n'
+
+class Friend(db.Model):
+    __tablename__ = 'friends'
+    id = db.Column(db.Integer(), primary_key=True)
+    id_user = db.Column(db.Integer(), db.ForeignKey('users.id'))
+    id_friend = db.Column(db.Integer(), db.ForeignKey('users.id'))
