@@ -139,6 +139,9 @@ Editor
 {% endblock %}
 
 {% block scripts %}
+<script>
+    var piece_set = {{ piece_set| tojson }};
+</script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
 {% endblock %}

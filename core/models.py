@@ -55,3 +55,11 @@ class Friend(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
     id_user = db.Column(db.Integer(), db.ForeignKey('users.id'))
     id_friend = db.Column(db.Integer(), db.ForeignKey('users.id'))
+
+class Preference(db.Model):
+    __tablename__ = 'preferences'
+    id = db.Column(db.Integer(), primary_key=True)
+    id_user = db.Column(db.Integer(), db.ForeignKey('users.id'))
+    piece_set = db.Column(db.String(length=30))
+    white_board = db.Column(db.String(length=30))
+    black_board = db.Column(db.String(length=30))

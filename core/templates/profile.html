@@ -51,13 +51,18 @@
             <td>{{ game.white }}</td>
             <td>{{ game.black }}</td>
 
+            {% if game.color %}
             {% if game.result == game.color %}
             <td>Win</td>
-            {% elif game.result == 'draw' %}
+            {% elif game.result == 0 %}
             <td>Draw</td>
             {% else %}
             <td>Lose</td>
             {% endif %}
+            {% else %}
+            <td>Unknown</td>
+            {% endif %}
+
             {% if game.date %}
             <td>{{ game.date.strftime('%d-%m-%Y') }}</td>
             {% else %}
@@ -77,7 +82,7 @@
             {% if current_user.is_authenticated %}
             {% if current_user.username == username %}
             <td>
-                <form action="{{ url_for('delete_page', id=game.id) }}" method="post">
+                <form action="{{ url_for('remove_game_page', id=game.id) }}" method="post">
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
             </td>

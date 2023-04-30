@@ -11,6 +11,15 @@ app.config['SECRET_KEY'] = '9d73e8d3fd1a92e4265b3bf0'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
-UPLOAD_FOLDER = './static/games'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+DEFAULT_PIECE_SET = 'alpha'
 from core import routes
+'''
+TODO
+add preferences for a user to change the piece set and the board color
+add a table for the preferences
+add to the home page the problems
+add a profile image based to the email
+add the possibility to change the profile image
+add the possibility to change the password
+
+'''

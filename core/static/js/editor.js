@@ -89,7 +89,7 @@ function resetBoard() {
     for (let key in pieces) {
         if (pieces.hasOwnProperty(key)) {
             let piece = pieces[key];
-            $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
+            $("#" + key).html("<img src='/static/images/piece_set/" + piece_set + "/" + piece + ".png'>");
         }
     }
 
@@ -109,7 +109,11 @@ function clearBoard() {
     for (let key in extra) {
         if (extra.hasOwnProperty(key)) {
             let piece = extra[key];
-            $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
+            if (piece === "trash") {
+                $("#" + key).html("<img src='/static/images/trash.png' style='position: relative; top: 3px; left: 5px;'>");
+            } else {
+                $("#" + key).html("<img src='/static/images/piece_set/" + piece_set + "/" + piece + ".png'>");
+            }
         }
     }
     $("#realFen").val("8/8/8/8/8/8/8/8 w - - 0 1");
@@ -177,7 +181,7 @@ function movePiece(endCellId) {
 
         if (endCellId[1] !== "0" && endCellId[1] !== "9") {
             let endCell = $("#" + endCellId);
-            endCell.html("<img src='/static/images/" + piece + ".png'>");
+            endCell.html("<img src='/static/images/piece_set/" + piece_set + "/" + piece + ".png'>");
             pieces[endCellId] = piece;
             startCellIdG = null;
         } else {

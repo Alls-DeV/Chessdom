@@ -1,10 +1,10 @@
 import os
 import chess
 
-from core import app
+from core import app, DEFAULT_PIECE_SET
 from flask import render_template, redirect, send_from_directory, url_for, flash, request
 from core import db
-from core.models import User, Game, Friend
+from core.models import User, Game, Friend, Preference
 from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.utils import secure_filename
@@ -16,7 +16,10 @@ def home_page():
 
 @app.route('/editor')
 def editor_page():
-    return render_template('editor.html', form=EditorForm())
+    piece_set = DEFAULT_PIECE_SET
+    if current_user.is_authenticated:
+        piece_set = Preference.query.filter_by(id_user=current_user.id).first().piece_set if Preference.query.filter_by(id_user=current_user.id).first() else DEFAULT_PIECE_SET       
+    return render_template('editor.html', form=EditorForm(), piece_set=piece_set)
     
 @app.route('/register', methods=['GET', 'POST'])
 def register_page():
@@ -273,11 +276,14 @@ def game_page(id):
         board.push_san(move)
         fen_list.append(board.fen())
         check_list.append(board.is_check())
-    return render_template('game.html', game=game, fen_list=fen_list, check_list=check_list)
+    piece_set = DEFAULT_PIECE_SET
+    if current_user.is_authenticated:
+        piece_set = Preference.query.filter_by(id_user=current_user.id).first().piece_set if Preference.query.filter_by(id_user=current_user.id).first() else DEFAULT_PIECE_SET       
+    return render_template('game.html', game=game, fen_list=fen_list, check_list=check_list, piece_set=piece_set)
 
 @login_required
-@app.route('/delete/<id>', methods=['GET', 'POST'])
-def delete_page(id):
+@app.route('/remove_game/<id>', methods=['GET', 'POST'])
+def remove_game_page(id):
     if not Game.query.filter_by(id=id).first():
         flash('Game not found!', category='danger')
         return redirect(url_for('home_page'))

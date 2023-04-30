@@ -62,7 +62,7 @@ function loadFen() {
     for (let key in pieces) {
         if (pieces.hasOwnProperty(key)) {
             let piece = pieces[key];
-            $("#" + key).html("<img src='/static/images/" + piece + ".png'>");
+            $("#" + key).html("<img src='/static/images/piece_set" + piece_set + "/" + piece + ".png'>");
         }
     }
 

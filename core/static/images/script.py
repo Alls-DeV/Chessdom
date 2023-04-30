@@ -1,17 +1,17 @@
+from PIL import Image
 import os
 
-with open('tmp.txt', 'r') as f:
-    miao = f.read()
+# set the desired size
+size = (56, 56)
 
-f = open('openings.txt', 'w')
-
-miao = miao[1:-1].split('},{')
-for a in miao:
-    a = a.split(',')
-    for i in range(len(a)):
-        a[i] = a[i].split(':')
-        for j in range(len(a[i])):
-            a[i][j] = a[i][j][1:-1]
-        a[i] = a[i][1]
-    a = a[0] + " " + a[1] + ":" + a[2]
-    f.write(a + '\n')
+# loop through each folder in the directory
+for folder in os.listdir('.'):
+    if folder == 'trash.png':
+        file = folder
+        img = Image.open(file)
+        
+        # resize the image
+        img = img.resize(size)
+        
+        # save the resized image with the same name as original
+        img.save(file) 

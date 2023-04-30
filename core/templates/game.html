@@ -104,6 +104,7 @@
 
 {% block scripts %}
 <script>
+    var piece_set = {{ piece_set| tojson }};
     var fenList = {{ fen_list| tojson }};
     var checkList = {{ check_list| tojson }};
 </script>
