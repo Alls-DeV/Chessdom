@@ -33,12 +33,6 @@ $(".cell").click(function () {
             startCellIdG = cellId;
             // Add the selected class to the cell
             $(this).addClass("selected");
-
-            // TODO
-            // if (cellId === "g0") {
-            //     // change the cursor to not-allowed in all the page
-            //     $("body").css("cursor", "not-allowed");
-            // }
         }
     }
 });
@@ -197,20 +191,3 @@ function getPiece(cellId) {
         return pieces.hasOwnProperty(cellId) ? pieces[cellId] : null;
     return extra.hasOwnProperty(cellId) ? extra[cellId] : null;
 }
-
-
-// TODO
-// Deselect the piece if I click not in the chessboard or in the other rows
-// $(document).click(function (e) {
-//     if (startCellIdG === null)
-//         return;
-//     if ($(e.target).closest(".containerr").length === 0 || $(e.target).closest(".row").length !== 0) {
-//         $("#" + startCellIdG).removeClass("selected");
-//         startCellIdG = null;
-//     }
-// });
-
-/* TODO
-nel profilo personale per rivedere una partita ogni mossa direi di modificarla in un fen cosi' che possiamo scorrere mossa per mossa
-flip board
-*/

@@ -1,36 +1,50 @@
 {% extends "base.html" %}
 {% block title %}
-{{ username }}'s profile
+{{ user.username }}'s profile
 {% endblock %}
 
 {% block content %}
+<!-- name and image -->
+<table>
+    <tr valign="top">
+        <td><img src="{{ user.avatar(128) }}"></td>
+        <td>
+            <h1>{{ user.username }}</h1>
+            {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
+            {% if user.last_seen %}<p>Last seen on: {{ user.last_seen.strftime('%d-%m-%Y %H:%M') }}</p>{% endif %}
+        </td>
+    </tr>
+    {% if current_user.is_authenticated %}
 
-{% if current_user.is_authenticated %}
-{% if current_user.username == username %}
-<!-- my friend -->
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h1>{{ username }}</h1>
-        </div>
-        <div class="col-md-6">
-        </div>
-    </div>
-</div> -->
+    <!-- if I am in my profile -->
+    {% if current_user.username == user.username %}
 
-<a href="{{ url_for('friend_page', username=username) }}">Friends list</a>
-<br>
-<a href="{{ url_for('preference_page', username=username) }}">Preferences</a>
+    <tr>
+        <td> <a href="{{ url_for('friend_page', username=user.username) }}">Friends</a></td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('preference_page', username=user.username) }}">Preferences</a></td>
+    </tr>
+    {% else %}
 
-{% else %}
-<!-- add friend -->
-{% if not is_friend %}
-<a href="{{ url_for('add_friend_page', username=username) }}">Add friend</a>
-{% else %}
-<a href="{{ url_for('remove_friend_page', username=username) }}">Remove friend</a>
-{% endif %}
-{% endif %}
-{% endif %}
+    {% if not is_friend %}
+    <tr>
+        <td>
+            <a href="{{ url_for('add_friend_page', username=user.username) }}">Add friend</a>
+        </td>
+    </tr>
+    {% else %}
+    <tr>
+        <td>
+            <a href="{{ url_for('remove_friend_page', username=user.username) }}">Remove friend</a>
+        </td>
+    </tr>
+    {% endif %}
+
+    {% endif %}
+
+    {% endif %}
+</table>
 
 <table class=" table table-striped" style="color: white">
     <thead>

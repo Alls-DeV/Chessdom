@@ -8,6 +8,7 @@ from core.models import User, Game, Friend, Preference
 from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm, PreferenceForm
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.utils import secure_filename
+from datetime import datetime
 
 DEFAULT_PIECE_SET = 'alpha'
 DEFAULT_WHITE_COLOR = '#f0d9b5'
@@ -24,6 +25,13 @@ def get_preferences():
             white_color = preference.white_color if preference.white_color else DEFAULT_WHITE_COLOR
             black_color = preference.black_color if preference.black_color else DEFAULT_BLACK_COLOR
     return piece_set, white_color, black_color
+
+@app.before_request
+def before_request():
+    if current_user.is_authenticated:
+        current_user.last_seen = datetime.utcnow()
+        current_user.last_seen = current_user.last_seen.replace(hour=current_user.last_seen.hour + 2)
+        db.session.commit()
 
 @app.route('/')
 @app.route('/home')
@@ -96,15 +104,16 @@ def search_page():
 
 @app.route('/profile/<username>')
 def profile_page(username):
-    if not User.query.filter_by(username=username).first():
+    user = User.query.filter_by(username=username).first()
+    if not user:
         flash('User not found!', category='danger')
         return redirect(url_for('home_page'))
     editable = current_user.is_authenticated and current_user.username == username
-    games = Game.query.filter_by(id_player=User.query.filter_by(username=username).first().id).all()
+    games = Game.query.filter_by(id_player=user.id).all()
     is_friend = False
     if current_user.is_authenticated:
-        is_friend = Friend.query.filter_by(id_user=current_user.id, id_friend=User.query.filter_by(username=username).first().id).first()
-    return render_template('profile.html', username=username, editable=editable, games=games, is_friend=is_friend)
+        is_friend = Friend.query.filter_by(id_user=current_user.id, id_friend=user.id).first()
+    return render_template('profile.html', user=user, editable=editable, games=games, is_friend=is_friend)
 
 @login_required
 @app.route('/friend/<username>')
@@ -316,9 +325,11 @@ def preference_page(username):
         return redirect(url_for('home_page'))
 
     form = PreferenceForm()
+    user = User.query.filter_by(username=username).first()
 
     piece_set, white_color, black_color = get_preferences()
     form.piece_set.default = piece_set
+    form.about_me.default = user.about_me
 
     if form.validate_on_submit():
         # if preference already exists update it
@@ -335,6 +346,9 @@ def preference_page(username):
                 black_color=form.black_color.data
             )
             db.session.add(preference_to_create)
+
+        user.about_me = form.about_me.data
+
         db.session.commit()
 
         flash('Success! You have changed your preferences', category='success')

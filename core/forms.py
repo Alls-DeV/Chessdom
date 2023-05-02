@@ -64,6 +64,7 @@ class EditorForm(FlaskForm):
     reset = SubmitField(label='Reset board')
 
 class PreferenceForm(FlaskForm):
+    about_me = TextAreaField(label='About me', validators=[Length(min=0, max=140)])
     piece_set = SelectField(label='Piece set', choices=[('alpha', 'Alpha'), ('anarcandy', 'Anarcandy'), ('california', 'California'), ('companion', 'Companion'), ('dubrovny', 'Dubrovny'), ('fantasy', 'Fantasy'), ('gioco', 'Gioco'), ('horsey', 'Horsey'), ('kosal', 'Kosal'), ('pixel', 'Pixel')])
     white_color = StringField('Light Color')
     black_color = StringField('Dark Color')
