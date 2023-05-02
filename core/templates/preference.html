@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ current_user.username }}'s preferences
+{% endblock %}
+
+{% block content %}
+
+<body class="text-center">
+    <div class="container" style="margin-top: 50px">
+        <form method="POST" class="form-preference" style="color:white" autocomplete="off" onchange="changeSample()">
+            {{ form.hidden_tag() }}
+            <div class="row">
+                <div class="col">
+                    {{ form.piece_set.label() }}
+                    {{ form.piece_set(class="form-control") }}
+                </div>
+                <div class="col">
+                    <label for="white-color-picker">Light Color</label>
+                    <input type="color" id="white-color-picker" name="white_color" class="form-control"
+                        value="{{ white_color }}">
+                </div>
+                <div class="col">
+                    <label for="black-color-picker">Dark Color</label>
+                    <input type="color" id="black-color-picker" name="black_color" class="form-control"
+                        value="{{ black_color }}">
+                </div>
+
+            </div>
+
+            <br>
+            {{ form.submit(class="btn btn-lg btn-primary btn-block") }}
+        </form>
+        <br>
+        <br>
+        <div class="containerr">
+            <div class="row">
+                <div id="a0"></div>
+                <div id="b0"></div>
+                <div id="c0"></div>
+                <div id="d0"></div>
+                <div id="e0"></div>
+                <div id="f0"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    var piece_set = {{ piece_set| tojson }};
+    var white_color = {{ white_color| tojson }};
+    var black_color = {{ black_color| tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/preference.js') }}"></script>
+{% endblock %}
+
+<!-- TODO
+controllare come fare parametrico il css. Se ad ogni cambiamento non si puo' fare allora dovro' farlo di cattiveria con javascript.
+ -->

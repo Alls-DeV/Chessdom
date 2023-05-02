@@ -11,7 +11,6 @@ app.config['SECRET_KEY'] = '9d73e8d3fd1a92e4265b3bf0'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
-DEFAULT_PIECE_SET = 'alpha'
 from core import routes
 '''
 TODO

@@ -1,3 +1,6 @@
+document.documentElement.style.setProperty('--white-color', white_color);
+document.documentElement.style.setProperty('--black-color', black_color);
+
 function initializeBoard() {
     // Loop through all the div in the chessboard
     $(".containerr div").each(function (index, value) {

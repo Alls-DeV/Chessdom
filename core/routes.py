@@ -1,13 +1,29 @@
 import os
 import chess
 
-from core import app, DEFAULT_PIECE_SET
+from core import app
 from flask import render_template, redirect, send_from_directory, url_for, flash, request
 from core import db
 from core.models import User, Game, Friend, Preference
-from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm
+from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm, PreferenceForm
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.utils import secure_filename
+
+DEFAULT_PIECE_SET = 'alpha'
+DEFAULT_WHITE_COLOR = '#f0d9b5'
+DEFAULT_BLACK_COLOR = '#b58863'
+
+def get_preferences():
+    piece_set = DEFAULT_PIECE_SET
+    white_color = DEFAULT_WHITE_COLOR
+    black_color = DEFAULT_BLACK_COLOR
+    if current_user.is_authenticated:
+        preference = Preference.query.filter_by(id_user=current_user.id).first()
+        if preference:
+            piece_set = preference.piece_set if preference.piece_set else DEFAULT_PIECE_SET
+            white_color = preference.white_color if preference.white_color else DEFAULT_WHITE_COLOR
+            black_color = preference.black_color if preference.black_color else DEFAULT_BLACK_COLOR
+    return piece_set, white_color, black_color
 
 @app.route('/')
 @app.route('/home')
@@ -16,10 +32,8 @@ def home_page():
 
 @app.route('/editor')
 def editor_page():
-    piece_set = DEFAULT_PIECE_SET
-    if current_user.is_authenticated:
-        piece_set = Preference.query.filter_by(id_user=current_user.id).first().piece_set if Preference.query.filter_by(id_user=current_user.id).first() else DEFAULT_PIECE_SET       
-    return render_template('editor.html', form=EditorForm(), piece_set=piece_set)
+    piece_set, white_color, black_color = get_preferences()
+    return render_template('editor.html', form=EditorForm(), piece_set=piece_set, white_color=white_color, black_color=black_color)
     
 @app.route('/register', methods=['GET', 'POST'])
 def register_page():
@@ -276,10 +290,8 @@ def game_page(id):
         board.push_san(move)
         fen_list.append(board.fen())
         check_list.append(board.is_check())
-    piece_set = DEFAULT_PIECE_SET
-    if current_user.is_authenticated:
-        piece_set = Preference.query.filter_by(id_user=current_user.id).first().piece_set if Preference.query.filter_by(id_user=current_user.id).first() else DEFAULT_PIECE_SET       
-    return render_template('game.html', game=game, fen_list=fen_list, check_list=check_list, piece_set=piece_set)
+    piece_set, white_color, black_color = get_preferences()
+    return render_template('game.html', game=game, fen_list=fen_list, check_list=check_list, piece_set=piece_set, white_color=white_color, black_color=black_color)
 
 @login_required
 @app.route('/remove_game/<id>', methods=['GET', 'POST'])
@@ -295,3 +307,37 @@ def remove_game_page(id):
     db.session.commit()
     flash('Success! You have deleted a game', category='success')
     return redirect(url_for('profile_page', username=current_user.username))
+
+@login_required
+@app.route('/preference/<username>', methods=['GET', 'POST'])
+def preference_page(username):
+    if current_user.username != username:
+        flash('You can\'t access this page!', category='danger')
+        return redirect(url_for('home_page'))
+
+    form = PreferenceForm()
+
+    piece_set, white_color, black_color = get_preferences()
+    form.piece_set.default = piece_set
+
+    if form.validate_on_submit():
+        # if preference already exists update it
+        preference = Preference.query.filter_by(id_user=current_user.id).first()
+        if preference:
+            preference.piece_set = form.piece_set.data
+            preference.white_color = form.white_color.data
+            preference.black_color = form.black_color.data
+        else:
+            preference_to_create = Preference(
+                id_user=current_user.id,
+                piece_set=form.piece_set.data,
+                white_color=form.white_color.data,
+                black_color=form.black_color.data
+            )
+            db.session.add(preference_to_create)
+        db.session.commit()
+
+        flash('Success! You have changed your preferences', category='success')
+        return redirect(url_for('preference_page', username=username))
+
+    return render_template('preference.html', form=form, piece_set=piece_set, white_color=white_color, black_color=black_color)

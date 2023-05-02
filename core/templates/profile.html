@@ -17,7 +17,11 @@
         </div>
     </div>
 </div> -->
-<a href="{{ url_for('friend_page', username=username) }}">Friend</a>
+
+<a href="{{ url_for('friend_page', username=username) }}">Friends list</a>
+<br>
+<a href="{{ url_for('preference_page', username=username) }}">Preferences</a>
+
 {% else %}
 <!-- add friend -->
 {% if not is_friend %}

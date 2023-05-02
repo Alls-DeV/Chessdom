@@ -61,5 +61,5 @@ class Preference(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
     id_user = db.Column(db.Integer(), db.ForeignKey('users.id'))
     piece_set = db.Column(db.String(length=30))
-    white_board = db.Column(db.String(length=30))
-    black_board = db.Column(db.String(length=30))
+    white_color = db.Column(db.String(length=30))
+    black_color = db.Column(db.String(length=30))

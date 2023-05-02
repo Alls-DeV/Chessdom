@@ -62,3 +62,9 @@ class EditorForm(FlaskForm):
             choices.append((line.split(':')[1][:-1], line.split(':')[0]))
     position = SelectField(choices=choices)
     reset = SubmitField(label='Reset board')
+
+class PreferenceForm(FlaskForm):
+    piece_set = SelectField(label='Piece set', choices=[('alpha', 'Alpha'), ('anarcandy', 'Anarcandy'), ('california', 'California'), ('companion', 'Companion'), ('dubrovny', 'Dubrovny'), ('fantasy', 'Fantasy'), ('gioco', 'Gioco'), ('horsey', 'Horsey'), ('kosal', 'Kosal'), ('pixel', 'Pixel')])
+    white_color = StringField('Light Color')
+    black_color = StringField('Dark Color')
+    submit = SubmitField(label='Save Changes')
