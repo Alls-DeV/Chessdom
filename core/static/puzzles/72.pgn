@@ -1,0 +1,106 @@
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "2789"]
+[Themes "crushing deflection endgame veryLong"]
+[FEN "7R/2Q4p/5ppk/2p5/1p6/7P/PP4PK/4qr2 w - - 6 44"] 
+44. Qxh7+ Kg5 45. Qh6+ Kf5 46. g4+ Ke4 47. Qxg6+ Ke3 48. Re8+ *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1318"]
+[Themes "advantage opening short"]
+[FEN "r2qr1k1/pp1b1pbp/3p2p1/1Bpn4/4P3/5N1P/PP3PP1/RQB2RK1 w - - 2 15"] 
+15. Bxd7 Qxd7 16. exd5 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1551"]
+[Themes "crushing middlegame short"]
+[FEN "6k1/q5b1/p4nBp/1p5P/2p5/P1N3B1/1P3PP1/3R2K1 w - - 1 31"] 
+31. Rd8+ Bf8 32. Bd6 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1301"]
+[Themes "crushing endgame master pin short"]
+[FEN "8/8/3Qn1kp/2p3p1/1p2r3/1P6/5PPK/8 w - - 1 37"] 
+37. Qd3 Kf6 38. Qxe4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1307"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "r6k/5Q2/6Rp/4q3/2p5/6PP/5P1K/1q6 w - - 0 42"] 
+42. Rxh6+ Qh7 43. Qxh7# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1500"]
+[Themes "endgame equality short"]
+[FEN "8/p4pk1/3R1Qpp/p4q2/8/1P5P/P4PP1/6K1 b - - 0 35"] 
+35... Qxf6 36. Rxf6 Kxf6 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1780"]
+[Themes "advantage intermezzo master masterVsMaster middlegame short"]
+[FEN "r1b1r1k1/2n2p1p/2Np2p1/1R1P3n/2pbP3/2N2P2/1P2B1PP/2B1R2K b - - 0 22"] 
+22... Bxc3 23. bxc3 Nxb5 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1687"]
+[Themes "crushing middlegame pin sacrifice short"]
+[FEN "1r1q2k1/1p1n2bp/p2N2p1/P1pP4/4r1P1/4B2P/1P2Q3/R4RK1 b - - 0 25"] 
+25... Rxe3 26. Qxe3 Bd4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "2623"]
+[Themes "advancedPawn bishopEndgame crushing endgame quietMove veryLong"]
+[FEN "8/8/2k3K1/8/6P1/7P/3b4/8 w - - 2 62"] 
+62. g5 Kd6 63. h4 Be1 64. Kf7 Bxh4 65. g6 Bf2 66. g7 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "2197"]
+[Themes "advantage middlegame short"]
+[FEN "4rqk1/1b5p/3B2p1/2pP1r2/2Bb4/RP5P/4QPP1/5RK1 b - - 0 27"] 
+27... Rxe2 28. Bxf8 Rexf2 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "2009"]
+[Themes "crushing endgame short skewer"]
+[FEN "6Q1/pp6/5p2/3P1kp1/3b1r2/1P5P/P1q2PP1/5RK1 w - - 6 40"] 
+40. Qh7+ Ke5 41. Qxc2 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "2028"]
+[Themes "crushing exposedKing long middlegame"]
+[FEN "1r3r1k/8/p2p1nRp/3q1B2/2pB1P1P/2p5/1n3K2/2N4R w - - 0 35"] 
+35. Rxh6+ Kg8 36. Rg1+ Kf7 37. Rxf6+ *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "2437"]
+[Themes "bishopEndgame crushing defensiveMove endgame short"]
+[FEN "8/4B3/8/2p5/2kp4/1p6/8/2K5 b - - 5 63"] 
+63... Kd5 64. Kb2 c4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1907"]
+[Themes "anastasiaMate attraction mate mateIn4 middlegame sacrifice veryLong"]
+[FEN "4r3/1pq2k2/p5b1/2p3Q1/P1Nn4/8/5PPP/R4RK1 b - - 0 30"] 
+30... Ne2+ 31. Kh1 Qxh2+ 32. Kxh2 Rh8+ 33. Qh6 Rxh6# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Classical"]
+[Rating "1974"]
+[Themes "advantage hangingPiece kingsideAttack long master middlegame superGM"]
+[FEN "1rb1r1k1/1p4b1/p5p1/3P3p/Pq2N3/3nB2P/1P1QB1P1/R4RK1 b - - 0 26"] 
+26... Qxe4 27. Bxd3 Qxe3+ 28. Qxe3 Rxe3 *
+
+

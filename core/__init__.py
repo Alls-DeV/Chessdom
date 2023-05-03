@@ -11,9 +11,12 @@ db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 from core import routes
+
 '''
 TODO
-add to the home page the problems
-add a profile image based to the email
+non far fare alla stessa persona piu' volte lo stesso problema
+fare una classifica dei problemi risolti
+mettere tra le possibilita' di skippare il problema
+avere un count degli errori e degli skip
 add the possibility to change the password
 '''

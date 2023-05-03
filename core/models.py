@@ -11,8 +11,7 @@ def load_user(user_id):
 class User(db.Model, UserMixin):
     def avatar(self, size):
         digest = md5(self.email.lower().encode('utf-8')).hexdigest()
-        return 'https://www.gravatar.com/avatar/{}?d=identicon&s={}'.format(
-            digest, size)
+        return 'https://www.gravatar.com/avatar/{}?d=identicon&s={}'.format(digest, size)
 
     __tablename__ = 'users'
     id = db.Column(db.Integer(), primary_key=True)
@@ -65,6 +64,12 @@ class Friend(db.Model):
     id_user = db.Column(db.Integer(), db.ForeignKey('users.id'))
     id_friend = db.Column(db.Integer(), db.ForeignKey('users.id'))
 
+    def __repr__(self) -> str:
+        return f'Friend {self.id}\nUser: {self.id_user}\nFriend: {self.id_friend}\n'
+    
+    def __str__(self) -> str:
+        return f'Friend {self.id}\nUser: {self.id_user}\nFriend: {self.id_friend}\n'
+
 class Preference(db.Model):
     __tablename__ = 'preferences'
     id = db.Column(db.Integer(), primary_key=True)
@@ -72,3 +77,18 @@ class Preference(db.Model):
     piece_set = db.Column(db.String(length=30))
     white_color = db.Column(db.String(length=30))
     black_color = db.Column(db.String(length=30))
+
+class Puzzle(db.Model):
+    __tablename__ = 'puzzles'
+    id = db.Column(db.Integer(), primary_key=True)
+    opening = db.Column(db.String(length=200))
+    rating = db.Column(db.Integer())
+    themes = db.Column(db.String(length=300))
+    FEN = db.Column(db.String(length=200))
+    moves = db.Column(db.String(length=200))
+
+    def __repr__(self) -> str:
+        return f'Puzzle {self.id}\nOpening: {self.opening}\nRating: {self.rating}\nThemes: {self.themes}\nFEN: {self.FEN}\nMoves: {self.moves}\n'
+    
+    def __str__(self) -> str:
+        return f'Puzzle {self.id}\nOpening: {self.opening}\nRating: {self.rating}\nThemes: {self.themes}\nFEN: {self.FEN}\nMoves: {self.moves}\n'

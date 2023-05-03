@@ -13,15 +13,32 @@
             {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
             {% if user.last_seen %}<p>Last seen on: {{ user.last_seen.strftime('%d-%m-%Y %H:%M') }}</p>{% endif %}
         </td>
+        <td>
+            <!-- followers and following -->
+            <table>
+                <tr>
+                    <td>Followers</td>
+                    {% if current_user.is_authenticated %}
+                    {% if current_user.username == user.username %}
+                    <td> <a href="{{ url_for('friend_page', username=user.username) }}">Following</a></td>
+                    {% else %}
+                    <td>Following</td>
+                    {% endif %}
+                    {% else %}
+                    <td>Following</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    <td>{{ number_followers }}</td>
+                    <td>{{ number_followed }}</td>
+                </tr>
+            </table>
+        </td>
     </tr>
     {% if current_user.is_authenticated %}
 
     <!-- if I am in my profile -->
     {% if current_user.username == user.username %}
-
-    <tr>
-        <td> <a href="{{ url_for('friend_page', username=user.username) }}">Friends</a></td>
-    </tr>
     <tr>
         <td><a href="{{ url_for('preference_page', username=user.username) }}">Preferences</a></td>
     </tr>
@@ -30,13 +47,18 @@
     {% if not is_friend %}
     <tr>
         <td>
-            <a href="{{ url_for('add_friend_page', username=user.username) }}">Add friend</a>
+            <!-- green button -->
+            <form action="{{ url_for('add_friend_page', username=user.username) }}" method="post">
+                <button type="submit" class="btn btn-success">Follow</button>
+            </form>
         </td>
     </tr>
     {% else %}
     <tr>
         <td>
-            <a href="{{ url_for('remove_friend_page', username=user.username) }}">Remove friend</a>
+            <form action="{{ url_for('remove_friend_page', username=user.username) }}" method="post">
+                <button type="submit" class="btn btn-danger">Unfollow</button>
+            </form>
         </td>
     </tr>
     {% endif %}

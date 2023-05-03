@@ -1,0 +1,302 @@
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1968"]
+[Themes "crushing defensiveMove long middlegame"]
+[FEN "rn3rk1/p4p1p/3qbQp1/2pP3P/2p5/2P5/P2K2P1/4R2R w - - 0 20"] 
+20. h6 Qxd5+ 21. Kc1 Qg5+ 22. Qxg5 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "2217"]
+[Themes "discoveredAttack master mate mateIn2 middlegame sacrifice short"]
+[FEN "3Q2k1/1N3p1p/p5p1/8/P1Bb1n2/4rP1P/1PQ2K2/6r1 b - - 0 29"] 
+29... Re8+ 30. Qxd4 Nxh3# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1684"]
+[Themes "advantage middlegame short"]
+[FEN "1r3rk1/pN2qpb1/n1n3pp/1Qp1P3/5P2/P4N2/1P4PP/R1BR2K1 b - - 0 18"] 
+18... Qxb7 19. Qxb7 Rxb7 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1751"]
+[Themes "attraction endgame kingsideAttack mate mateIn2 sacrifice short"]
+[FEN "4r1rk/1p3p1p/p2p1P1Q/3P1PR1/P1p1P3/2N2K1P/1q6/8 w - - 0 32"] 
+32. Qxh7+ Kxh7 33. Rh5# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "955"]
+[Themes "crushing fork middlegame short"]
+[FEN "6k1/5p1p/3pPBpb/1PpP1P2/r1n5/r4P2/1RQ3KP/8 b - - 0 30"] 
+30... Ne3+ 31. Kf2 Nxc2 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1177"]
+[Themes "crushing middlegame pin short"]
+[FEN "2b2rk1/6b1/pr1pq1pp/2p5/3nBP2/2N5/1P4PP/R1BQ1RK1 w - - 0 22"] 
+22. Bd5 Kh7 23. Bxe6 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1944"]
+[Themes "crushing master middlegame short"]
+[FEN "r4k1b/pp1Q4/2n1P1pp/q1p4n/5P2/4pK1P/PP4P1/R1B2B1R b - - 2 20"] 
+20... Nd4+ 21. Kxe3 Qe1+ *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1547"]
+[Themes "advantage long middlegame sacrifice"]
+[FEN "r5k1/pp1P3p/2n2np1/1Np5/8/8/Pb4PP/4RRK1 w - - 1 25"] 
+25. Rxf6 Bxf6 26. Re8+ Kg7 27. Rxa8 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "667"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "5k2/3n1p2/3bq3/P4R2/6Q1/7P/6P1/7K b - - 0 44"] 
+44... Qe1+ 45. Rf1 Qxf1# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1677"]
+[Themes "crushing discoveredAttack endgame master short"]
+[FEN "2Q5/3r2kp/6p1/1p1b1q2/5N2/8/6PP/5R1K w - - 2 40"] 
+40. Nh5+ Kh6 41. Rxf5 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1872"]
+[Themes "crushing discoveredAttack endgame long"]
+[FEN "8/R6p/4n3/5k1P/2p3p1/B1P1K1P1/r7/8 w - - 2 34"] 
+34. Ra5+ Kf6 35. Be7+ Kxe7 36. Rxa2 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1515"]
+[Themes "crushing endgame queenEndgame short"]
+[FEN "8/pp5p/3P2p1/2pq4/k7/8/PQ4PP/6K1 w - - 1 37"] 
+37. Qb3+ Qxb3 38. axb3+ *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1074"]
+[Themes "advancedPawn discoveredAttack endgame long mate mateIn3 promotion"]
+[FEN "4r2k/7p/4qP2/2Q1B1P1/1p5p/7P/1P5K/8 w - - 1 36"] 
+36. f7+ Qxe5+ 37. Qxe5+ Rxe5 38. f8=Q# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1338"]
+[Themes "advantage discoveredAttack opening short"]
+[FEN "r1b1r1k1/1p1n1pbp/pq1p1np1/2pP4/P3PP2/2NB1N2/1PQ3PP/R1B1R1K1 b - - 4 13"] 
+13... c4+ 14. Be3 cxd3 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "940"]
+[Themes "backRankMate mate mateIn2 middlegame sacrifice short"]
+[FEN "1r5k/1q1B1Qnp/6p1/8/2p1r1P1/7P/1P6/1R3R1K w - - 0 30"] 
+30. Qf8+ Rxf8 31. Rxf8# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1239"]
+[Themes "advantage middlegame short"]
+[FEN "r3r1nk/1p6/p2b4/2p3P1/P2p1R2/7P/8/1BR3K1 w - - 1 36"] 
+36. Rh4+ Nh6 37. Rxh6+ *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "2164"]
+[Themes "crushing exposedKing kingsideAttack long master opening"]
+[FEN "r1b3kb/1p1n1q2/p2P2p1/6p1/2p2p2/2Bn4/PP1Q2PP/3BRR1K w - - 2 24"] 
+24. Re7 Qd5 25. Re8+ Nf8 26. Bxh8 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1076"]
+[Themes "crushing discoveredAttack middlegame short"]
+[FEN "r3r1k1/1q1n1pbp/p4np1/1p6/2p1NB2/5Q2/PPB3PP/3R1R1K w - - 2 24"] 
+24. Nxf6+ Nxf6 25. Qxb7 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1937"]
+[Themes "crushing middlegame pin quietMove veryLong"]
+[FEN "r3rk2/4q3/pn3nQb/3P1B2/2p5/2N5/1P4KP/5R2 w - - 2 32"] 
+32. Be6 Bg7 33. Ne4 Nxd5 34. Bxd5 Qxe4+ 35. Bxe4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1334"]
+[Themes "advantage middlegame short"]
+[FEN "4r1k1/p2qr2p/1p2N1p1/2p1Qp2/6P1/8/PP2R2P/4R1K1 b - - 0 29"] 
+29... Rxe6 30. Qxe6+ Rxe6 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1542"]
+[Themes "crushing middlegame short"]
+[FEN "2r1r1k1/1p4bp/p2q2p1/P2P1p2/2nB4/2N2P2/1P5P/3RRQK1 w - - 2 25"] 
+25. Rxe8+ Rxe8 26. Qxc4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1802"]
+[Themes "crushing endgame hangingPiece short"]
+[FEN "2R1r1k1/3q3p/6p1/3P1p2/R2b1P2/5Q1P/6P1/7K b - - 0 26"] 
+26... Qxa4 27. Rxe8+ Qxe8 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1623"]
+[Themes "advantage endgame short"]
+[FEN "8/6kp/1q4p1/p2p4/Pp1Nn3/1PbQ1KP1/7P/3R4 b - - 0 38"] 
+38... Qf6+ 39. Kg2 Qf2+ *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "2570"]
+[Themes "crushing endgame pin short"]
+[FEN "r4k2/p2q3p/4r3/8/2Q3R1/2N3K1/PP4P1/8 w - - 2 34"] 
+34. Qf1+ Qf7 35. Rf4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "2151"]
+[Themes "crushing middlegame short"]
+[FEN "r5k1/pp5p/1n1p2p1/3q4/2p2P2/2B4Q/PP2r1PP/R4R1K w - - 2 23"] 
+23. f5 Rf8 24. fxg6 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "2748"]
+[Themes "advantage kingsideAttack middlegame veryLong"]
+[FEN "rn2r1k1/ppq2p1p/6pB/2pPb3/8/8/PP2B1PP/R2Q1RK1 w - - 6 18"] 
+18. d6 Bxd6 19. Bc4 Re7 20. Bxf7+ Rxf7 21. Rxf7 Qxf7 22. Qxd6 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1500"]
+[Themes "equality fork long middlegame"]
+[FEN "4r3/1p1b2kp/pn1P2p1/6N1/3b4/1BN4P/PP3nPK/4R3 w - - 1 27"] 
+27. Rxe8 Bxe8 28. Ne6+ Kf6 29. Nxd4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1223"]
+[Themes "mate mateIn1 middlegame oneMove smotheredMate"]
+[FEN "5rk1/p6p/2Q3p1/2p3B1/4r3/7n/PP4PP/2R3RK b - - 0 27"] 
+27... Nf2# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1256"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "7k/p4Rrp/pq4pN/3P4/2p3b1/8/PP4PP/R6K w - - 0 27"] 
+27. Rf8+ Rg8 28. Rxg8# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1718"]
+[Themes "crushing endgame queenEndgame short"]
+[FEN "8/7p/8/P4kp1/8/2q5/4Q3/3K4 w - - 2 52"] 
+52. Qc2+ Qxc2+ 53. Kxc2 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1850"]
+[Themes "advantage long opening"]
+[FEN "rnb1kb1r/pp2qp1p/3p2p1/2pP4/4nP2/2N4P/PP4P1/R1BQKBNR w KQkq - 0 9"] 
+9. Qa4+ Nd7 10. Qxe4 Qxe4+ 11. Nxe4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1069"]
+[Themes "crushing endgame hangingPiece oneMove"]
+[FEN "2r3k1/7p/1q1p2p1/p2P1pQ1/2p2P2/2PnR2P/R5PK/8 b - - 1 30"] 
+30... Qxe3 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1481"]
+[Themes "fork mate mateIn2 middlegame short"]
+[FEN "r3k2r/1b4bp/p1nQP1p1/qppn4/5P2/2N2N2/PP4PP/R1B1K2R w KQkq - 0 17"] 
+17. Qd7+ Kf8 18. Qf7# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1190"]
+[Themes "crushing middlegame short"]
+[FEN "r2kr3/1pq2pbp/pQ1p2p1/2pP1b2/P4P2/2P2N2/6PP/R1B1R1K1 w - - 3 19"] 
+19. Rxe8+ Kxe8 20. Qxc7 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1085"]
+[Themes "mate mateIn1 middlegame oneMove pin"]
+[FEN "r1n1R3/3r1p2/p4Ppk/2p3qp/6P1/2PBQ3/7P/3R2K1 w - - 7 31"] 
+31. Rh8# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1253"]
+[Themes "crushing hangingPiece middlegame oneMove"]
+[FEN "r1bqr3/ppNk2bp/2nP2p1/1Bp1Pp1n/5B2/8/PP2Q1PP/R3K1NR b KQ - 1 16"] 
+16... Nxf4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1876"]
+[Themes "crushing kingsideAttack long middlegame"]
+[FEN "r2qr1k1/1p3pbp/pQ1p2p1/P1pP3n/4PPb1/2NB4/1P1N2PP/R1B2RK1 b - - 0 15"] 
+15... Bd4+ 16. Kh1 Qh4 17. Ne2 Bxe2 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1616"]
+[Themes "advantage fork middlegame short"]
+[FEN "rn3bk1/pp5p/4q1p1/1Np1N1Q1/P2p4/8/1P4PP/R5K1 w - - 1 22"] 
+22. Nc7 Qe7 23. Qxe7 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1819"]
+[Themes "crushing endgame short"]
+[FEN "2r4k/1p6/p5Q1/3Pr2n/P1p5/5R1P/6PK/2q5 w - - 2 28"] 
+28. Rf7 Qf4+ 29. Rxf4 *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1868"]
+[Themes "deflection kingsideAttack mate mateIn2 middlegame sacrifice short"]
+[FEN "4r1k1/1p1n1p1p/p2P2P1/P1p5/3b4/2N2B1q/1P5B/R2Q3K b - - 0 24"] 
+24... Re1+ 25. Qxe1 Qxf3# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Pawn Storm Variation"]
+[Rating "1619"]
+[Themes "mate mateIn2 middlegame short"]
+[FEN "6k1/1p1r3p/p1nQ2p1/5b2/P1q5/8/1P4PP/3RR2K w - - 0 33"] 
+33. Re8+ Kf7 34. Qf8# *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "1226"]
+[Themes "advancedPawn crushing endgame promotion short"]
+[FEN "8/8/8/3K4/8/1n2k3/1p6/1Qb5 b - - 5 85"] 
+85... Nd2 86. Qg6 b1=Q *
+
+[Date "2021.06.06"]
+[Opening "Benoni Defense: Mikenas Variation"]
+[Rating "2491"]
+[Themes "crushing master masterVsMaster middlegame short"]
+[FEN "4rk2/p2Rn1bQ/2p5/q1p1rpB1/8/2N5/PP4PP/6K1 w - - 1 25"] 
+25. Bh6 Kf7 26. Bxg7 *
+
+

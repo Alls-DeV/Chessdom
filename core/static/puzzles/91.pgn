@@ -1,0 +1,379 @@
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1849"]
+[Themes "crushing deflection long middlegame"]
+[FEN "r4k2/ppp3pQ/2n2r1p/3p3B/1b1Pq3/4B1PP/PP3P2/R2K3R w - - 3 20"] 
+20. Qh8+ Ke7 21. Qxg7+ Rf7 22. Qxf7+ *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "2222"]
+[Themes "advantage defensiveMove middlegame veryLong"]
+[FEN "5r1k/pp1b2pp/7n/1P1P2rq/P7/1Q2NpP1/5P1P/R4RKB b - - 4 26"] 
+26... Qh3 27. Rfe1 Ng4 28. Nxg4 Bxg4 29. Qb4 Kg8 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1776"]
+[Themes "advantage interference middlegame short"]
+[FEN "5rk1/1pq3pb/2p4p/p1b1p3/2P1P1PP/P7/1PQ3B1/2KR3R b - - 1 23"] 
+23... Rf2 24. Qd3 Rxg2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "1714"]
+[Themes "crushing endgame quietMove short"]
+[FEN "4r3/1p6/2pR4/2P2p1k/2r1pPp1/2B1P1P1/1P5P/6K1 w - - 6 33"] 
+33. Bg7 Rh8 34. Bxh8 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1548"]
+[Themes "advantage opening short"]
+[FEN "rn1q1rk1/p2p2pp/bppb4/5p2/4B3/4P1PN/PP2NP1P/R1BQ1RK1 b - - 0 13"] 
+13... fxe4 14. Qxd6 Bxe2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1915"]
+[Themes "crushing deflection endgame long master"]
+[FEN "5r2/pp5k/6q1/6p1/8/1P1Q1nPK/P4P1P/R2R4 b - - 0 33"] 
+33... g4+ 34. Kg2 Ne1+ 35. Rxe1 Qxd3 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "841"]
+[Themes "crushing endgame oneMove"]
+[FEN "8/pp4k1/2p2Q2/5P1p/2pP4/P5pP/1P3bR1/1K6 b - - 0 35"] 
+35... Kxf6 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "1908"]
+[Themes "crushing endgame long rookEndgame"]
+[FEN "6k1/1p2Rrp1/p2p3p/3P4/1P5P/3r2P1/P1R3K1/8 w - - 2 37"] 
+37. Rc8+ Rf8 38. Rcc7 Rff3 39. Rxg7+ *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "968"]
+[Themes "crushing endgame long pawnEndgame"]
+[FEN "8/8/6pp/2k1PP2/1p1p3P/1P1K4/1P6/8 b - - 0 39"] 
+39... gxf5 40. e6 Kd6 41. Kxd4 Kxe6 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "1049"]
+[Themes "backRankMate endgame mate mateIn2 queenRookEndgame short"]
+[FEN "1r5k/p1p3pp/1p1p4/4q1P1/2P1p1P1/1r5P/PP3R2/5R1K w - - 0 29"] 
+29. Rf8+ Rxf8 30. Rxf8# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "2020"]
+[Themes "advantage kingsideAttack master middlegame sacrifice veryLong"]
+[FEN "r4r1k/ppp3p1/3p1q1p/2nP1B2/2P2P2/6R1/PPQ4P/2K3R1 w - - 1 24"] 
+24. Rxg7 Qxf5 25. Rg8+ Rxg8 26. Rxg8+ Rxg8 27. Qxf5 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1320"]
+[Themes "mate mateIn2 middlegame short"]
+[FEN "r4rk1/ppp4p/3p4/3P1p1P/b1PQ2p1/P1B1PqP1/1P1K1P2/R6R b - - 2 22"] 
+22... Qxf2+ 23. Kc1 Qc2# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1413"]
+[Themes "crushing endgame rookEndgame short"]
+[FEN "8/P4k2/2R5/8/rp6/6PK/2p4P/8 b - - 1 63"] 
+63... b3 64. a8=Q Rxa8 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1261"]
+[Themes "advantage fork middlegame short"]
+[FEN "rnbq1rk1/pp4pp/2p1p3/3p2b1/2PPpN2/BP2P1P1/P4PBP/R2QK2R b KQ - 2 11"] 
+11... Qa5+ 12. Qd2 Qxa3 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1411"]
+[Themes "crushing middlegame short"]
+[FEN "4rk2/ppB5/8/8/3P4/3Q1PPb/1q2Pb1P/2R4K w - - 0 34"] 
+34. Bd6+ Kg7 35. Rc7+ *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1353"]
+[Themes "crushing long middlegame"]
+[FEN "r2q1rk1/pp2b1pp/2pp4/8/2PBB3/6Pb/PP3P2/R2Q1RK1 w - - 0 15"] 
+15. Qh5 Bf5 16. Bxf5 Rxf5 17. Qxf5 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "1472"]
+[Themes "endgame kingsideAttack mate mateIn2 short"]
+[FEN "5qk1/p1Q5/1p2p2p/3p2n1/3Pp1p1/1P2P1P1/P4P1P/5RK1 b - - 1 27"] 
+27... Nh3+ 28. Kh1 Qf3# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "2022"]
+[Themes "attraction crushing endgame exposedKing fork veryLong"]
+[FEN "r2k4/pb1p2pp/1p2B3/8/1B1Q2n1/6P1/P4p1P/5K2 b - - 0 29"] 
+29... Ba6+ 30. Bc4 Bxc4+ 31. Qxc4 Ne3+ 32. Kxf2 Nxc4 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1175"]
+[Themes "kingsideAttack mate mateIn2 middlegame short"]
+[FEN "r1b2r1k/1pp3p1/6B1/p3p3/3bQ3/1P4P1/P4q1P/1R1n3K w - - 0 23"] 
+23. Qh4+ Kg8 24. Qh7# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1131"]
+[Themes "crushing endgame fork short"]
+[FEN "8/6Bp/3b2kP/1K1Pp3/8/5R2/2r5/8 w - - 6 53"] 
+53. Rf6+ Kg5 54. Rxd6 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1827"]
+[Themes "crushing endgame short"]
+[FEN "8/8/5r2/2p1k3/3pP1PP/1p1B3K/3R4/8 b - - 0 52"] 
+52... Rf3+ 53. Kg2 Rxd3 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1278"]
+[Themes "mate mateIn1 middlegame oneMove"]
+[FEN "r4rk1/1bp4p/8/p1pq1p2/5Np1/1P4P1/P3PP1P/R2Q1RK1 b - - 1 22"] 
+22... Qh1# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1987"]
+[Themes "crushing discoveredAttack kingsideAttack long middlegame sacrifice"]
+[FEN "r1b3k1/ppp2r1p/2n1p2B/3p3Q/1bPq4/3B2P1/PP3P1P/R4KNR w - - 0 16"] 
+16. Bxh7+ Kxh7 17. Be3+ Kg8 18. Bxd4 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1197"]
+[Themes "kingsideAttack mate mateIn2 middlegame short"]
+[FEN "5rk1/pp2nqbp/3p4/1P2P1p1/P1PP4/B2Q2Pb/6BP/3RR1K1 b - - 0 30"] 
+30... Qf2+ 31. Kh1 Bxg2# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1711"]
+[Themes "deflection mate mateIn2 middlegame short"]
+[FEN "3q4/8/p1bNQnk1/5p2/P1P2Pp1/6P1/1r6/R4K2 w - - 0 35"] 
+35. Qf7+ Kh6 36. Nxf5# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1611"]
+[Themes "deflection endgame mate mateIn2 short"]
+[FEN "8/5r2/1R5p/6pk/2pQ4/6P1/5PK1/1q2q3 w - - 0 40"] 
+40. g4+ Kh4 41. Rxh6# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "1675"]
+[Themes "crushing middlegame short skewer"]
+[FEN "5r1k/3p2pp/bQpP1b2/p4p2/4pB1P/P2qP1P1/5PB1/1R4K1 w - - 5 31"] 
+31. Bf1 Qc2 32. Bxa6 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "762"]
+[Themes "bishopEndgame crushing endgame short"]
+[FEN "8/p3b3/1p6/2p2kP1/2P1p3/PP2B3/3K4/8 b - - 2 36"] 
+36... Bxg5 37. Ke2 Bxe3 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1510"]
+[Themes "crushing discoveredAttack kingsideAttack middlegame short"]
+[FEN "r1b2rk1/ppp1q1pp/3p1n2/8/2PpB3/6P1/PP2QP1P/2KR2NR w - - 0 14"] 
+14. Bxh7+ Kxh7 15. Qxe7 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1323"]
+[Themes "crushing endgame fork short"]
+[FEN "7k/8/3p2b1/P2Np1p1/2B1PpP1/5n2/P7/1K6 b - - 0 38"] 
+38... Nd2+ 39. Kc2 Nxc4 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1600"]
+[Themes "crushing long middlegame"]
+[FEN "3r2k1/p5pp/1p5r/2pR4/2B1p1b1/1P2P1P1/P1Q1KP2/3R3q w - - 4 31"] 
+31. Kd2 Qxd1+ 32. Qxd1 Rxd5+ 33. Bxd5+ *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "785"]
+[Themes "crushing endgame fork short"]
+[FEN "4brk1/1p4pp/4p3/B1PpP3/4pP2/2n1P1P1/1R3K1P/5B2 b - - 10 33"] 
+33... Nd1+ 34. Ke1 Nxb2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1591"]
+[Themes "advantage defensiveMove long middlegame"]
+[FEN "r5k1/p1pn3p/5q2/3b2p1/3P4/6P1/PP1Q1PNP/R4RK1 b - - 3 18"] 
+18... Qf3 19. Qxg5+ Kh8 20. Qxd5 Qxd5 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1468"]
+[Themes "advantage capturingDefender intermezzo middlegame short"]
+[FEN "5rk1/p5pp/3Np3/2rn1p2/4nB2/6P1/PP2PP1P/R4RK1 b - - 0 20"] 
+20... Nxf4 21. gxf4 Nxd6 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1971"]
+[Themes "advancedPawn crushing kingsideAttack long middlegame promotion sacrifice"]
+[FEN "4r1k1/pp4pp/3P1n2/4Qp2/1B2nP2/2P3P1/4q1BP/5R1K w - - 7 28"] 
+28. Qxe8+ Nxe8 29. d7 N4f6 30. d8=Q *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "2257"]
+[Themes "advancedPawn crushing endgame pawnEndgame veryLong"]
+[FEN "8/1p6/pKp5/P2k4/1P6/8/8/8 w - - 10 52"] 
+52. Kxb7 c5 53. b5 c4 54. bxa6 c3 55. a7 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1017"]
+[Themes "crushing endgame fork short"]
+[FEN "7k/pp6/6p1/3p2B1/6PP/8/1rpK1P2/8 w - - 0 34"] 
+34. Bf6+ Kg8 35. Bxb2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1634"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "6k1/p1p3pp/2q5/4P3/2P5/2b3P1/P2Bp2P/1Q4KR b - - 1 27"] 
+27... Bd4+ 28. Be3 Bxe3# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1686"]
+[Themes "advantage capturingDefender middlegame short"]
+[FEN "r4qk1/6b1/pp1p2B1/1bpP4/P7/1P3QP1/4N2P/5RK1 b - - 0 29"] 
+29... Qxf3 30. Rxf3 Bxe2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1817"]
+[Themes "advantage defensiveMove endgame rookEndgame short"]
+[FEN "8/p5p1/7p/P1kR4/1r6/2K3P1/7P/8 b - - 3 40"] 
+40... Kxd5 41. Kxb4 a6 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "2199"]
+[Themes "advantage endgame long"]
+[FEN "2r2r1k/Q3R1pp/2p2q2/8/8/5pP1/PP3P1P/2R3K1 b - - 1 25"] 
+25... Qh6 26. Rc3 Qh3 27. Rxf3 Rxf3 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "2445"]
+[Themes "advantage exposedKing long middlegame pin"]
+[FEN "2r3r1/1pRb2k1/p2p2B1/8/q2p4/3Q2P1/PP3P1P/6K1 w - - 1 27"] 
+27. Qf5 Rgf8 28. Rxd7+ Qxd7 29. Qxd7+ *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1565"]
+[Themes "crushing discoveredAttack endgame short"]
+[FEN "6k1/p3B1p1/1pp1N1P1/2P2P1p/1b6/1b1K4/7P/8 w - - 0 41"] 
+41. cxb6 axb6 42. Bxb4 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "2294"]
+[Themes "advantage exposedKing fork middlegame veryLong"]
+[FEN "2r4k/pp4pp/4P3/2q4b/4pR2/PQN5/1P1K3P/R7 b - - 6 32"] 
+32... Qd4+ 33. Kc2 Qd3+ 34. Kc1 Qe3+ 35. Kb1 Qxf4 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1592"]
+[Themes "advantage middlegame oneMove"]
+[FEN "3r1rk1/ppp3pp/4bn2/4ppB1/1qPn4/1PN3P1/PQ2PPBP/R4RK1 b - - 6 15"] 
+15... Qxc3 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1066"]
+[Themes "endgame mate mateIn1 oneMove"]
+[FEN "3r3k/n5p1/7p/1p1QP3/2p1BP2/6PK/5q1P/8 w - - 0 40"] 
+40. Qxd8# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1418"]
+[Themes "crushing hangingPiece long middlegame"]
+[FEN "4Rr1k/ppp3pB/1n1p4/3P4/8/1P1Q2P1/Pq5P/R6K b - - 0 24"] 
+24... Qxa1+ 25. Qb1 Qxb1+ 26. Bxb1 Rxe8 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1937"]
+[Themes "crushing endgame long quietMove rookEndgame"]
+[FEN "8/8/1P4R1/7p/6p1/P5k1/5r2/4K3 b - - 0 48"] 
+48... Rb2 49. Kd1 h4 50. Kc1 Rb5 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "870"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "B7/5Q1p/1p1R2pk/2n1p1q1/2P5/6Pb/5P1P/6K1 b - - 4 28"] 
+28... Qc1+ 29. Rd1 Qxd1# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "2697"]
+[Themes "advantage middlegame quietMove veryLong"]
+[FEN "5qk1/Q3R1pp/4p3/1pp5/6N1/5rP1/PP1r1PKP/4R3 b - - 4 24"] 
+24... Rfxf2+ 25. Kg1 Rg2+ 26. Kh1 h6 27. Rxg7+ Qxg7 28. Qa8+ Qf8 29. Qxg2 Rxg2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "2542"]
+[Themes "advancedPawn advantage endgame master quietMove veryLong"]
+[FEN "3r4/7p/3P1k2/3R1P2/2p1P3/p2BK2P/5p2/8 b - - 0 43"] 
+43... cxd3 44. Kxf2 Ra8 45. d7 a2 46. Ra5 d2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Blackburne Attack"]
+[Rating "1667"]
+[Themes "crushing endgame pawnEndgame quietMove short"]
+[FEN "8/6pp/2p5/p4P2/2P3P1/1k1K4/7P/8 w - - 1 39"] 
+39. g5 a4 40. f6 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1745"]
+[Themes "advantage long middlegame sacrifice"]
+[FEN "r1q2rk1/1p2b1pp/1Np5/p1P1B2n/4P1b1/1P3NP1/P1Q2P2/3RR1K1 b - - 2 21"] 
+21... Qe6 22. Nxa8 Bxf3 23. Qc4 Qxc4 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation"]
+[Rating "1583"]
+[Themes "crushing endgame fork long"]
+[FEN "6k1/p2q2p1/1p1p4/3N2np/2P5/1P1Q2P1/P3r2P/5RK1 b - - 5 34"] 
+34... Nh3+ 35. Kh1 Nf2+ 36. Rxf2 Rxf2 *
+
+

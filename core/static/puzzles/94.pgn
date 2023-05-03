@@ -1,0 +1,85 @@
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "2171"]
+[Themes "advantage endgame short"]
+[FEN "2r4k/p5pp/3qN3/2P1pp2/2Q5/4P1P1/P2n1P1P/2R3K1 b - - 0 28"] 
+28... Qc6 29. Qd3 Nf3+ *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1795"]
+[Themes "advancedPawn advantage endgame promotion short"]
+[FEN "8/7p/b2kNP2/8/1p1P1K1P/1r6/8/8 w - - 0 43"] 
+43. f7 Kxe6 44. f8=Q *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1313"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "4r2k/1p4p1/8/3B3q/3R2b1/1P4Q1/P4P2/6K1 b - - 1 33"] 
+33... Re1+ 34. Kg2 Qh1# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "2248"]
+[Themes "advantage middlegame short"]
+[FEN "3r2k1/pp2qr1p/6B1/8/5P2/1P4Pb/P1Q4P/3R1RK1 b - - 0 25"] 
+25... hxg6 26. Qxg6+ Rg7 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1089"]
+[Themes "endgame mate mateIn1 oneMove rookEndgame"]
+[FEN "8/p4r2/1p2kr2/1P1R2R1/8/6K1/8/8 w - - 16 52"] 
+52. Rge5# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1039"]
+[Themes "advantage deflection endgame short"]
+[FEN "1Rb3k1/6pp/q1p5/2Pp4/3P1P1P/4PKP1/r7/1Q6 w - - 3 40"] 
+40. Rxc8+ Qxc8 41. Qxa2 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1278"]
+[Themes "mate mateIn1 middlegame oneMove pin"]
+[FEN "r1b2Q2/pp4qp/2p1p2k/3p4/2PP1R1P/1P2nBP1/P7/6K1 w - - 4 35"] 
+35. Rf6# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1971"]
+[Themes "crushing deflection endgame pawnEndgame short"]
+[FEN "8/8/8/1p6/2p1kPp1/P1K3P1/8/8 w - - 2 56"] 
+56. a4 bxa4 57. Kxc4 *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1493"]
+[Themes "endgame fork mate mateIn2 short"]
+[FEN "4k3/1b4pp/2p5/1pPpN3/3rp1PP/1q2P2K/5Q2/8 w - - 2 36"] 
+36. Qf7+ Kd8 37. Qd7# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "961"]
+[Themes "endgame mate mateIn2 rookEndgame short"]
+[FEN "8/2R5/5kpp/2P5/4PKPP/2r5/8/8 b - - 2 39"] 
+39... g5+ 40. hxg5+ hxg5# *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "2062"]
+[Themes "advancedPawn advantage kingsideAttack long middlegame"]
+[FEN "2B2rk1/p3q1pp/bpp5/3pn3/2PPp3/1P2P1P1/P1Q4P/R4RK1 b - - 0 21"] 
+21... Nf3+ 22. Rxf3 exf3 23. Bxa6 f2+ *
+
+[Date "2021.06.06"]
+[Opening "Dutch Defense: Classical Variation, Stonewall Variation"]
+[Rating "1229"]
+[Themes "crushing fork middlegame short"]
+[FEN "5rk1/5qp1/P1p3r1/2Np3p/3Qp2P/1P4P1/4RPK1/7R b - - 0 32"] 
+32... Qf3+ 33. Kh2 Qxe2 *
+
+

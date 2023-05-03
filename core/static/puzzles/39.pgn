@@ -1,0 +1,1394 @@
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1419"]
+[Themes "crushing discoveredAttack middlegame short"]
+[FEN "5rk1/1qr1ppb1/p4npp/1p1Pp3/1Q6/6P1/PP1BPPBP/2R2RK1 w - - 0 21"] 
+21. d6 Rxc1 22. Bxb7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1926"]
+[Themes "crushing defensiveMove endgame pawnEndgame short zugzwang"]
+[FEN "8/8/p2k2p1/Pp3p1p/1P1p1P1P/3K2P1/8/8 w - - 3 43"] 
+43. Kxd4 Kd7 44. Kd5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "936"]
+[Themes "crushing endgame pawnEndgame short"]
+[FEN "8/2k1p3/3p4/1p1Pp2p/1P1K1P1P/8/8/8 w - - 0 43"] 
+43. fxe5 dxe5+ 44. Kxe5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1012"]
+[Themes "crushing middlegame short"]
+[FEN "1r3rk1/p1q2pbp/1p1ppnp1/6B1/2P5/1PN2QP1/P3PP1P/3R1RK1 w - - 0 17"] 
+17. Bxf6 Bxf6 18. Qxf6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2339"]
+[Themes "crushing endgame rookEndgame short"]
+[FEN "8/8/8/8/4pkpp/8/5KR1/8 b - - 3 61"] 
+61... h3 62. Rg1 e3+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1781"]
+[Themes "endgame master mate mateIn2 short"]
+[FEN "8/6k1/2q1Q1p1/8/2Bb1P2/3P2P1/7P/5K2 b - - 2 52"] 
+52... Qf3+ 53. Ke1 Bc3# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1677"]
+[Themes "crushing endgame short"]
+[FEN "5k2/1p2Np1p/3p2p1/4n3/2bQP3/4P1PP/2q3B1/6K1 w - - 3 29"] 
+29. Qxd6 Nf3+ 30. Bxf3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1079"]
+[Themes "crushing discoveredAttack kingsideAttack middlegame short"]
+[FEN "6k1/3q1pbp/p3pnp1/1p1N4/2b1P3/P3B1PP/1P1Q1PB1/6K1 w - - 0 25"] 
+25. Nxf6+ Bxf6 26. Qxd7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1957"]
+[Themes "endgame mate mateIn2 rookEndgame short"]
+[FEN "8/5pk1/6p1/6Kp/7P/6P1/R4P2/1r6 b - - 0 42"] 
+42... Rb4 43. f3 f6# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1630"]
+[Themes "advantage endgame master short trappedPiece"]
+[FEN "r4rk1/pp3p2/3p2pp/4p3/2P5/1Pn3P1/PN3PKP/R3R3 w - - 0 23"] 
+23. Re3 d5 24. Rxc3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1521"]
+[Themes "advantage middlegame short"]
+[FEN "1rb1nrk1/1p1p1pbp/pq1N2p1/4p1B1/2PnN3/6P1/PP1QPPBP/R4RK1 b - - 9 14"] 
+14... Nxd6 15. Nxd6 Qxd6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1614"]
+[Themes "advantage middlegame short"]
+[FEN "r3nrk1/1p2ppbp/p2pN1p1/8/2PQP3/R1B3P1/1Pq2PBP/5RK1 b - - 0 18"] 
+18... Bxd4 19. Nxd4 Qd3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1687"]
+[Themes "crushing endgame short"]
+[FEN "5bk1/Q1R4p/3p2p1/3P1p2/1p6/1P4PP/P2q2BK/4r3 w - - 6 36"] 
+36. Rxh7 Re7 37. Rxe7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1880"]
+[Themes "advantage endgame master masterVsMaster short"]
+[FEN "5Nk1/pp5p/3p1qp1/8/2Pb1Qb1/1P4P1/P4P1P/4R1K1 b - - 2 25"] 
+25... Qxf4 26. gxf4 Kxf8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2483"]
+[Themes "crushing defensiveMove endgame master queenEndgame skewer veryLong"]
+[FEN "5qk1/5p1p/6pP/4Q1P1/8/8/6K1/8 w - - 1 61"] 
+61. Qf6 Qa8+ 62. Kg1 Kf8 63. Qh8+ Ke7 64. Qxa8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1704"]
+[Themes "advantage middlegame pin veryLong"]
+[FEN "3r2k1/1Q2ppbp/p3b1p1/2N1n3/5B2/1P4P1/P3PPBP/3R2K1 b - - 0 21"] 
+21... Rxd1+ 22. Bf1 Bh3 23. Qa8+ Bf8 24. Qg2 Bxg2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1902"]
+[Themes "endgame exposedKing long mate mateIn3 rookEndgame"]
+[FEN "8/8/6p1/6R1/2P1R3/2r4k/2r5/7K b - - 8 44"] 
+44... Rh2+ 45. Kg1 Rc1+ 46. Re1 Rxe1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1705"]
+[Themes "advantage middlegame short"]
+[FEN "2r1r2k/3b1pbp/3p1np1/1p1N4/3P4/1P4P1/PBR2PBP/2R3K1 b - - 4 20"] 
+20... Rxc2 21. Rxc2 Re1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1625"]
+[Themes "advancedPawn advantage discoveredAttack endgame rookEndgame short"]
+[FEN "3r4/R2p1p1p/pr1P2p1/1pR1P2k/5P2/8/P6P/6K1 w - - 9 30"] 
+30. e6+ f5 31. e7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1808"]
+[Themes "crushing long middlegame"]
+[FEN "r4rk1/p4p1p/1p1Np1q1/3bb1p1/8/Q3B1P1/PPR1PP1P/2R3K1 b - - 5 21"] 
+21... Bxd6 22. Qxd6 Qe4 23. f3 Qxe3+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1837"]
+[Themes "advantage intermezzo long middlegame"]
+[FEN "1r1qr1k1/8/bpB3pp/p7/2PQ1P2/1P4P1/P6P/2RR2K1 b - - 0 25"] 
+25... Re1+ 26. Kf2 Qxd4+ 27. Rxd4 Rxc1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1960"]
+[Themes "advantage intermezzo kingsideAttack middlegame short"]
+[FEN "r4rk1/pp2pp1p/5bp1/1qpP1Q2/P7/4P1P1/1P1B1PBP/R4RK1 b - - 0 15"] 
+15... Qxf1+ 16. Kxf1 gxf5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2059"]
+[Themes "advantage long middlegame trappedPiece"]
+[FEN "3r2k1/p3qpb1/1p4p1/3P1b1p/4pB2/1Q2P1P1/PP3PBP/3R2K1 b - - 0 23"] 
+23... g5 24. d6 Qf6 25. Bxg5 Qxg5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "859"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "4r1k1/7p/pp3Rp1/5p2/6P1/PP3bBP/5P2/6K1 b - - 0 30"] 
+30... Re1+ 31. Kh2 Rh1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1893"]
+[Themes "crushing endgame long"]
+[FEN "5rk1/3R1p2/3p1Qp1/3P1b1p/2P5/1P4PP/5qBK/8 b - - 1 28"] 
+28... h4 29. gxh4 Qf4+ 30. Kh1 Qc1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1755"]
+[Themes "advantage master middlegame veryLong"]
+[FEN "r3r1k1/ppqb1p2/6pb/3P3p/2P5/1PB1p1nP/P3N1B1/2RQ1R1K w - - 0 26"] 
+26. Nxg3 Qxg3 27. Qd4 Qe5 28. Qxe5 Rxe5 29. Bxe5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1185"]
+[Themes "advantage middlegame short"]
+[FEN "r4r2/1q3pkp/5np1/p2N4/3Q4/1P2P1P1/P4P1P/2R2RK1 b - - 1 23"] 
+23... Qxd5 24. Qxd5 Nxd5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1333"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "3r2k1/p3pp1p/6p1/8/2B5/2P2PP1/PQ2PqRP/7K b - - 0 28"] 
+28... Rd1+ 29. Rg1 Rxg1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1204"]
+[Themes "advantage endgame short"]
+[FEN "3R4/8/2r1k1p1/4np1p/5K1P/6P1/8/5B2 w - - 4 58"] 
+58. Re8+ Kf6 59. Rxe5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1631"]
+[Themes "kingsideAttack mate mateIn2 middlegame short"]
+[FEN "1r4k1/pBQ1pp1p/6p1/2p5/6n1/2B1P1Pb/q4P1P/1R1R2K1 b - - 0 24"] 
+24... Qxf2+ 25. Kh1 Qxh2# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1256"]
+[Themes "clearance kingsideAttack mate mateIn2 middlegame sacrifice short"]
+[FEN "5rk1/2r1ppbp/p2p2p1/7q/2P2Nnn/1P4P1/P2BPPB1/2RQ1RK1 b - - 1 22"] 
+22... Nf3+ 23. Bxf3 Qh2# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1670"]
+[Themes "advantage discoveredAttack middlegame short"]
+[FEN "1r2r1k1/1p2ppbp/pQ1pqnp1/8/2P5/1P2P1P1/PB3PBP/2RR2K1 b - - 0 18"] 
+18... Nd7 19. Qa5 Bxb2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1603"]
+[Themes "advantage middlegame short"]
+[FEN "1r1r4/5pbk/3ppnpp/1p6/4P3/1P1QB1P1/q4PBP/2RR2K1 w - - 0 25"] 
+25. Ra1 Qxa1 26. Rxa1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1252"]
+[Themes "crushing master middlegame short superGM"]
+[FEN "r1r3k1/pR1q1p1p/3bp1p1/B2p4/8/4P1P1/P1Q2P1P/2R3K1 w - - 0 26"] 
+26. Rxd7 Rxc2 27. Rxc2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1500"]
+[Themes "equality middlegame short"]
+[FEN "2r3k1/p2q1p2/3Qp2p/1p4pb/8/1Pb1N1P1/P2RPPBP/4R1K1 b - - 0 26"] 
+26... Qxd6 27. Rxd6 Bxe1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1095"]
+[Themes "endgame mate mateIn1 oneMove"]
+[FEN "8/3R1Bb1/p2p1k1p/5pp1/P7/4BbPP/5P1K/1r6 w - - 9 37"] 
+37. Bd4# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1468"]
+[Themes "crushing middlegame short"]
+[FEN "2rbr1k1/1p1q1p1p/p2p2p1/Q2Pp3/7P/6PB/PP2PP1K/2R2R2 b - - 3 22"] 
+22... Qxh3+ 23. Kxh3 Bxa5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1622"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "4r1k1/R1R4p/6p1/4p3/6K1/3q2Q1/P6P/8 b - - 0 44"] 
+44... Qf5+ 45. Kh4 Qh5# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1041"]
+[Themes "crushing fork middlegame short"]
+[FEN "1r1r2k1/1p1q1pbp/pR1pp1pB/P7/2PnP3/1P4P1/5PBP/2QR2K1 b - - 4 28"] 
+28... Ne2+ 29. Kh1 Nxc1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1308"]
+[Themes "endgame mate mateIn2 rookEndgame short"]
+[FEN "8/4ppk1/3p4/2pP1P2/2P1K3/1PR4R/8/r4r2 w - - 9 42"] 
+42. Rcg3+ Kf6 43. Rh6# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2135"]
+[Themes "crushing defensiveMove endgame short"]
+[FEN "2R5/1p3p1p/p6Q/3Prq2/6k1/1P6/P4P2/6K1 w - - 1 37"] 
+37. Rg8+ Kf3 38. Qc1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "695"]
+[Themes "crushing kingsideAttack middlegame short"]
+[FEN "1r1r2k1/4ppbp/6p1/ppPQ4/q7/P3P1P1/3R1P1P/2R2BK1 w - - 1 27"] 
+27. Qxd8+ Rxd8 28. Rxd8+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2167"]
+[Themes "advantage endgame short"]
+[FEN "5r1k/pq5p/6p1/Q7/2P2P2/1P1r2PK/P6P/1R3R2 b - - 2 31"] 
+31... Rf5 32. Qxf5 gxf5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2206"]
+[Themes "advantage hangingPiece master masterVsMaster middlegame short superGM"]
+[FEN "r1r3k1/4pp1p/1qp2np1/1P1Pn1B1/p7/P5PP/6BK/Q4R2 w - - 0 26"] 
+26. Qxe5 cxd5 27. Qxe7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "871"]
+[Themes "endgame long mate mateIn3"]
+[FEN "8/R2Q1pbk/7p/1r3pp1/2R1b3/6P1/4PP1P/6K1 b - - 0 32"] 
+32... Rb1+ 33. Rc1 Rxc1+ 34. Qd1 Rxd1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2054"]
+[Themes "advancedPawn crushing defensiveMove endgame long"]
+[FEN "1r6/1q2ppkp/1Pr3p1/8/3Q4/2p2PP1/1R2P2P/1R4K1 b - - 1 30"] 
+30... e5 31. Qxe5+ f6 32. Qd4 cxb2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2408"]
+[Themes "advantage middlegame short"]
+[FEN "1r3rk1/4qpbp/3p2p1/1B2p3/8/1P1Q2Pb/P2BPP1P/2R1R1K1 b - - 0 20"] 
+20... e4 21. Qd5 e3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1500"]
+[Themes "equality fork middlegame short"]
+[FEN "1rq2rk1/5pbp/2N1p1p1/ppNp4/5P2/P3P1P1/7P/2RnRBK1 w - - 0 27"] 
+27. Ne7+ Kh8 28. Nxc8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2223"]
+[Themes "crushing deflection fork intermezzo long middlegame sacrifice"]
+[FEN "1r3rk1/pp5p/2bppq2/4N1p1/2P3P1/1P3P1P/P3Q1K1/3R1N1R b - - 0 31"] 
+31... Qxe5 32. Qxe5 Bxf3+ 33. Kh2 dxe5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1188"]
+[Themes "advantage middlegame short"]
+[FEN "r5k1/pp3p2/1q5p/3P1pb1/8/1PN1rRP1/P2QPKBP/8 w - - 0 21"] 
+21. Rxe3 f4 22. gxf4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "904"]
+[Themes "advantage endgame fork short"]
+[FEN "8/8/3p2k1/3Pb2p/6pP/6P1/2r3B1/5R1K w - - 16 67"] 
+67. Be4+ Kg7 68. Bxc2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1209"]
+[Themes "crushing discoveredAttack kingsideAttack middlegame short"]
+[FEN "4r1k1/1p3pbp/p1bp2p1/3Nn3/8/1Q3PP1/1P3P1P/4R1K1 b - - 4 26"] 
+26... Nxf3+ 27. Qxf3 Rxe1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1984"]
+[Themes "crushing endgame fork intermezzo long"]
+[FEN "8/pb4kp/2pq2p1/5p1P/1P1p4/P2QP1P1/2B1P3/4R1K1 b - - 0 30"] 
+30... Qxg3+ 31. Kf1 dxe3 32. Qxe3 Qxe3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1417"]
+[Themes "crushing deflection endgame short skewer"]
+[FEN "4n2r/p4k2/3p2p1/R1pPp1Q1/2P1B3/1P3KPq/5P2/8 b - - 4 38"] 
+38... Qh1+ 39. Ke2 Qxe4+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1725"]
+[Themes "crushing intermezzo master middlegame short"]
+[FEN "r2r2k1/1p3p1p/3p2pP/2n1Q3/2P5/1q4P1/3RPPB1/3R2K1 b - - 0 24"] 
+24... Qxd1+ 25. Rxd1 dxe5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "682"]
+[Themes "crushing endgame fork short"]
+[FEN "8/5p2/4pk1p/5n1P/5P2/1R3K2/8/8 b - - 20 56"] 
+56... Nd4+ 57. Kf2 Nxb3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1633"]
+[Themes "crushing defensiveMove middlegame veryLong"]
+[FEN "2R2bk1/pp5p/4Q1p1/4n2r/1P1B4/P3PqP1/5P2/5RK1 b - - 0 34"] 
+34... Nf7 35. Rxf8+ Kxf8 36. Qc8+ Ke7 37. Bc5+ Kf6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1979"]
+[Themes "advantage long middlegame trappedPiece"]
+[FEN "2r2rk1/pp2ppbp/3pb1p1/8/2P1PP2/3Q2P1/PP5P/R1BNqB1K w - - 4 17"] 
+17. Bd2 Bxc4 18. Bxe1 Bxd3 19. Bxd3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "660"]
+[Themes "crushing middlegame short"]
+[FEN "1r3rk1/p3ppbp/2Bp2p1/3P4/1q6/1Q2P1P1/P3P2P/1R3RK1 w - - 0 19"] 
+19. Qxb4 Rxb4 20. Rxb4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1501"]
+[Themes "crushing endgame fork short"]
+[FEN "6k1/4rp1p/6p1/Q3bq2/8/6P1/5PBP/4R1K1 w - - 0 28"] 
+28. Qd8+ Kg7 29. Qxe7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1070"]
+[Themes "crushing endgame fork short"]
+[FEN "4n3/R6p/3pp1k1/5pP1/8/p4P2/1b1BP2P/6K1 b - - 6 34"] 
+34... Bd4+ 35. e3 Bxa7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1082"]
+[Themes "crushing fork middlegame short"]
+[FEN "r1b5/pp2q1k1/5Np1/4p2p/2Pn3P/2Q3P1/PP2P1B1/5RK1 b - - 0 25"] 
+25... Nxe2+ 26. Kh2 Nxc3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2062"]
+[Themes "advancedPawn advantage endgame rookEndgame short"]
+[FEN "8/5pkp/R5p1/1P6/Pr6/3p1KP1/5P1P/8 b - - 1 37"] 
+37... Rd4 38. Ke3 d2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1648"]
+[Themes "crushing middlegame short trappedPiece"]
+[FEN "r2q1rk1/pp2ppbp/5np1/2p2b2/1nP5/PQN2NP1/1P1BPPBP/R4RK1 b - - 0 11"] 
+11... Bc2 12. Qxb4 cxb4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1133"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "4r3/R4pk1/3p1b2/2p2K1p/P1P3p1/6P1/2Q4P/5B2 b - - 3 38"] 
+38... Re5+ 39. Kf4 Bg5# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1759"]
+[Themes "endgame mate mateIn2 queenRookEndgame short"]
+[FEN "8/5pkp/p7/6K1/P3P1P1/7q/4R1RP/8 b - - 0 42"] 
+42... Qh6+ 43. Kf5 Qf6# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2128"]
+[Themes "crushing endgame long"]
+[FEN "8/6kp/2NR2p1/4Kp2/1P2p3/6PP/1n3r2/8 w - - 5 35"] 
+35. Rd7+ Kh6 36. Kf6 Rh2 37. Ne7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1500"]
+[Themes "equality hangingPiece middlegame short"]
+[FEN "1r1rR1k1/1p3pbp/p1bp2p1/2qN4/2P5/1P3PP1/PB1Q2KP/3R3B b - - 0 24"] 
+24... Rxe8 25. Bxg7 Kxg7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1894"]
+[Themes "advantage fork long master middlegame sacrifice"]
+[FEN "2q2rk1/3bppbp/p2p2p1/8/2r5/2NQ2PP/P3PPB1/2R2RK1 w - - 2 20"] 
+20. Nd5 Rxc1 21. Nxe7+ Kh8 22. Nxc8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1748"]
+[Themes "crushing defensiveMove endgame pawnEndgame short zugzwang"]
+[FEN "8/5p2/5kp1/7p/6KP/6P1/5P2/8 w - - 0 45"] 
+45. Kf4 Ke7 46. Kg5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1461"]
+[Themes "advantage middlegame short"]
+[FEN "r2r1k2/6bp/3pbpp1/q2N4/P7/4P1P1/4QRBP/5RK1 b - - 1 26"] 
+26... Bxd5 27. Rf5 gxf5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1753"]
+[Themes "advantage deflection discoveredAttack kingsideAttack long master middlegame"]
+[FEN "3r1rk1/p4pbp/3N1np1/2pNp3/8/5PPq/PP2P2P/R2Q1RK1 w - - 0 19"] 
+19. Ne7+ Kh8 20. Nxf7+ Rxf7 21. Qxd8+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1448"]
+[Themes "advantage endgame long pin"]
+[FEN "3R4/4ppkp/5bp1/4q3/8/6P1/1rRQPPKP/8 b - - 7 26"] 
+26... Qe4+ 27. f3 Qxc2 28. Qxc2 Rxc2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2148"]
+[Themes "bishopEndgame crushing defensiveMove endgame long"]
+[FEN "8/2b1p3/4Pk2/7K/5P2/5B2/3p4/8 b - - 0 51"] 
+51... Kf5 52. Kh4 Kxf4 53. Bg4 Ke3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1672"]
+[Themes "advantage middlegame short"]
+[FEN "1rbq1rk1/4p1bp/p2P1p2/1p2n1pQ/8/2N1B1P1/PP2PPBP/2RR2K1 b - - 0 17"] 
+17... Bg4 18. dxe7 Qxe7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1653"]
+[Themes "crushing endgame oneMove"]
+[FEN "3r1r2/6kp/pQ3pp1/2p1p3/1P6/6P1/q3PP1P/2RR2K1 w - - 0 24"] 
+24. Rxd8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1734"]
+[Themes "advantage middlegame short"]
+[FEN "2r1r3/p4pbk/4b1pp/q2N4/4P3/6P1/P3QPBP/1RR3K1 b - - 8 23"] 
+23... Rxc1+ 24. Rxc1 Bxd5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1144"]
+[Themes "advantage fork middlegame short"]
+[FEN "1r6/p2p1Nk1/1p2r3/4QR2/2q1P3/6P1/PP4KP/R7 b - - 0 25"] 
+25... Rxe5 26. Nxe5 Qxe4+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1671"]
+[Themes "crushing endgame short"]
+[FEN "8/7p/3Nppp1/4P3/k4P1b/5K1P/8/8 w - - 0 46"] 
+46. Kg4 fxe5 47. Kxh4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2207"]
+[Themes "advantage long middlegame"]
+[FEN "r1r5/pp1Q1pk1/3p2p1/3P1n1p/5P2/1P3BPq/P6P/2R2RK1 b - - 3 25"] 
+25... Rxc1 26. Rxc1 h4 27. Bg2 Qg4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1589"]
+[Themes "crushing kingsideAttack long middlegame"]
+[FEN "r3q1k1/p2prpb1/2p3pp/2P5/1PQ1BBb1/5PP1/P6P/1R2R1K1 b - - 0 22"] 
+22... Bxf3 23. Bxf3 Rxe1+ 24. Rxe1 Qxe1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "961"]
+[Themes "crushing endgame fork master short"]
+[FEN "8/8/4R3/4ppkn/8/6p1/4K1B1/8 b - - 5 63"] 
+63... Nf4+ 64. Kf3 Nxe6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1710"]
+[Themes "crushing intermezzo kingsideAttack middlegame short"]
+[FEN "6k1/1pQ1pp1p/p2p2p1/3P3q/3b2b1/PP2P1PP/1B3P1K/4nB2 w - - 0 26"] 
+26. Qd8+ Kg7 27. Bxd4+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "815"]
+[Themes "crushing fork middlegame short"]
+[FEN "1rb2rk1/ppb2p1p/2p3p1/4p2q/2P1N3/6P1/PPQ3BP/3RR1K1 w - - 0 20"] 
+20. Nf6+ Kg7 21. Nxh5+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2068"]
+[Themes "advantage discoveredAttack endgame long"]
+[FEN "5bk1/1Q1p4/p3pq1p/2P3p1/3Pr3/1P6/P4P1P/2R2RK1 b - - 0 27"] 
+27... Qf3 28. h3 Rg4+ 29. hxg4 Qxb7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1077"]
+[Themes "mate mateIn2 middlegame short"]
+[FEN "7k/4r3/p2p1bp1/3Bnq2/2P4P/1P2Q1P1/P7/4R2K w - - 3 39"] 
+39. Qh6+ Rh7 40. Qf8# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2252"]
+[Themes "crushing defensiveMove endgame long quietMove rookEndgame"]
+[FEN "6R1/2K5/5p2/4pk2/6p1/8/8/8 b - - 2 64"] 
+64... e4 65. Kd6 e3 66. Kd5 Kf4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1549"]
+[Themes "attraction endgame mate mateIn2 sacrifice short"]
+[FEN "6k1/1q3p1p/3pn1p1/p7/2P4P/6P1/P2QRP2/1r3BK1 b - - 2 32"] 
+32... Rxf1+ 33. Kxf1 Qh1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "865"]
+[Themes "advantage fork middlegame short"]
+[FEN "2bq1rk1/p4p1p/1p1p1pp1/8/2PnBQ2/4P1P1/PP3P1P/R4RK1 b - - 0 18"] 
+18... Ne2+ 19. Kh1 Nxf4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1952"]
+[Themes "advantage endgame short"]
+[FEN "q5k1/3p1p1p/p2P2p1/1pP5/8/1NQ3P1/P1R1rP1P/6K1 b - - 4 27"] 
+27... b4 28. Qc4 Re1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1183"]
+[Themes "advantage middlegame short"]
+[FEN "3rr1k1/p3pp1p/bq4pB/8/4Q3/2n2NP1/P3PPBP/1R4K1 w - - 7 19"] 
+19. Rxb6 Nxe4 20. Rxa6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1287"]
+[Themes "crushing endgame short"]
+[FEN "3Q1b2/1p3pkp/pNp2pp1/8/2P1P3/1P4Pq/P4P2/6K1 w - - 2 23"] 
+23. Nd7 Qxd7 24. Qxd7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2104"]
+[Themes "advancedPawn crushing endgame long quietMove"]
+[FEN "8/7p/1p4k1/2b1p3/4b3/3pB1P1/5P1P/2R3K1 b - - 1 45"] 
+45... Bxe3 46. fxe3 Bf3 47. Rb1 d2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2095"]
+[Themes "advantage middlegame short"]
+[FEN "r4rk1/pp1b3p/3p2p1/1q6/3B4/6P1/P2Q3P/2R1R1K1 w - - 0 25"] 
+25. Re7 Rf7 26. Rxf7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1081"]
+[Themes "mate mateIn2 middlegame short"]
+[FEN "2r3k1/1p2B2p/p2p2p1/3P1p2/8/1P1Q1BPb/2rbPP1P/1R4K1 b - - 0 25"] 
+25... Rc1+ 26. Rxc1 Rxc1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2095"]
+[Themes "advantage endgame short"]
+[FEN "6k1/4pp1p/p5p1/2b5/2r5/B3P1P1/P2R1P1P/6K1 w - - 1 26"] 
+26. Rd8+ Kg7 27. Rc8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1722"]
+[Themes "attraction endgame long master mate mateIn3 sacrifice"]
+[FEN "3r2rk/3qpp1p/1p6/p2P1p2/5Q2/6P1/PP3PK1/3R3R w - - 6 31"] 
+31. Rxh7+ Kxh7 32. Rh1+ Kg6 33. Qh6# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1967"]
+[Themes "crushing endgame oneMove"]
+[FEN "4r3/pR2pk2/2p2pp1/4q3/2P5/1P4Pp/P3PP1P/3Q2K1 b - - 5 37"] 
+37... Rd8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1380"]
+[Themes "crushing endgame master rookEndgame short"]
+[FEN "8/8/5rk1/PR5p/7p/8/6K1/8 w - - 0 50"] 
+50. Rb6 Kg7 51. Rxf6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1511"]
+[Themes "advantage hangingPiece master middlegame short"]
+[FEN "R3r1k1/4pp2/3p2p1/1q1P3p/1P5P/3n2P1/1Q3PB1/4R1K1 b - - 0 24"] 
+24... Nxb2 25. Rxe8+ Qxe8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1539"]
+[Themes "advantage endgame short"]
+[FEN "6k1/2r2p1p/4pnp1/1B2r3/1PPp4/6P1/2R1PP1P/3R2K1 b - - 2 31"] 
+31... Rxb5 32. cxb5 Rxc2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2644"]
+[Themes "crushing endgame long quietMove rookEndgame"]
+[FEN "6R1/8/3r4/1r1p1ppk/3Rp3/4P1P1/5PK1/8 w - - 6 44"] 
+44. Rd1 Kg4 45. Rh1 f4 46. exf4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1445"]
+[Themes "advantage attraction deflection endgame long"]
+[FEN "3q2k1/7p/p5p1/1p1b4/1Q2N3/5KP1/7P/3R4 b - - 0 41"] 
+41... Bxe4+ 42. Ke2 Bf3+ 43. Kxf3 Qxd1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1943"]
+[Themes "advantage deflection fork middlegame short"]
+[FEN "2r3k1/p4pB1/1p1p2p1/3B1q1p/2P5/6PP/PQ3n1K/5R2 b - - 1 30"] 
+30... Qxh3+ 31. Kg1 Qxg3+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2149"]
+[Themes "advantage interference middlegame short"]
+[FEN "5r2/p1q1p1k1/1p1pBbp1/3P4/PPP3Pp/5r2/2RQ1PK1/7R w - - 0 34"] 
+34. g5 Be5 35. Rxh4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1184"]
+[Themes "crushing master middlegame short"]
+[FEN "3r1k2/p3qp1p/1p1pp1p1/nP6/1Qr1P3/3R2PP/P4PB1/2R3K1 w - - 0 26"] 
+26. Rxc4 Nxc4 27. Qxc4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1850"]
+[Themes "endgame long mate mateIn3"]
+[FEN "Q6r/p2k1p1r/1p2pR2/1Pp1q3/P2p4/1P4P1/8/5RK1 w - - 4 42"] 
+42. Rxf7+ Rxf7 43. Rxf7+ Kd6 44. Qc6# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1757"]
+[Themes "crushing master middlegame short"]
+[FEN "q4r2/5pkp/3Q1np1/1B2p3/2P5/2N2PPb/Pr2P2P/R1R3K1 b - - 0 19"] 
+19... Rxe2 20. Qxf6+ Kxf6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1026"]
+[Themes "crushing fork middlegame short"]
+[FEN "r7/5kbp/pp1pq3/n1p2p2/2P5/1P3NP1/P1Q1P1KP/3R4 w - - 2 23"] 
+23. Ng5+ Ke7 24. Nxe6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1734"]
+[Themes "mate mateIn2 middlegame sacrifice short"]
+[FEN "1r6/2R4p/3Q1ppk/1p2pbN1/1P4n1/P3q1P1/6BP/7K w - - 4 27"] 
+27. Rxh7+ Kxg5 28. h4# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1914"]
+[Themes "crushing endgame queenEndgame short"]
+[FEN "6Q1/1p2q3/p5pp/5p1k/P3p2P/1P4P1/7K/8 w - - 0 42"] 
+42. Qd5 Qxh4+ 43. gxh4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1582"]
+[Themes "crushing endgame long master rookEndgame"]
+[FEN "8/5pk1/6p1/R4r1p/7P/6P1/5PK1/8 w - - 18 46"] 
+46. Rxf5 gxf5 47. Kf3 Kf6 48. Kf4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1609"]
+[Themes "crushing endgame long master rookEndgame skewer"]
+[FEN "8/7r/3k4/4p3/2K5/8/R7/8 w - - 0 56"] 
+56. Ra6+ Kd7 57. Ra7+ Ke6 58. Rxh7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1427"]
+[Themes "advantage endgame hangingPiece short"]
+[FEN "3r2k1/pp3p2/2p1b1pp/8/2P1N3/1P4P1/P3PbBP/3R2K1 w - - 0 18"] 
+18. Nxf2 Rxd1+ 19. Nxd1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2195"]
+[Themes "bishopEndgame crushing defensiveMove endgame veryLong"]
+[FEN "8/3bk3/1K2p1p1/4P1pp/2B5/6P1/7P/8 w - - 0 42"] 
+42. Bb5 Bxb5 43. Kxb5 Kd7 44. Kb6 g4 45. Kb7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1589"]
+[Themes "crushing middlegame short"]
+[FEN "r1b2rk1/p3ppbp/2p3p1/1q6/Q7/6P1/PP2PPBP/R1B2RK1 w - - 2 14"] 
+14. Qxb5 cxb5 15. Bxa8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1795"]
+[Themes "advantage middlegame short"]
+[FEN "5rk1/5pbp/brp1p1p1/Bq1pn3/1P6/6PP/P3PPB1/1R1QR1K1 w - - 0 20"] 
+20. a4 Qxa5 21. bxa5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1151"]
+[Themes "crushing endgame fork short"]
+[FEN "3q1r2/r3ppkp/3p2p1/1p1Q4/8/1P4P1/P3PP1P/2R2RK1 w - - 1 19"] 
+19. Qd4+ e5 20. Qxa7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1143"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "8/1br4k/pR1R2pp/1p2pp2/8/1P4P1/P3PP1P/6K1 b - - 4 28"] 
+28... Rc1+ 29. Rd1 Rxd1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1322"]
+[Themes "crushing master middlegame short"]
+[FEN "1r3rk1/3bppb1/3p2pp/q2P4/1p6/1Q2B1P1/PPR1PPBP/5RK1 b - - 3 18"] 
+18... Ba4 19. Qxa4 Qxa4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1643"]
+[Themes "advantage middlegame quietMove short trappedPiece"]
+[FEN "r1q2rk1/4ppbp/pBp3p1/1p6/8/6P1/bPQ1PPBP/3R1RK1 w - - 0 17"] 
+17. b3 Bxb3 18. Qxb3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1083"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "5B2/1p3p1k/pb4pp/3P4/8/1P4qP/P5Bn/2Q4K w - - 0 39"] 
+39. Qxh6+ Kg8 40. Qg7# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1771"]
+[Themes "crushing defensiveMove endgame oneMove queenEndgame"]
+[FEN "8/1P1Q4/5ppk/8/4KP1p/7P/8/1q6 w - - 12 51"] 
+51. Kd5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1203"]
+[Themes "crushing discoveredAttack kingsideAttack middlegame short"]
+[FEN "4r2k/QR4bp/p2p1qp1/3Bnb2/2P1P3/1P4P1/P6P/5R1K b - - 0 28"] 
+28... Bxe4+ 29. Bxe4 Qxf1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2115"]
+[Themes "crushing endgame long skewer"]
+[FEN "8/5B2/1n5R/1r6/4pk2/8/4PK2/8 w - - 2 54"] 
+54. Rh4+ Ke5 55. Rh5+ Kf6 56. Rxb5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1328"]
+[Themes "mate mateIn1 middlegame oneMove"]
+[FEN "1r1qr1kb/4p2p/pp1p1ppB/3N4/2P3n1/1P2Q1P1/P3PP1P/3R1RK1 w - - 2 23"] 
+23. Qe6# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1585"]
+[Themes "advantage endgame short"]
+[FEN "8/5pkp/1R4p1/2r5/b4P2/6P1/B6P/7K b - - 1 38"] 
+38... Rc1+ 39. Kg2 Rc2+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1592"]
+[Themes "crushing endgame short"]
+[FEN "2r5/4ppkp/1q1p2p1/1p3b2/8/1P3BP1/P2QPP1P/2R3K1 w - - 1 21"] 
+21. Rxc8 Bxc8 22. Qc3+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1146"]
+[Themes "crushing defensiveMove endgame pawnEndgame short zugzwang"]
+[FEN "8/8/1p3k2/p1P2p1p/2P2K1P/P2P4/8/8 b - - 0 39"] 
+39... bxc5 40. Ke3 Ke5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2025"]
+[Themes "crushing middlegame short"]
+[FEN "1r1q1r2/1b4kp/p2p2p1/3Np1n1/2P3Q1/1P4PB/P4P1P/3R1R1K b - - 3 24"] 
+24... Bc8 25. Qxg5 Qxg5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1547"]
+[Themes "endgame master mate mateIn2 short"]
+[FEN "6k1/4Q1bp/6p1/1rq2b2/8/2P3P1/P3PP1P/3R2K1 w - - 0 24"] 
+24. Rd8+ Bf8 25. Rxf8# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1201"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "5Q2/7p/p2p1pp1/1p1P3k/5P2/6PB/3nP1K1/q7 w - - 0 32"] 
+32. g4+ Kh4 33. Qh6# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1577"]
+[Themes "crushing middlegame short"]
+[FEN "r4b1k/1R1p3p/8/1QP5/1P2N3/8/4KP1q/4R1q1 w - - 0 40"] 
+40. Rxg1 Qxg1 41. Qxd7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2069"]
+[Themes "advantage long middlegame"]
+[FEN "3r4/1B3pk1/1R1P1qp1/2r1p2p/4P1bP/1P4P1/P2Q1P2/3R2K1 b - - 0 27"] 
+27... Qf3 28. Qd3 Qxd1+ 29. Qxd1 Bxd1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1760"]
+[Themes "advantage endgame long"]
+[FEN "r1r3k1/p4p1p/4p1p1/8/3R4/Q1q1P1P1/P4P1P/3R2K1 w - - 4 25"] 
+25. Rd8+ Rxd8 26. Rxd8+ Rxd8 27. Qxc3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1444"]
+[Themes "advancedPawn crushing endgame knightEndgame long quietMove"]
+[FEN "4n1k1/5p1p/2P1p1p1/8/pP3P2/P5PP/6K1/8 w - - 1 38"] 
+38. b5 Kf8 39. b6 Ke7 40. b7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1416"]
+[Themes "crushing kingsideAttack middlegame oneMove"]
+[FEN "1rq2rk1/1p2ppbp/p2p1np1/3N4/2P5/1P4P1/PB1QPPbP/2RR2K1 w - - 0 16"] 
+16. Nxe7+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1773"]
+[Themes "advantage fork middlegame short"]
+[FEN "2rr2k1/p1q1ppbp/5np1/8/2P5/2N1Q1P1/PB2PPKP/R4R2 b - - 2 17"] 
+17... Qb7+ 18. Qf3 Qxb2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1811"]
+[Themes "advantage master middlegame short"]
+[FEN "2r2rk1/3qppbp/3pbnp1/1Q6/3B4/1PN3P1/P3PPBP/2RR2K1 b - - 0 17"] 
+17... Rxc3 18. Qxd7 Rxc1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1271"]
+[Themes "advantage discoveredAttack long middlegame"]
+[FEN "4r1k1/R4p1p/6p1/1r2b3/8/1b2B1P1/5PBP/1R2K3 b - - 5 29"] 
+29... Bc3+ 30. Ke2 Bc4+ 31. Kd1 Rxb1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1244"]
+[Themes "endgame mate mateIn1 oneMove"]
+[FEN "5Q2/pp5p/3p2p1/3P3k/2P3nP/1P3BP1/q7/5K2 b - - 1 36"] 
+36... Qf2# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1372"]
+[Themes "advantage discoveredAttack endgame short"]
+[FEN "2r3k1/5pbp/1p4p1/8/R1r5/2N3P1/PP2PPKP/2R5 b - - 2 22"] 
+22... Rxa4 23. Nxa4 Rxc1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1891"]
+[Themes "mate mateIn2 middlegame pin short"]
+[FEN "2r1r3/1pR1pk1p/p2p1ppB/3P2P1/3QB3/7b/P3qP2/6K1 w - - 2 25"] 
+25. Qxf6+ Kg8 26. Qg7# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2053"]
+[Themes "advancedPawn crushing defensiveMove endgame sacrifice veryLong"]
+[FEN "6k1/4ppb1/3p2p1/P6p/3P4/1qB2PP1/R3Q1KP/1r6 w - - 7 38"] 
+38. a6 Qxc3 39. a7 Rg1+ 40. Kxg1 Bxd4+ 41. Kg2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1285"]
+[Themes "endgame mate mateIn1 oneMove"]
+[FEN "2Q5/3r2kp/p3p1p1/q3n3/P7/1P4P1/6BP/5RK1 w - - 0 28"] 
+28. Qf8# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1783"]
+[Themes "crushing endgame master short"]
+[FEN "3Rq3/4ppkp/5bp1/p2Q4/3rN3/5PP1/4P1KP/8 w - - 2 25"] 
+25. Qxd4 Bxd4 26. Rxe8 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2194"]
+[Themes "advancedPawn attraction crushing endgame exposedKing long master"]
+[FEN "8/R5bk/3p2p1/3P2P1/4BP2/p3P1pP/r4r2/5RK1 b - - 3 36"] 
+36... Rxf1+ 37. Kxf1 Rf2+ 38. Kg1 a2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1604"]
+[Themes "crushing endgame fork rookEndgame short"]
+[FEN "8/3kp3/3P2p1/r6p/2PK1R2/6P1/7P/8 b - - 0 37"] 
+37... e5+ 38. Ke4 exf4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1944"]
+[Themes "crushing endgame master short"]
+[FEN "1r4k1/3b1p1p/3p2p1/p2B4/2P3P1/1PQ2P2/q2B2KP/8 w - - 0 32"] 
+32. Kg3 Qxb3 33. Qf6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1722"]
+[Themes "crushing discoveredAttack endgame long"]
+[FEN "6k1/1p2pp2/pq6/P2P4/8/5BP1/2b2PK1/8 w - - 0 47"] 
+47. axb6 Kf8 48. d6 Ke8 49. Bxb7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1472"]
+[Themes "advantage intermezzo middlegame short"]
+[FEN "r1b2rk1/pp2ppbp/2N3p1/2p5/8/6P1/PP2PPBP/R1Bq1RK1 w - - 0 12"] 
+12. Nxe7+ Kh8 13. Rxd1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1439"]
+[Themes "endgame fork mate mateIn2 short"]
+[FEN "6k1/1p5p/p2P2p1/4b3/P3Q3/1q4PP/5N1K/2R5 b - - 0 32"] 
+32... Qxg3+ 33. Kh1 Qh2# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1964"]
+[Themes "equality middlegame short"]
+[FEN "r1q2rk1/pp6/2p5/5n1p/P1P1R3/1P3BNb/1Q3P1P/3R2K1 b - - 0 26"] 
+26... Nxg3 27. Re7 Nf5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1370"]
+[Themes "crushing middlegame short"]
+[FEN "2r2r2/q3ppkp/p2p2p1/Pp1N1P2/1Pn1P2P/5QP1/6R1/3R3K w - - 1 32"] 
+32. f6+ exf6 33. Qxf6+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1867"]
+[Themes "advantage endgame fork long sacrifice"]
+[FEN "3r3k/R4pbp/2Rp2p1/8/8/1P2rBP1/P3P2P/6K1 b - - 1 28"] 
+28... Rxf3 29. exf3 Bd4+ 30. Kf1 Bxa7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1090"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "8/5R2/6pk/3p4/3bp1PP/6K1/4q3/5R2 w - - 1 49"] 
+49. g5+ Kh5 50. Rh7# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "714"]
+[Themes "advantage endgame master short"]
+[FEN "3r4/1Rb5/2Pk1p2/p4bp1/4p3/B4BP1/P4P2/6K1 b - - 1 37"] 
+37... Kxc6 38. Rxc7+ Kxc7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1336"]
+[Themes "crushing middlegame short"]
+[FEN "3q1rk1/1p2ppb1/1P1p2pp/2nN1b2/rR6/6P1/3BPPBP/3Q1RK1 w - - 0 23"] 
+23. Rxa4 Nxa4 24. Qxa4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1849"]
+[Themes "advancedPawn crushing defensiveMove endgame long"]
+[FEN "8/1B6/Pk3P2/1p2p1p1/r3P3/2K3P1/8/8 w - - 1 51"] 
+51. f7 Ra3+ 52. Kb4 Rf3 53. Bd5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1609"]
+[Themes "crushing defensiveMove endgame short"]
+[FEN "8/p2Q3k/2pb2p1/4q2p/4P2P/1P4PB/P6K/8 b - - 4 38"] 
+38... Kh6 39. Qxd6 Qxd6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1396"]
+[Themes "bishopEndgame crushing defensiveMove endgame oneMove"]
+[FEN "8/8/5b1p/p4Pp1/P1k1K1P1/2pB3P/8/8 b - - 11 54"] 
+54... Kb3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "977"]
+[Themes "advancedPawn crushing endgame pawnEndgame short"]
+[FEN "8/8/6k1/6P1/pP3P2/8/4K2P/8 b - - 1 49"] 
+49... a3 50. Kd3 a2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1475"]
+[Themes "crushing middlegame short"]
+[FEN "2r2rk1/3bppbp/p2p2p1/qp1P4/3BP3/1P4PP/P4PB1/2RQ1RK1 b - - 0 16"] 
+16... Rxc1 17. Qxc1 Bxd4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1074"]
+[Themes "mate mateIn1 middlegame oneMove"]
+[FEN "3r4/p4k1p/2b1p1p1/1pp1bp2/7Q/PPn1P1P1/2B2P1P/2B2RK1 b - - 1 25"] 
+25... Ne2# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1195"]
+[Themes "crushing deflection fork middlegame short"]
+[FEN "4rrk1/p3Qp1p/3p2p1/3B1b2/8/1P4P1/q3PP1P/2RR2K1 w - - 1 21"] 
+21. Bxf7+ Rxf7 22. Qxe8+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "943"]
+[Themes "arabianMate endgame mate mateIn2 short"]
+[FEN "4k1r1/pp2p3/3p4/4n3/2P1P3/1PN1P2P/P1R4K/8 b - - 0 36"] 
+36... Nf3+ 37. Kh1 Rg1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1850"]
+[Themes "crushing long middlegame"]
+[FEN "2rr4/1p2ppkp/p2q2p1/1bRP4/1P6/3Q2P1/P4PBP/1R4K1 w - - 2 22"] 
+22. Qc3+ Qf6 23. Rxc8 Qxc3 24. Rxc3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "841"]
+[Themes "crushing fork middlegame short"]
+[FEN "5rk1/pp2pp2/2p1bqpp/8/2PRP3/1P3PP1/P1Q3BP/R5K1 b - - 0 19"] 
+19... Qxd4+ 20. Qf2 Qxa1+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1115"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "8/pp2pk1p/3pR1p1/3P4/PP2BP2/2r1R1P1/3r3P/6K1 b - - 0 30"] 
+30... Rc1+ 31. Re1 Rxe1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1122"]
+[Themes "endgame mate mateIn1 oneMove queenEndgame"]
+[FEN "1Q6/8/8/8/8/K1k5/8/3q4 b - - 0 69"] 
+69... Qa1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1937"]
+[Themes "advancedPawn crushing endgame long master masterVsMaster rookEndgame"]
+[FEN "5r2/8/6p1/6P1/3kp1RP/7K/8/8 b - - 9 70"] 
+70... Kd3 71. Rg1 e3 72. Kg2 e2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2409"]
+[Themes "crushing middlegame short"]
+[FEN "2b2rk1/1p2Qpbp/3p2p1/3q4/8/4P1P1/PP3P1P/R1B2RK1 b - - 0 16"] 
+16... Qf3 17. Qh4 g5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1663"]
+[Themes "crushing defensiveMove master middlegame veryLong"]
+[FEN "1r3rk1/pp2ppbp/3p1np1/3N4/2P1P3/1P1Q2Pq/PB3P1P/3R1RK1 b - - 1 16"] 
+16... Ng4 17. Nxe7+ Kh8 18. Bxg7+ Kxg7 19. Qd4+ f6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1463"]
+[Themes "exposedKing long master mate mateIn3 middlegame"]
+[FEN "6k1/2R5/3bN1p1/1p1pn2p/8/1P1r2P1/r7/2R2KB1 w - - 2 42"] 
+42. Rg7+ Kh8 43. Rc8+ Bf8 44. Rxf8# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1376"]
+[Themes "bishopEndgame crushing endgame short"]
+[FEN "8/8/8/6Kp/p2k1p2/B4P2/8/8 b - - 1 49"] 
+49... Ke3 50. Kf5 Kxf3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1589"]
+[Themes "advantage middlegame short"]
+[FEN "r1bq1rk1/pp3pbp/3Q1np1/1N2p3/2P2B2/6P1/PP2PPBP/3R1RK1 b - - 0 13"] 
+13... Qxd6 14. Nxd6 exf4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1229"]
+[Themes "advantage endgame fork master short"]
+[FEN "8/5pkp/1R4p1/1bnBr3/8/5KPP/8/3R4 b - - 1 32"] 
+32... Be2+ 33. Kf2 Bxd1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "754"]
+[Themes "endgame mate mateIn2 short"]
+[FEN "5r2/5p1p/3R2p1/1NRbk3/r7/6P1/4PP1P/6K1 b - - 5 30"] 
+30... Ra1+ 31. Rc1 Rxc1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2294"]
+[Themes "clearance crushing exposedKing kingsideAttack middlegame pin sacrifice veryLong"]
+[FEN "3r2k1/pp3pb1/6pp/3Pr3/4PP2/B2Q2Pq/PP6/1RR3K1 b - - 0 22"] 
+22... Rdxd5 23. exd5 Re2 24. Qxe2 Bd4+ 25. Qf2 Qxg3+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1357"]
+[Themes "advantage deflection middlegame short"]
+[FEN "1rb3k1/2qpr1bp/1NpRppp1/2P5/8/1P2P1P1/PB2QP1P/2R3K1 b - - 6 26"] 
+26... Rxb6 27. cxb6 Qxd6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2141"]
+[Themes "advantage long master middlegame"]
+[FEN "r3r1k1/ppR2pbp/6p1/8/1B5Q/1P4P1/P3qP1P/5RK1 b - - 1 19"] 
+19... Re4 20. Re1 Rxh4 21. Rxe2 Rxb4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1082"]
+[Themes "mate mateIn2 middlegame sacrifice short"]
+[FEN "5rk1/pp2Q3/q5pR/3P3p/4P3/1N4P1/Pb4BP/7K b - - 7 28"] 
+28... Rf1+ 29. Bxf1 Qxf1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1833"]
+[Themes "clearance crushing middlegame short"]
+[FEN "1r5r/p3q1k1/1p1p4/3PpQ1n/2P4P/1P4P1/P7/2K2R1R w - - 1 32"] 
+32. Qg4+ Kh6 33. Rf5 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1375"]
+[Themes "crushing fork middlegame short"]
+[FEN "2r3k1/2nbprb1/1QNq2pp/1p1Pp1B1/2p1PpP1/P6P/1P3PB1/2RR2K1 w - - 0 26"] 
+26. Nxe7+ Qxe7 27. Bxe7 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1617"]
+[Themes "bishopEndgame crushing defensiveMove endgame short zugzwang"]
+[FEN "8/4p3/4bk2/2pB4/p1P5/P3KP2/8/8 w - - 0 45"] 
+45. Bxe6 Kxe6 46. Ke4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "991"]
+[Themes "crushing fork master middlegame short"]
+[FEN "r5k1/4ppbp/p2pb1p1/1P2n2n/8/1PN3P1/P1NB1P1P/2R2RK1 b - - 0 17"] 
+17... Nf3+ 18. Kg2 Nxd2 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1484"]
+[Themes "advantage endgame fork short"]
+[FEN "4b3/8/4p2p/2K2kpP/2B5/2R1P1P1/8/1r6 w - - 1 48"] 
+48. Bd3+ Ke5 49. Bxb1 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1495"]
+[Themes "advancedPawn crushing endgame long"]
+[FEN "8/1q5k/3R2pb/4p2p/2P1P3/5Ppb/4Q2P/4R1K1 b - - 0 34"] 
+34... Qa7+ 35. Kh1 g2+ 36. Qxg2 Bxg2+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1913"]
+[Themes "endgame long mate mateIn3 sacrifice"]
+[FEN "4r1k1/5p2/3pq3/2pR1Q1p/2P4P/1P3PP1/3R2K1/r7 b - - 0 34"] 
+34... Qe2+ 35. Rxe2 Rxe2+ 36. Kh3 Rh1# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2506"]
+[Themes "crushing endgame master short"]
+[FEN "8/p5k1/1p4pN/5p2/5qP1/1P5Q/P3rbK1/3R4 w - - 4 37"] 
+37. Nxf5+ Kf6 38. Rd6+ *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2003"]
+[Themes "clearance crushing defensiveMove endgame master masterVsMaster rookEndgame short"]
+[FEN "8/pp1r2k1/5pP1/5P1K/3p4/1P6/P1R5/8 b - - 1 52"] 
+52... d3 53. Rd2 Rd4 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2252"]
+[Themes "advantage endgame short"]
+[FEN "8/4Qpk1/3p1np1/3P3P/1p6/4PBP1/2q2PK1/8 b - - 0 31"] 
+31... gxh5 32. Qxd6 b3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2008"]
+[Themes "crushing middlegame short"]
+[FEN "2q5/1p2p2k/r5Bp/1N2P2r/PnP2P2/1P3R1b/3R3K/1Q6 b - - 0 32"] 
+32... Rxg6 33. Qxg6+ Kxg6 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2105"]
+[Themes "crushing endgame pawnEndgame short"]
+[FEN "8/p7/1p2k1p1/P1p5/1PPp1PPp/7P/4K3/8 b - - 6 47"] 
+47... cxb4 48. Kd3 b3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1627"]
+[Themes "advantage middlegame short"]
+[FEN "r4rk1/pp1nppbp/3pb1p1/7q/2P1P2P/1PNQ1BP1/PB3P2/R4RK1 b - - 2 15"] 
+15... Ne5 16. Bxh5 Nxd3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1998"]
+[Themes "capturingDefender crushing master middlegame short"]
+[FEN "4r1k1/5p1p/p2p2p1/1p1Rb3/8/1PrQ1NPq/P3PP1P/5RK1 w - - 6 28"] 
+28. Rxe5 Rxe5 29. Qxc3 *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1770"]
+[Themes "advancedPawn advantage defensiveMove endgame long master promotion"]
+[FEN "3k4/3n4/1PKBB3/2P5/5P2/1r4p1/8/8 b - - 0 57"] 
+57... g2 58. Bc7+ Ke7 59. Bxd7 g1=Q *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "1163"]
+[Themes "endgame long mate mateIn3"]
+[FEN "6k1/5r1p/3p1Qp1/1p1p4/5P2/1P4PK/P3rq2/2R5 w - - 0 32"] 
+32. Rc8+ Re8 33. Rxe8+ Rf8 34. Qxf8# *
+
+[Date "2021.06.06"]
+[Opening "English Opening: Symmetrical Variation, Mecking Variation"]
+[Rating "2026"]
+[Themes "crushing endgame master short"]
+[FEN "8/8/6p1/1k1B4/5Prp/2R2K2/4n3/8 w - - 6 51"] 
+51. Rb3+ Kc5 52. Kxg4 *
+
+

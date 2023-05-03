@@ -4,11 +4,12 @@ import chess
 from core import app
 from flask import render_template, redirect, send_from_directory, url_for, flash, request
 from core import db
-from core.models import User, Game, Friend, Preference
+from core.models import User, Game, Friend, Preference, Puzzle
 from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm, PreferenceForm
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.utils import secure_filename
 from datetime import datetime
+from random import randint
 
 DEFAULT_PIECE_SET = 'alpha'
 DEFAULT_WHITE_COLOR = '#f0d9b5'
@@ -30,13 +31,28 @@ def get_preferences():
 def before_request():
     if current_user.is_authenticated:
         current_user.last_seen = datetime.utcnow()
-        current_user.last_seen = current_user.last_seen.replace(hour=current_user.last_seen.hour + 2)
+        current_user.last_seen = current_user.last_seen.replace(hour=(current_user.last_seen.hour + 2) % 24)
         db.session.commit()
 
 @app.route('/')
 @app.route('/home')
 def home_page():
-    return render_template('home.html')
+    piece_set, white_color, black_color = get_preferences()
+    puzzle = Puzzle.query.filter_by(id=randint(0, Puzzle.query.count())).first()
+    fen_list = []
+    check_list = []
+    color = 'white' if puzzle.FEN.split(' ')[1] == 'w' else 'black'
+    board = chess.Board(fen=puzzle.FEN)
+    fen_list.append(board.fen())
+    check_list.append(board.is_check())
+    for move in puzzle.moves.split(' '):
+        if move[-1] == '.':
+            continue
+        board.push_san(move)
+        fen_list.append(board.fen())
+        check_list.append(board.is_check())
+
+    return render_template('home.html', piece_set=piece_set, white_color=white_color, black_color=black_color, fen_list=fen_list, check_list=check_list, rating=puzzle.rating, opening=puzzle.opening, themes=puzzle.themes, color=color)
 
 @app.route('/editor')
 def editor_page():
@@ -113,7 +129,11 @@ def profile_page(username):
     is_friend = False
     if current_user.is_authenticated:
         is_friend = Friend.query.filter_by(id_user=current_user.id, id_friend=user.id).first()
-    return render_template('profile.html', user=user, editable=editable, games=games, is_friend=is_friend)
+    # TODO risolvi boh qualcosa
+    number_followers = Friend.query.filter_by(id_friend=user.id).count()
+    # print(f'people that follow {user.username}: {number_followers}')
+    number_following = Friend.query.filter_by(id_user=current_user.id).count()
+    return render_template('profile.html', user=user, editable=editable, games=games, is_friend=is_friend, number_followers=number_followers, number_following=number_following)
 
 @login_required
 @app.route('/friend/<username>')
@@ -142,7 +162,7 @@ def friend_page(username):
     return render_template('friend.html', username=username, users=users)
 
 @login_required
-@app.route('/add_friend/<username>')
+@app.route('/add_friend/<username>', methods=['GET', 'POST'])
 def add_friend_page(username):
     if not User.query.filter_by(username=username).first():
         flash('User not found!', category='danger')

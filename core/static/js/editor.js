@@ -114,28 +114,7 @@ function clearBoard() {
 }
 
 function changeFen() {
-    let fen = "";
-    for (let i = 8; i >= 1; i--) {
-        let empty = 0;
-        for (let j = 0; j < 8; j++) {
-            let key = String.fromCharCode(97 + j) + i;
-            if (pieces.hasOwnProperty(key)) {
-                if (empty > 0) {
-                    fen += empty;
-                    empty = 0;
-                }
-                fen += pieces[key];
-            } else {
-                empty++;
-            }
-        }
-        if (empty > 0) {
-            fen += empty;
-        }
-        if (i > 1) {
-            fen += "/";
-        }
-    }
+    let fen = getFen();
     let turn = $("#turn").val()
     fen += " " + turn + " ";
     let wk = (document.getElementById("wk").checked ? "K" : ""),
@@ -145,49 +124,4 @@ function changeFen() {
     fen += (wk + wq + bk + bq).length > 0 ? (wk + wq + bk + bq) : "-";
     fen += " - 0 1";
     $("#realFen").val(fen);
-}
-
-function movePiece(endCellId) {
-    // Get the piece that is in the starting cell
-    var piece = getPiece(startCellIdG);
-
-    if (piece === "trash") {
-        if (endCellId[1] !== "0" && endCellId[1] !== "9") {
-            $("#" + endCellId).html("");
-            // Remove the piece from the pieces array
-            delete pieces[endCellId];
-        } else {
-            $("#" + startCellIdG).removeClass("selected");
-            startCellIdG = endCellId;
-            $("#" + startCellIdG).addClass("selected");
-        }
-    } else {
-        let startCell = $("#" + startCellIdG);
-        startCell.removeClass("selected");
-
-        // If the piece isn't in the row 0 or 9, remove the piece from the current cell
-        if (startCellIdG[1] !== "0" && startCellIdG[1] !== "9" &&
-            endCellId[1] !== "0" && endCellId[1] !== "9") {
-            startCell.html("");
-            // Remove the piece from the pieces array
-            delete pieces[startCellIdG];
-        }
-
-        if (endCellId[1] !== "0" && endCellId[1] !== "9") {
-            let endCell = $("#" + endCellId);
-            endCell.html("<img src='/static/images/piece_set/" + piece_set + "/" + piece + ".png'>");
-            pieces[endCellId] = piece;
-            startCellIdG = null;
-        } else {
-            startCellIdG = endCellId;
-            $("#" + startCellIdG).addClass("selected");
-        }
-    }
-}
-
-// Function to get the piece in a cell (if there is one)
-function getPiece(cellId) {
-    if (cellId[1] !== "0" && cellId[1] !== "9")
-        return pieces.hasOwnProperty(cellId) ? pieces[cellId] : null;
-    return extra.hasOwnProperty(cellId) ? extra[cellId] : null;
 }
