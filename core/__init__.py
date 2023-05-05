@@ -14,9 +14,5 @@ from core import routes
 
 '''
 TODO
-non far fare alla stessa persona piu' volte lo stesso problema
-fare una classifica dei problemi risolti
-mettere tra le possibilita' di skippare il problema
-avere un count degli errori e degli skip
 add the possibility to change the password
 '''

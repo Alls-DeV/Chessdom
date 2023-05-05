@@ -74,7 +74,8 @@ def home_page():
         check_list.append(board.is_check())
 
     if current_user.is_authenticated:
-        delta_elo = abs(int(20 * (- 1 / (1 + 10 ** ((puzzle_stats.elo - puzzle.rating) / 400)))))
+        K = 40 if puzzle_stats.attempted <= 10 else 10
+        delta_elo = abs(int(K * (- 1 / (1 + 10 ** ((puzzle_stats.elo - puzzle.rating) / 400)))))
     else:
         delta_elo = 0
 
@@ -429,3 +430,11 @@ def preference_page(username):
         return redirect(url_for('preference_page', username=username))
 
     return render_template('preference.html', form=form, piece_set=piece_set, white_color=white_color, black_color=black_color)
+
+@app.route('/leaderboard')
+def leaderboard_page():
+    users_stats = PuzzleStats.query.order_by(PuzzleStats.elo.desc()).all()
+    users = []
+    for user_stats in users_stats:
+        users.append(User.query.filter_by(id=user_stats.id_user).first())
+    return render_template('leaderboard.html', users_stats=users_stats, users=users, size=len(users_stats))

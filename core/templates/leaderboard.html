@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}
+Leaderboard
+{% endblock %}
+
+{% block content %}
+
+<table class=" table table-striped" style="color: white">
+    <thead>
+        <tr>
+            <th scope="col">User</th>
+            <th scope="col">Elo</th>
+            <th scope="col">Problem solved</th>
+            <th scope="col">Problem attempted</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in range(size) %}
+        <tr>
+            <td>
+                <img src="{{ users[i].avatar(50) }}" class="img-rounded">
+                <a href="{{ url_for('profile_page', username=users[i].username) }}">{{ users[i].username }}</a>
+            </td>
+            <td>{{ users_stats[i].elo }}</td>
+            <td>{{ users_stats[i].solved }}</td>
+            <td>{{ users_stats[i].attempted }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}
