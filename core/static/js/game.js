@@ -39,3 +39,5 @@ function lastFen() {
     index = fenList.length - 1;
     loadFen();
 }
+
+// TODO aggiungi una tabella con le mosse 

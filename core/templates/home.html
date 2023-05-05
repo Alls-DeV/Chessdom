@@ -88,10 +88,27 @@ Home
             <div id="h1"></div>
         </div>
     </div>
-    <span id="lose" style="color: #FF0000; font-size: 20px;"></span>
-    <!-- green -->
-    <span id="win" style="color: #00FF00; font-size: 20px;"></span>
-    <!-- show white/black king -->
+
+    <row>
+        <img src="{{ url_for('static', filename='images/error.png') }}" alt="Error">
+        <span id="errors_icon" style="color: red;">
+        </span>
+    </row>
+    <row>
+        <img src="{{ url_for('static', filename='images/hint.png') }}" alt="Hint">
+        <span id="hints_icon" style="color: aqua;">
+        </span>
+    </row>
+    <span id="delta_elo"></span>
+    <span id="text"></span>
+    <button id="hintButton" class="btn btn-primary" onclick="hint()">Hint</button>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.result(hidden=True, id="result") }}
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+
+
     <span>{{ rating }} ELO</span>
     <span>Find the best move for the {{ color }}</span>
 </div>
@@ -109,6 +126,7 @@ Home
     var opening = {{ opening| tojson }};
     var themes = {{ themes| tojson }};
     var color = {{ color| tojson }};
+    var delta_elo = {{ delta_elo| tojson }};
 </script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 <script src="{{ url_for('static', filename='js/home.js') }}"></script>

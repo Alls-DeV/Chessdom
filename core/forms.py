@@ -69,3 +69,7 @@ class PreferenceForm(FlaskForm):
     white_color = StringField('Light Color')
     black_color = StringField('Dark Color')
     submit = SubmitField(label='Save Changes')
+
+class PuzzleForm(FlaskForm):
+    result = IntegerField()
+    submit = SubmitField("Next problem")

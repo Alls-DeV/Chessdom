@@ -44,6 +44,10 @@ body {
 }
 
 .cell.selected {
+    background-color: #00ff00;
+}
+
+.cell.checked {
     background-color: #ff0000;
 }
 

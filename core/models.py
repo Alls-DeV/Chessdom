@@ -92,3 +92,29 @@ class Puzzle(db.Model):
     
     def __str__(self) -> str:
         return f'Puzzle {self.id}\nOpening: {self.opening}\nRating: {self.rating}\nThemes: {self.themes}\nFEN: {self.FEN}\nMoves: {self.moves}\n'
+
+class PuzzleAttempted(db.Model):
+    __tablenam__ = 'puzzle_attempted'
+    id = db.Column(db.Integer(), primary_key=True)
+    id_user = db.Column(db.Integer(), db.ForeignKey('users.id'))
+    id_puzzle = db.Column(db.Integer(), db.ForeignKey('puzzles.id'))
+    result = db.Column(db.Integer())
+
+    def __repr__(self) -> str:
+        return f'PuzzleAttempted {self.id}\nUser: {self.id_user}\nPuzzle: {self.id_puzzle}\nResult: {self.result}\n'
+    
+    def __str__(self) -> str:
+        return f'PuzzleAttempted {self.id}\nUser: {self.id_user}\nPuzzle: {self.id_puzzle}\nResult: {self.result}\n'
+
+class PuzzleStats(db.Model):
+    __tablename__ = 'puzzle_stats'
+    id_user = db.Column(db.Integer(), db.ForeignKey('users.id'), primary_key=True)
+    elo = db.Column(db.Integer(), default=1200)
+    solved = db.Column(db.Integer(), default=0)
+    attempted = db.Column(db.Integer(), default=0)
+
+    def __repr__(self) -> str:
+        return f'PuzzleStats {self.id_user}\nElo: {self.elo}\nSolved: {self.solved}\nAttempted: {self.attempted}\n'
+    
+    def __str__(self) -> str:
+        return f'PuzzleStats {self.id_user}\nElo: {self.elo}\nSolved: {self.solved}\nAttempted: {self.attempted}\n'

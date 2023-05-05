@@ -1,6 +1,9 @@
 initializeBoard();
-var pieces = {}, index = 0, index_max = 0, startCellIdG = null, errors = 0;
+var pieces = {}, index = 0, index_max = 0, startCellIdG = null, errors = 0, hints = 0, showingSolution = false;
 loadFen();
+document.getElementById("errors_icon").textContent = errors;
+document.getElementById("hints_icon").textContent = hints;
+document.getElementById("result").value = 0;
 
 // Add a click event listener to each cell on the chessboard
 $(".cell").click(function () {
@@ -18,9 +21,17 @@ $(".cell").click(function () {
 
             movePiece(cellId);
             if (getFen().split(" ")[0] !== fenList[index + 1].split(" ")[0]) {
-                errors++;
-                document.getElementById("lose").textContent = "You have done " + errors + " error" + (errors > 1 ? "s" : "") + "!";
-                setTimeout(function () { loadFen(); }, 700);
+                document.getElementById("errors_icon").textContent = ++errors;
+                document.getElementById("text").textContent = "That's not the move! Try something else"
+                document.getElementById("text").style.color = "red";
+                if (hints === 0 && errors === 1) {
+                    document.getElementById("delta_elo").textContent = "-" + String(delta_elo);
+                    document.getElementById("delta_elo").style.color = "red";
+                }
+                document.getElementById("result").value = -1;
+                showingSolution = true;
+                setTimeout(function () { loadFen(); }, 1000);
+                showingSolution = false;
             } else {
                 index_max = Math.max(index_max, ++index);
                 if (checkList[index]) {
@@ -37,17 +48,30 @@ $(".cell").click(function () {
                             break;
                         }
                     }
-                    $("#" + king_cell).addClass("selected");
+                    $("#" + king_cell).addClass("checked");
                 } else {
-                    $(".cell").removeClass("selected");
+                    $(".cell").removeClass("checked");
                 }
-                // win
                 if (index_max === fenList.length - 1) {
                     index_max++;
-                    document.getElementById("win").textContent = "You win!"
+                    if (hints + errors === 0) {
+                        document.getElementById("text").textContent = "You win!"
+                        document.getElementById("text").style.color = "green";
+                        document.getElementById("delta_elo").textContent = "+" + String(delta_elo);
+                        document.getElementById("delta_elo").style.color = "green";
+                        document.getElementById("result").value = 1;
+                    } else {
+                        document.getElementById("text").textContent = "Puzzle complete!"
+                        document.getElementById("text").style.color = defaultColor;
+                    }
+                    $('#hintButton').prop('disabled', true).blur();
                 } else {
                     index_max = Math.max(index_max, ++index);
+                    showingSolution = true;
                     setTimeout(function () { loadFen(); }, 1000);
+                    showingSolution = false;
+                    document.getElementById("text").textContent = "Best move! Keep going…"
+                    document.getElementById("text").style.color = "green";
                 }
             }
         }
@@ -62,18 +86,18 @@ $(".cell").click(function () {
     }
 });
 
-
-// if you press the right arrow key, go to the next fen
 $(document).keydown(function (e) {
-    if (e.keyCode === 39) {
-        nextFen();
-    }
-});
-
-// if you press the left arrow key, go to the previous fen
-$(document).keydown(function (e) {
-    if (e.keyCode === 37) {
-        prevFen();
+    if (!showingSolution) {
+        if (e.keyCode === 39) {
+            nextFen();
+        }
+        else if (e.keyCode === 37) {
+            prevFen();
+        }
+        else if (e.keyCode === 27) {
+            $("#" + startCellIdG).removeClass("selected");
+            startCellIdG = null;
+        }
     }
 });
 
@@ -89,4 +113,22 @@ function prevFen() {
         index--;
         loadFen();
     }
+}
+
+function hint() {
+    showingSolution = true;
+
+    index_max = Math.max(index_max, ++index);
+    loadFen();
+    if (index_max === fenList.length - 1) {
+        index_max++;
+        document.getElementById("text").textContent = "Puzzle complete!"
+        $('#hintButton').prop('disabled', true).blur();
+    } else {
+        index_max = Math.max(index_max, ++index);
+        setTimeout(function () { loadFen(); }, 1000);
+    }
+
+    showingSolution = false;
+    document.getElementById("hints_icon").textContent = ++hints;
 }

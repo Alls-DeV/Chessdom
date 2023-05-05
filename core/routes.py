@@ -4,8 +4,8 @@ import chess
 from core import app
 from flask import render_template, redirect, send_from_directory, url_for, flash, request
 from core import db
-from core.models import User, Game, Friend, Preference, Puzzle
-from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm, PreferenceForm
+from core.models import User, Game, Friend, Preference, Puzzle, PuzzleAttempted, PuzzleStats
+from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm, PreferenceForm, PuzzleForm
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.utils import secure_filename
 from datetime import datetime
@@ -34,11 +34,22 @@ def before_request():
         current_user.last_seen = current_user.last_seen.replace(hour=(current_user.last_seen.hour + 2) % 24)
         db.session.commit()
 
-@app.route('/')
-@app.route('/home')
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 def home_page():
+    if current_user.is_authenticated:
+        # if PuzzleStats has not the current user, create it
+        if not PuzzleStats.query.filter_by(id_user=current_user.id).first():
+            puzzle_stats = PuzzleStats(id_user=current_user.id)
+            db.session.add(puzzle_stats)
+        else:
+            puzzle_stats = PuzzleStats.query.filter_by(id_user=current_user.id).first()
+
     piece_set, white_color, black_color = get_preferences()
-    puzzle = Puzzle.query.filter_by(id=randint(0, Puzzle.query.count())).first()
+    if current_user.is_authenticated:
+        puzzle = Puzzle.query.filter(Puzzle.id.notin_(PuzzleAttempted.query.with_entities(PuzzleAttempted.id_puzzle).filter_by(id_user=current_user.id))).filter(Puzzle.rating >= puzzle_stats.elo - 100).filter(Puzzle.rating <= puzzle_stats.elo + 100).order_by(Puzzle.rating.desc()).first()
+    else:
+        puzzle = Puzzle.query.filter_by(id=randint(0, Puzzle.query.count())).first()
     fen_list = []
     check_list = []
     color = 'white' if puzzle.FEN.split(' ')[1] == 'w' else 'black'
@@ -52,7 +63,27 @@ def home_page():
         fen_list.append(board.fen())
         check_list.append(board.is_check())
 
-    return render_template('home.html', piece_set=piece_set, white_color=white_color, black_color=black_color, fen_list=fen_list, check_list=check_list, rating=puzzle.rating, opening=puzzle.opening, themes=puzzle.themes, color=color)
+    delta_elo = abs(int(20 * (- 1 / (1 + 10 ** ((puzzle_stats.elo - puzzle.rating) / 400)))))
+
+    form = PuzzleForm()
+    
+    if current_user.is_authenticated and form.validate_on_submit():
+        result = form.result.data
+        puzzle_attempted = PuzzleAttempted(id_user=current_user.id, id_puzzle=puzzle.id, result=result)
+        puzzle_stats.attempted += 1
+
+        print(delta_elo)
+        if result == 1:
+            puzzle_stats.solved += 1
+            puzzle_stats.elo += delta_elo
+        elif result == -1:
+            puzzle_stats.elo -= delta_elo
+        
+        db.session.add(puzzle_attempted)
+        db.session.commit()
+
+    
+    return render_template('home.html', piece_set=piece_set, white_color=white_color, black_color=black_color, fen_list=fen_list, check_list=check_list, rating=puzzle.rating, opening=puzzle.opening, themes=puzzle.themes, color=color, form=form, delta_elo=delta_elo)
 
 @app.route('/editor')
 def editor_page():
@@ -133,7 +164,17 @@ def profile_page(username):
     number_followers = Friend.query.filter_by(id_friend=user.id).count()
     # print(f'people that follow {user.username}: {number_followers}')
     number_following = Friend.query.filter_by(id_user=current_user.id).count()
-    return render_template('profile.html', user=user, editable=editable, games=games, is_friend=is_friend, number_followers=number_followers, number_following=number_following)
+
+    puzzle_stats = PuzzleStats.query.filter_by(id_user=user.id).first()
+    if puzzle_stats is None:
+        puzzle_stats = PuzzleStats(id_user=current_user.id)
+        db.session.add(puzzle_stats)
+        db.session.commit()
+    elo = puzzle_stats.elo 
+    solved = puzzle_stats.solved
+    attempted = puzzle_stats.attempted
+
+    return render_template('profile.html', user=user, editable=editable, games=games, is_friend=is_friend, number_followers=number_followers, number_following=number_following, elo=elo, solved=solved, attempted=attempted)
 
 @login_required
 @app.route('/friend/<username>')

@@ -117,7 +117,8 @@ function loadFen() {
 
     if (checkList[index]) {
         let king_to_highlight;
-        if (fenList[index].split(" ")[1] === "w") {
+
+        if (fenList[0].split(" ")[1] === "w") {
             king_to_highlight = (index % 2 === 0) ? "K" : "k";
         } else {
             king_to_highlight = (index % 2 === 0) ? "k" : "K";
@@ -129,9 +130,9 @@ function loadFen() {
                 break;
             }
         }
-        $("#" + king_cell).addClass("selected");
+        $("#" + king_cell).addClass("checked");
     } else {
-        $(".cell").removeClass("selected");
+        $(".cell").removeClass("checked");
     }
 }
 

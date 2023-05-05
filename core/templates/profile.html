@@ -14,6 +14,11 @@
             {% if user.last_seen %}<p>Last seen on: {{ user.last_seen.strftime('%d-%m-%Y %H:%M') }}</p>{% endif %}
         </td>
         <td>
+            <h1>puzzle elo : {{ elo }}</h1>
+            <h1>solved : {{ solved }}</h1>
+            <h1>attempted : {{ attempted }}</h1>
+        </td>
+        <td>
             <!-- followers and following -->
             <table>
                 <tr>
