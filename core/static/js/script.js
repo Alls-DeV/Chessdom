@@ -115,6 +115,7 @@ function loadFen() {
         }
     }
 
+    $(".cell").removeClass("checked");
     if (checkList[index]) {
         let king_to_highlight;
 
@@ -131,8 +132,6 @@ function loadFen() {
             }
         }
         $("#" + king_cell).addClass("checked");
-    } else {
-        $(".cell").removeClass("checked");
     }
 }
 

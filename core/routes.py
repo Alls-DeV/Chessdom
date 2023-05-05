@@ -1,5 +1,6 @@
 import os
 import chess
+import random
 
 from core import app
 from flask import render_template, redirect, send_from_directory, url_for, flash, request
@@ -9,7 +10,6 @@ from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.utils import secure_filename
 from datetime import datetime
-from random import randint
 
 DEFAULT_PIECE_SET = 'alpha'
 DEFAULT_WHITE_COLOR = '#f0d9b5'
@@ -47,9 +47,19 @@ def home_page():
 
     piece_set, white_color, black_color = get_preferences()
     if current_user.is_authenticated:
-        puzzle = Puzzle.query.filter(Puzzle.id.notin_(PuzzleAttempted.query.with_entities(PuzzleAttempted.id_puzzle).filter_by(id_user=current_user.id))).filter(Puzzle.rating >= puzzle_stats.elo - 100).filter(Puzzle.rating <= puzzle_stats.elo + 100).order_by(Puzzle.rating.desc()).first()
+        # Define the elo range for the current user
+        elo_min = puzzle_stats.elo - 200
+        elo_max = puzzle_stats.elo + 200
+
+        # Query for puzzles within the elo range that the current user has not attempted
+        puzzles_attempted = db.session.query(PuzzleAttempted.id_puzzle).filter_by(id_user=current_user.id)
+        puzzles_unattempted = Puzzle.query.filter(Puzzle.rating.between(elo_min, elo_max)).filter(~Puzzle.id.in_(puzzles_attempted))
+
+        # Choose a random unattempted puzzle
+        puzzle = puzzles_unattempted.offset(int(puzzles_unattempted.count() * random.random())).first()
+
     else:
-        puzzle = Puzzle.query.filter_by(id=randint(0, Puzzle.query.count())).first()
+        puzzle = Puzzle.query.filter_by(id=random.randint(0, Puzzle.query.count())).first()
     fen_list = []
     check_list = []
     color = 'white' if puzzle.FEN.split(' ')[1] == 'w' else 'black'
@@ -63,7 +73,10 @@ def home_page():
         fen_list.append(board.fen())
         check_list.append(board.is_check())
 
-    delta_elo = abs(int(20 * (- 1 / (1 + 10 ** ((puzzle_stats.elo - puzzle.rating) / 400)))))
+    if current_user.is_authenticated:
+        delta_elo = abs(int(20 * (- 1 / (1 + 10 ** ((puzzle_stats.elo - puzzle.rating) / 400)))))
+    else:
+        delta_elo = 0
 
     form = PuzzleForm()
     

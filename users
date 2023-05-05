@@ -1,0 +1,40 @@
+alessio
+0a@a.com
+qwerT1
+
+andrea
+1a@a.com
+qwerT1
+
+danny
+2a@a.com
+qwerT1
+
+
+
+# for number_of_puzzle in range(100):
+#     number_of_puzzle = str(number_of_puzzle)
+#     if len(number_of_puzzle) == 1:
+#         number_of_puzzle = '0' + number_of_puzzle
+
+#     with open('core/static/puzzles/' + number_of_puzzle + '.pgn') as f:
+#         lines = f.readlines()
+#     puzzle = {}
+#     for line in lines:
+#         if line.startswith('['):
+#             puzzle[line[1:line.index(' ')]] = line[line.index('"') + 1:line.rindex('"')]
+#         elif line == '\n':
+#             continue
+#         else:
+#             puzzle['moves'] = line[:-3]
+#             puz = Puzzle(
+#                 opening=puzzle['Opening'],
+#                 rating=puzzle['Rating'],
+#                 themes=puzzle['Themes'],
+#                 FEN=puzzle['FEN'],
+#                 moves=puzzle['moves']
+#             )
+#             db.session.add(puz)
+#             puzzle = {}
+#     db.session.commit()
+# random puzzle from Puzzle table

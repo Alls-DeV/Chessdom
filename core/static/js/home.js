@@ -34,9 +34,11 @@ $(".cell").click(function () {
                 showingSolution = false;
             } else {
                 index_max = Math.max(index_max, ++index);
+                $(".cell").removeClass("checked");
                 if (checkList[index]) {
                     let king_to_highlight;
-                    if (color === "white") {
+
+                    if (fenList[0].split(" ")[1] === "w") {
                         king_to_highlight = (index % 2 === 0) ? "K" : "k";
                     } else {
                         king_to_highlight = (index % 2 === 0) ? "k" : "K";
@@ -49,8 +51,6 @@ $(".cell").click(function () {
                         }
                     }
                     $("#" + king_cell).addClass("checked");
-                } else {
-                    $(".cell").removeClass("checked");
                 }
                 if (index_max === fenList.length - 1) {
                     index_max++;
