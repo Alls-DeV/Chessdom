@@ -6,6 +6,18 @@ Home
 {% block content %}
 
 <div class="containerr">
+    <row>
+        <row>
+            <img src="{{ url_for('static', filename='images/error.png') }}" alt="Error">
+            <span id="errors_icon" style="color: red;">
+            </span>
+        </row>
+        <row>
+            <img src="{{ url_for('static', filename='images/hint.png') }}" alt="Hint">
+            <span id="hints_icon" style="color: aqua;">
+            </span>
+        </row>
+    </row>
     <div class="chessboard">
         <div class="row">
             <div id="a8"></div>
@@ -89,17 +101,9 @@ Home
         </div>
     </div>
 
-    <row>
-        <img src="{{ url_for('static', filename='images/error.png') }}" alt="Error">
-        <span id="errors_icon" style="color: red;">
-        </span>
-    </row>
-    <row>
-        <img src="{{ url_for('static', filename='images/hint.png') }}" alt="Hint">
-        <span id="hints_icon" style="color: aqua;">
-        </span>
-    </row>
+    {% if current_user.is_authenticated %}
     <span id="delta_elo"></span>
+    {% endif %}
     <span id="text"></span>
     <button id="hintButton" class="btn btn-primary" onclick="hint()">Hint</button>
     <form method="POST">
@@ -107,8 +111,6 @@ Home
         {{ form.result(hidden=True, id="result") }}
         {{ form.submit(class="btn btn-primary") }}
     </form>
-
-
     <span>{{ rating }} ELO</span>
     <span>Find the best move for the {{ color }}</span>
 </div>
