@@ -5,25 +5,21 @@ Login
 
 {% block content %}
 
-<!-- TODO controlla che sia una buona pratica dichiarare un body dentro un body -->
-
-<body class="text-center">
-    <div class="container" style="margin-top: 50px">
-        <form method="POST" class="form-signin" style="color:white" autocomplete="off">
-            {{ form.hidden_tag() }}
-            {{ form.username.label() }}
-            {{ form.username(class="form-control", placeholder="User Name or Email") }}
-            <br>
-            {{ form.password.label() }}
-            {{ form.password(class="form-control", placeholder="Password") }}
-            <br>
-            {{ form.submit(class="btn btn-lg btn-primary btn-block") }}
-            <div class="checkbox mb-3">
-                <label>
-                    <a href="{{ url_for('register_page') }}">Don't have an account? Register here</a>
-                </label>
-            </div>
-        </form>
-    </div>
-</body>
+<div class="container" style="margin-top: 50px">
+    <form method="POST" class="form-signin" style="color:white" autocomplete="off">
+        {{ form.hidden_tag() }}
+        {{ form.username.label() }}
+        {{ form.username(class="form-control", placeholder="User Name or Email") }}
+        <br>
+        {{ form.password.label() }}
+        {{ form.password(class="form-control", placeholder="Password") }}
+        <br>
+        {{ form.submit(class="btn btn-lg btn-primary btn-block") }}
+        <div class="checkbox mb-3">
+            <label>
+                <a href="{{ url_for('register_page') }}">Don't have an account? Register here</a>
+            </label>
+        </div>
+    </form>
+</div>
 {% endblock %}
