@@ -5,79 +5,105 @@ Import Games
 
 {% block content %}
 
-<!-- two column where each column is a form -->
-<div class="container" style="margin-top: 50px">
-    <form method="POST" class="form-import" style="color:white" autocomplete="off" enctype="multipart/form-data">
-        <!-- show a separator vertical between the three columns with dimensions -->
-        <div class="row">
-            <div class="col-md-6">
-                {{ form.hidden_tag() }}
-                {{ form.white.label() }}
-                {{ form.white(class="form-control", placeholder="White Player") }}
-                {% for error in form.white.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-                {{ form.black.label() }}
-                {{ form.black(class=" form-control", placeholder="Black Player" ) }}
-                {% for error in form.black.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-                {{ form.moves.label() }}
-                {{ form.moves(class="form-control", placeholder="Moves") }}
-                {% for error in form.moves.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-                {{ form.color.label() }}
-                {{ form.color(class="form-control", placeholder="Your color") }}
-                {% for error in form.color.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-                <br>
-                {{ form.result.label() }}
-                {{ form.result(class="form-control", placeholder="Result") }}
-                {% for error in form.result.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-                {{ form.date.label() }}
-                {{ form.date(class="form-control", placeholder="Date") }}
-                {% for error in form.date.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-                {{ form.white_elo.label() }}
-                {{ form.white_elo(class="form-control", placeholder="White Elo") }}
-                {% for error in form.white_elo.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-                {{ form.black_elo.label() }}
-                {{ form.black_elo(class="form-control", placeholder="Black Elo") }}
-                {% for error in form.black_elo.errors %}
-                <span style="color: red">{{ error }}</span>
-                {% endfor %}
-                <br>
-            </div>
-            <div class="col-md-1" style="display: flex; align-items: center; justify-content: center;">
-                or
-            </div>
-            <div class="col-md-3" style="display: flex; align-items: center; justify-content: center;">
 
-                {{ form.file.label() }}
-                <br>
-                {{ form.file(placeholder="File") }}
+
+<div class="container">
+    <form method="POST" autocomplete="off" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-lg-5 my-box">
+                <div class="col-lg-12 my-form">
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        {{ form.white.label(class="form-control-label") }}
+                        {{ form.white(class="form-control") }}
+                        {% for error in form.white.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.black.label(class="form-control-label") }}
+                        {{ form.black(class="form-control") }}
+                        {% for error in form.black.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.moves.label(class="form-control-label") }}
+                        {{ form.moves(class="form-control") }}
+                        {% for error in form.moves.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.color.label(class="form-control-label") }}
+                        {{ form.color(class="form-control") }}
+
+
+                        {% for error in form.color.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+
+                    <!-- TODO aggiungi sta roba al posto del select field classico
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div> -->
+
+                    <div class="form-group">
+                        {{ form.result.label(class="form-control-label") }}
+                        {{ form.result(class="form-control") }}
+                        {% for error in form.result.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.date.label(class="form-control-label") }}
+                        {{ form.date(class="form-control") }}
+                        {% for error in form.date.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.white_elo.label(class="form-control-label") }}
+                        {{ form.white_elo(class="form-control") }}
+                        {% for error in form.white_elo.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.black_elo.label(class="form-control-label") }}
+                        {{ form.black_elo(class="form-control") }}
+                        {% for error in form.black_elo.errors %}
+                        <span class="red">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 justify-content-center align-self-center">
+                <h4 class="text-center">OR</h4>
+            </div>
+
+            <div class="col-lg-5 justify-content-center align-self-center">
+                {{ form.file(class="form-control", style="font-size: 1.5rem") }}
                 {% for error in form.file.errors %}
-                <span style="color: red">{{ error }}</span>
+                <span class="red">{{ error }}</span>
                 {% endfor %}
-                <br>
             </div>
         </div>
         <br>
-        {{ form.submit(class="btn btn-lg btn-primary btn-block") }}
+        <div class="col-lg-12 my-btm my-button text-center">
+            {{ form.submit(class="btn btn-outline-primary", style="font-size: 1.5rem") }}
+        </div>
     </form>
 </div>
 

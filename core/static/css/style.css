@@ -1,16 +1,13 @@
 body {
-    background-color: #212529;
-    color: white;
+    background-color: var(--bg);
+    color: var(--fg);
 }
 
 .containerr {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    /* the elements in containerr display vertically */
     flex-direction: column;
-    /* all the elements distanciate 50px */
     gap: 30px;
 }
 
@@ -44,11 +41,11 @@ body {
 }
 
 .cell.selected {
-    background-color: #00ff00;
+    background-color: var(--green);
 }
 
 .cell.checked {
-    background-color: #ff0000;
+    background-color: var(--red);
 }
 
 .player-name {
@@ -72,4 +69,169 @@ input[type="color"] {
     background: transparent;
     padding: 0;
     margin: 0;
+}
+
+.my-nav {
+    background-color: var(--bg_h);
+}
+
+.my-nav a {
+    color: var(--fg);
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--orange);
+}
+
+.my-box {
+    margin-top: 75px;
+    height: auto;
+    background: var(--bg_h);
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.my-title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--fg);
+}
+
+.my-form {
+    margin-top: 25px;
+    text-align: left;
+}
+
+input[type=text] {
+    background-color: var(--bg_h);
+    border: none;
+    border-bottom: 2px solid var(--blue);
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: var(--fg);
+}
+
+input[type=password] {
+    background-color: var(--bg_h);
+    border: none;
+    border-bottom: 2px solid var(--blue);
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: var(--fg);
+}
+
+.form-group {
+    margin-bottom: 40px;
+    outline: 0px;
+}
+
+.form-control {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--blue);
+    outline: 0;
+    background-color: var(--bg_h);
+    color: var(--fg);
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--orange);
+    outline: 0;
+    background-color: var(--bg_h);
+    color: var(--fg);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+.my-form option {
+    color: var(--orange);
+}
+
+input[type=file] {
+    color: var(--fg);
+    padding: 5px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding-top: 1.5%;
+
+}
+
+input[type=file]::file-selector-button {
+    background-color: var(--bg);
+    border-color: var(--blue);
+    color: var(--blue);
+    border-radius: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--fg);
+}
+
+.btn-outline-primary {
+    border-color: var(--blue);
+    color: var(--blue);
+    border-radius: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--fg);
+}
+
+.my-btm {
+    float: left;
+}
+
+.my-button {
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.my-text {
+    text-align: left;
+    padding-left: 0px;
+    color: var(--fg);
+}
+
+.mybttm {
+    padding: 0px;
 }
