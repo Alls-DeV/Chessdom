@@ -15,16 +15,16 @@ class RegisterForm(FlaskForm):
         if email:
             raise ValidationError('Email already exists! Please try a different email.')
 
-    username = StringField(label='User Name:', validators=[Length(min=3, max=30), Regexp(regex='\A[\w\-\.]{3,}\Z', message='Username must be 3 characters or more and contain only letters, numbers and underscores.'), DataRequired()])
-    email = StringField(label='Email Address:', validators=[Email(), DataRequired()])
-    password = PasswordField(label='Password:', validators=[Length(min=6), Regexp(regex='\A(?=\S*?\d)(?=\S*?[A-Z])(?=\S*?[a-z])\S{6,}\Z', message='Password must be 6 characters or more and contain at least one uppercase letter, one lowercase letter and one number.'), DataRequired()])
-    confirm_password = PasswordField(label='Confirm Password:', validators=[EqualTo('password'), DataRequired()])
-    submit = SubmitField(label='Create Account')
+    username = StringField(label='USERNAME', validators=[Length(min=3, max=30), Regexp(regex='\A[\w\-\.]{3,}\Z', message='Username must be 3 characters or more and contain only letters, numbers and underscores.'), DataRequired()])
+    email = StringField(label='EMAIL', validators=[Email(), DataRequired()])
+    password = PasswordField(label='PASSWORD:', validators=[Length(min=6), Regexp(regex='\A(?=\S*?\d)(?=\S*?[A-Z])(?=\S*?[a-z])\S{6,}\Z', message='Password must be 6 characters or more and contain at least one uppercase letter, one lowercase letter and one number.'), DataRequired()])
+    confirm_password = PasswordField(label='CONFIRM PASSWORD', validators=[EqualTo('password'), DataRequired()])
+    submit = SubmitField(label='REGISTER')
 
 class LoginForm(FlaskForm):
-    username = StringField(label='User Name:', validators=[DataRequired()])
-    password = PasswordField(label='Password:', validators=[DataRequired()])
-    submit = SubmitField(label='Sign in')
+    username = StringField(label='USERNAME', validators=[DataRequired()])
+    password = PasswordField(label='PASSWORD', validators=[DataRequired()])
+    submit = SubmitField(label='SIGN IN')
 
 class SearchForm(FlaskForm):
     search = StringField(label='Search', validators=[DataRequired()])
@@ -39,16 +39,16 @@ class GameForm(FlaskForm):
         if black_elo_to_check.data and black_elo_to_check.data <= 0:
             raise ValidationError('Black Elo must be positive.')
 
-    white = StringField(label='White Player*')
-    black = StringField(label='Black Player*')
-    color = SelectField(label='Your color*', choices=[(1, 'White'), (-1, 'Black')])
-    result = SelectField(label='Result*', choices=[(1, 'White'), (0, 'Draw'), (-1, 'Black')])
-    moves = TextAreaField(label='Moves*')
-    date = DateField('Date', [validators.optional()])
-    white_elo = IntegerField(label='White Elo', validators=[validators.optional()])
-    black_elo = IntegerField(label='Black Elo', validators=[validators.optional()])
+    white = StringField(label='WHITE PLAYER*')
+    black = StringField(label='BLACK PLAYER*')
+    color = SelectField(label='YOUR COLOR*', choices=[(1, 'WHITE'), (-1, 'BLACK')])
+    result = SelectField(label='RESULT*', choices=[(1, 'WHITE'), (0, 'DRAW'), (-1, 'BLACK')])
+    moves = TextAreaField(label='MOVES*')
+    date = DateField('DATE', [validators.optional()])
+    white_elo = IntegerField(label='WHITE ELO', validators=[validators.optional()])
+    black_elo = IntegerField(label='BLACK ELO', validators=[validators.optional()])
     file = FileField(label='', validators=[FileAllowed(['pgn'], 'Only PGN files are allowed.')])
-    submit = SubmitField(label='Import')
+    submit = SubmitField(label='IMPORT')
 
 class EditorForm(FlaskForm):
     turn = SelectField(choices=[('w', 'White to play'), ('b', 'Black to play')])

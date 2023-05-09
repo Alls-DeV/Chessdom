@@ -3,7 +3,7 @@ import chess
 import random
 
 from core import app
-from flask import render_template, redirect, send_from_directory, url_for, flash, request
+from flask import render_template, redirect, send_from_directory, url_for, flash, request, session
 from core import db
 from core.models import User, Game, Friend, Preference, Puzzle, PuzzleAttempted, PuzzleStats
 from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm, PreferenceForm, PuzzleForm
@@ -33,6 +33,16 @@ def before_request():
         current_user.last_seen = datetime.utcnow()
         current_user.last_seen = current_user.last_seen.replace(hour=(current_user.last_seen.hour + 2) % 24)
         db.session.commit()
+
+@app.route("/toggle-theme")
+def toggle_theme():
+    current_theme = session.get("theme")
+    if current_theme == "dark":
+        session["theme"] = "light"
+    else:
+        session["theme"] = "dark"
+    
+    return redirect(request.args.get("current_page"))
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/home', methods=['GET', 'POST'])
@@ -118,9 +128,10 @@ def register_page():
         login_user(user_to_create)
         flash(f'Success! You are registered and logged in as {user_to_create.username}', category='success')
         return redirect(url_for('home_page'))
-    if form.errors != {}:
-        for err_msg in form.errors.values():
-            flash(err_msg[0], category='danger')
+    # TODO controlla
+    # if form.errors != {}:
+    #     for err_msg in form.errors.values():
+    #         flash(err_msg[0], category='danger')
     return render_template('register.html', form=form)
 
 @app.route('/login', methods=['GET', 'POST'])
