@@ -94,7 +94,7 @@ Import Games
             </div>
 
             <div class="col-lg-5 justify-content-center align-self-center">
-                {{ form.file(class="form-control", style="font-size: 1.5rem") }}
+                {{ form.file(class="form-control btn btn-outline-primary", style="font-size: 1.5rem") }}
                 {% for error in form.file.errors %}
                 <span class="red">{{ error }}</span>
                 {% endfor %}
