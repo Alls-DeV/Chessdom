@@ -22,16 +22,12 @@ $(".cell").click(function () {
             movePiece(cellId);
             if (getFen().split(" ")[0] !== fenList[index + 1].split(" ")[0]) {
                 document.getElementById("errors_icon").textContent = ++errors;
-                document.getElementById("text").textContent = "That's not the move! Try something else"
-                document.getElementById("text").style.color = "red";
-                if (hints === 0 && errors === 1) {
-                    document.getElementById("delta_elo").textContent = "-" + String(delta_elo);
-                    document.getElementById("delta_elo").style.color = "red";
+                document.getElementById("text").textContent = "That's not the move!";
+                document.getElementById("text").style.color = "var(--red)";
+                if (hints === 0) {
+                    document.getElementById("result").value = -1;
                 }
-                document.getElementById("result").value = -1;
-                showingSolution = true;
                 setTimeout(function () { loadFen(); }, 1000);
-                showingSolution = false;
             } else {
                 index_max = Math.max(index_max, ++index);
                 $(".cell").removeClass("checked");
@@ -50,19 +46,21 @@ $(".cell").click(function () {
                             break;
                         }
                     }
+
                     $("#" + king_cell).addClass("checked");
                 }
                 if (index_max === fenList.length - 1) {
                     index_max++;
-                    if (hints + errors === 0) {
-                        document.getElementById("text").textContent = "You win!"
-                        document.getElementById("text").style.color = "green";
-                        document.getElementById("delta_elo").textContent = "+" + String(delta_elo);
-                        document.getElementById("delta_elo").style.color = "green";
-                        document.getElementById("result").value = 1;
-                    } else {
+                    // if isn't a user or the user has previously asked for a hint
+                    if (delta_elo === 0) {
                         document.getElementById("text").textContent = "Puzzle complete!"
-                        document.getElementById("text").style.color = defaultColor;
+                    } else {
+                        document.getElementById("text").textContent = "You " + ((errors === 0) ? "win " : "lose ") + String(delta_elo) + " Elo!";
+                    }
+                    if (errors === 0) {
+                        document.getElementById("text").style.color = "var(--green)";
+                    } else {
+                        document.getElementById("text").style.color = "var(--red)";
                     }
                     $('#hintButton').prop('disabled', true).blur();
                 } else {
@@ -71,7 +69,7 @@ $(".cell").click(function () {
                     setTimeout(function () { loadFen(); }, 1000);
                     showingSolution = false;
                     document.getElementById("text").textContent = "Best move! Keep going…"
-                    document.getElementById("text").style.color = "green";
+                    document.getElementById("text").style.color = "var(--green)";
                 }
             }
         }
@@ -80,6 +78,7 @@ $(".cell").click(function () {
             if (getPiece(cellId) !== null) {
                 startCellIdG = cellId;
                 // Add the selected class to the cell
+                // TODO puoi fare in modo che toglie la classe check per mettere quela seelzionato e poi la rimette
                 $(this).addClass("selected");
             }
         }
@@ -116,13 +115,26 @@ function prevFen() {
 }
 
 function hint() {
+    document.getElementById("hints_icon").textContent = ++hints;
     showingSolution = true;
 
     index_max = Math.max(index_max, ++index);
     loadFen();
+    if (errors === 0) {
+        delta_elo = 0;
+    }
     if (index_max === fenList.length - 1) {
         index_max++;
-        document.getElementById("text").textContent = "Puzzle complete!"
+        if (delta_elo === 0) {
+            document.getElementById("text").textContent = "Puzzle complete!"
+        } else {
+            document.getElementById("text").textContent = "You " + ((errors === 0) ? "win " : "lose ") + String(delta_elo) + " Elo!";
+        }
+        if (errors === 0) {
+            document.getElementById("text").style.color = "var(--green)";
+        } else {
+            document.getElementById("text").style.color = "var(--red)";
+        }
         $('#hintButton').prop('disabled', true).blur();
     } else {
         index_max = Math.max(index_max, ++index);
@@ -130,5 +142,4 @@ function hint() {
     }
 
     showingSolution = false;
-    document.getElementById("hints_icon").textContent = ++hints;
 }

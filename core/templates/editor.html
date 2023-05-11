@@ -7,7 +7,7 @@ Editor
 
 <div class="container">
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-lg-8" style="margin-top: 50px;">
             <div class="containerr">
                 <div class="row">
                     <div id="a9"></div>
@@ -110,30 +110,42 @@ Editor
                 </div>
             </div>
         </div>
-        <div class="col-md-2 text-center containerr">
-            <form id="form-editboard" class="form-editboard" style="color:rgb(255, 255, 255)" onchange="changeFen()">
-                {{ form.turn(id="turn", class="form-control") }}
-                <h3>Castling</h3>
-                <h5>White:</h5>
-                {{ form.castling_w_k.label() }}
-                {{ form.castling_w_k(id="wk", class="form-control") }}
-                {{ form.castling_w_q.label() }}
-                {{ form.castling_w_q(id="wq", class="form-control" ) }}
+        <div class="col-lg-4 my-box">
+            <form class="my-form" onchange="changeFen()">
+                <div class="form-group">
+                    {{ form.turn(id="turn", class="form-control") }}
+                </div>
+                <div class="my-title">Castling</div>
+                <div class="form-group">
+                    <h5>White:</h5>
+                    <div class="form-group">
+                        {{ form.castling_w_k.label(class="form-control-label") }}
+                        {{ form.castling_w_k(id="wk", class="my-checkbox") }}
+                        {{ form.castling_w_q.label(class="form-control-label") }}
+                        {{ form.castling_w_q(id="wq", class="my-checkbox" ) }}
+                    </div>
+                </div>
                 <h5>Black:</h5>
-                {{ form.castling_b_k.label() }}
-                {{ form.castling_b_k(id="bk", class="form-control") }}
-                {{ form.castling_b_q.label() }}
-                {{ form.castling_b_q(id="bq", class="form-control") }}
-                {{ form.position(id="fen", class="form-control", onclick="resetBoard()", style="width: 30ch") }}
-                <button type="button" class="btn btn-danger" onclick="resetBoard()">Reset position</button>
-                <button type="button" class="btn btn-danger" onclick="clearBoard()">Clear board</button>
-                <br>
-                <br>
-                <br>
+                <div class="form-group">
+                    {{ form.castling_b_k.label(class="form-control-label") }}
+                    {{ form.castling_b_k(id="bk", class="my-checkbox") }}
+                    {{ form.castling_b_q.label(class="form-control-label") }}
+                    {{ form.castling_b_q(id="bq", class="my-checkbox") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.position(id="fen", class="form-control", onclick="resetBoard()") }}
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-outline-primary" onclick="resetBoard()">RESET POSITION</button>
+                    <button class="btn btn-outline-primary" onclick="clearBoard()">CLEAR BOARD</button>
+                </div>
             </form>
-            <input type="text" id="realFen" readonly style="width: 62ch;">
         </div>
+        <input type="text" id="realFen" readonly
+            style="width: 75ch; border-bottom: 0px; padding: 5px; text-align: center; margin-top: 10px;">
     </div>
+
 </div>
 
 {% endblock %}
@@ -144,6 +156,6 @@ Editor
     var white_color = {{ white_color| tojson }};
     var black_color = {{ black_color| tojson }};
 </script>
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src=" {{ url_for('static', filename='js/script.js' ) }}"></script>
 <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
 {% endblock %}
