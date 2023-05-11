@@ -5,26 +5,60 @@ Search
 
 {% block content %}
 
-<div class="container" style="margin-top: 50px">
-    <form method="POST" class="form-search" style="color:white" autocomplete="off">
-        {{ form.hidden_tag() }}
-        {{ form.search(class="form-control", placeholder="Search by username or email") }}
-        <br>
-        {{ form.submit(class="btn btn-lg btn-primary btn-block") }}
+<div class="container">
+    <form method="POST" autocomplete="off">
+        <div class="my-box my-form">
+            <div class="form-group">
+                {{ form.hidden_tag() }}
+                {{ form.search(class="form-control", placeholder="Search by username or email",
+                style="border-bottom: 0px; padding: 5px; text-align: center; margin-top: 10px; font-size: 1.5rem;") }}
+            </div>
+        </div>
+        <div class="form-group text-center">
+            {{ form.submit(class="btn btn-outline-primary", style="font-size: 1.5rem;") }}
+        </div>
     </form>
-</div>
-{% if users %}
-<!-- for each user print his name that links to his profile and his avatar -->
-<div class="container" style="margin-top: 50px">
-    <ul class="list-group">
-        {% for user in users %}
+    {% if users %}
+    <ul class="list-group" style="text-align: center;">
+        {% for index in range(len) %}
         <li class="list-group-item">
-            <img src="{{ user.avatar(60) }}" class="img-rounded">
-            <a href="{{ url_for('profile_page', username=user.username) }}">{{ user.username }}</a>
+            <div class="row">
+                <div class="col-2">
+                    <img src="{{ users[index].avatar(60) }}" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-7">
+                    <a href="{{ url_for('profile_page', username=users[index].username) }}">{{
+                        users[index].username}}</a>
+                    <br>
+                    <small>Last seen: {{ users[index].last_seen.strftime('%d-%m-%Y') }}</small>
+                </div>
+                <div class="col-3" style="margin-top: auto; margin-bottom: auto;">
+                    <medium>Elo:</medium> {{ elos[index] }}
+                </div>
+            </div>
         </li>
+
         {% endfor %}
     </ul>
-</div>
-{% endif %}
+    <!-- <ul class="list-group my-box">
+        {% for index in range(len) %}
+        <a href="{{ url_for('profile_page', username=users[index].username) }}"
+            class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <img src="{{ users[index].avatar(60) }}" class="img-rounded">
+                <h5 class="mb-1">{{ users[index].username }}</h5>
+                <small>Last seen: {{ users[index].last_seen.strftime('%d-%m-%Y') }}</small>
+                <small>Elo: {{ elos[index] }}</small>
+            </div>
+        </a>
+        {% endfor %}
+    </ul> -->
 
+
+    {% endif %}
+</div>
+
+{% endblock %}
+
+{% block scripts %}
 {% endblock %}

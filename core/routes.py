@@ -163,6 +163,7 @@ def logout_page():
 def search_page():
     form = SearchForm()
     users = None
+    elos = None
     if form.validate_on_submit():
         if '@' in form.search.data:
             pref = form.search.data.split('@')[0]
@@ -172,7 +173,11 @@ def search_page():
         else:
             # search all the users that has for the form.search.data as subsequences
             users = User.query.filter(User.username.like('%' + form.search.data + '%'))
-    return render_template('search.html', form=form, users=users)
+        elos = []
+        for user in users:
+            elos.append(PuzzleStats.query.filter_by(id_user=user.id).first().elo)
+    
+    return render_template('search.html', form=form, users=users, elos=elos, len=len(elos if elos else []))
 
 @app.route('/profile/<username>')
 def profile_page(username):

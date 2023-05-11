@@ -139,3 +139,5 @@ function clearBoard() {
     pieces = {};
     $(".cell").html("");
 }
+
+
