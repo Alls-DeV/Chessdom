@@ -176,6 +176,7 @@ def search_page():
         elos = []
         for user in users:
             elos.append(PuzzleStats.query.filter_by(id_user=user.id).first().elo)
+        form.search.data = ''
     
     return render_template('search.html', form=form, users=users, elos=elos, len=len(elos if elos else []))
 
