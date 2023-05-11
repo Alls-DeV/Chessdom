@@ -21,14 +21,14 @@ Search
     {% if users %}
     <ul class="list-group" style="text-align: center;">
         {% for index in range(len) %}
-        <li class="list-group-item">
+        <li class="list-group-item"
+            onclick="window.location.href='{{ url_for('profile_page', username=users[index].username) }}'">
             <div class="row">
                 <div class="col-2">
                     <img src="{{ users[index].avatar(60) }}" class="img-fluid rounded-circle">
                 </div>
                 <div class="col-7">
-                    <a href="{{ url_for('profile_page', username=users[index].username) }}">{{
-                        users[index].username}}</a>
+                    <a>{{ users[index].username}}</a>
                     <br>
                     <small>Last seen: {{ users[index].last_seen.strftime('%d-%m-%Y') }}</small>
                 </div>
