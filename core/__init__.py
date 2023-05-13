@@ -15,4 +15,8 @@ from core import routes
 '''
 TODO
 add the possibility to change the password
+debugga le preferenze biografia e sul set dei pezzi
+chiedi agli altri il bug su clear board
+aggiungere colore accent per il sito
+
 '''

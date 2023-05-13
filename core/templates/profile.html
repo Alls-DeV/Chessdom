@@ -4,7 +4,6 @@
 {% endblock %}
 
 {% block content %}
-<!-- name and image -->
 <table>
     <tr valign="top">
         <td><img src="{{ user.avatar(128) }}"></td>
@@ -19,7 +18,6 @@
             <h1>attempted : {{ attempted }}</h1>
         </td>
         <td>
-            <!-- followers and following -->
             <table>
                 <tr>
                     <td>Followers</td>
@@ -73,71 +71,97 @@
     {% endif %}
 </table>
 
-<table class=" table table-striped" style="color: white">
-    <thead>
-        <tr>
-            <th scope="col">White</th>
-            <th scope="col">Black</th>
-            <th scope="col">Result</th>
-            <th scope="col">Date</th>
-            <th scope="col">White Elo</th>
-            <th scope="col">Black Elo</th>
-            <th scope="col">Game</th>
+<div class="container">
+    <ul class="list-group" style="text-align: center;">
+        <div class="row">
             {% if current_user.is_authenticated %}
-            {% if current_user.username == username %}
-            <th scope="col">Delete</th>
-            {% endif %}
-            {% endif %}
-        </tr>
-    </thead>
-    {% for game in games %}
-    <tbody>
-        <tr>
-            <td>{{ game.white }}</td>
-            <td>{{ game.black }}</td>
-
-            {% if game.color %}
-            {% if game.result == game.color %}
-            <td>Win</td>
-            {% elif game.result == 0 %}
-            <td>Draw</td>
+                {% if current_user.username == user.username %}
+                    <div class="col-12">
+                {% else %}
+                    <div class="col-12">
+                {% endif %}
             {% else %}
-            <td>Lose</td>
-            {% endif %}
-            {% else %}
-            <td>Unknown</td>
+                <div class="col-12">
             {% endif %}
 
-            {% if game.date %}
-            <td>{{ game.date.strftime('%d-%m-%Y') }}</td>
-            {% else %}
-            <td>Unknown</td>
-            {% endif %}
-            {% if game.white_elo %}
-            <td>{{ game.white_elo }}</td>
-            {% else %}
-            <td>Unknown</td>
-            {% endif %}
-            {% if game.black_elo %}
-            <td>{{ game.black_elo }}</td>
-            {% else %}
-            <td>Unknown</td>
-            {% endif %}
-            <td><a href="{{ url_for('game_page', id=game.id) }}">View</a></td>
+                <li class="list-group-item my-style">
+                    <div class="row">
+                        <div class="col-3">WHITE</div>
+                        <div class="col-3">BLACK</div>
+                        <div class="col-3">RESULT</div>
+                        {% if current_user.is_authenticated %}
+                            {% if current_user.username == user.username %}
+                                <div class="col-2">DATE
+                            {% else %}
+                                <div class="col-3">DATE
+                            {% endif %}
+                        {% else %}
+                            <div class="col-3">DATE
+                        {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </ul>
+    <ul class="list-group" style="text-align: center;">
+        {% for game in games %}
+        <div class="row">
             {% if current_user.is_authenticated %}
-            {% if current_user.username == username %}
-            <td>
-                <form action="{{ url_for('remove_game_page', id=game.id) }}" method="post">
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-            </td>
+                {% if current_user.username == user.username %}
+                    <div class="col-12">
+                {% else %}
+                    <div class="col-12">
+                {% endif %}
+            {% else %}
+                <div class="col-12">
             {% endif %}
-            {% endif %}
-        </tr>
-    </tbody>
-
-    {% endfor %}
-</table>
+                <li class="list-group-item"
+                    onclick="window.location.href='{{ url_for('game_page', id=game.id) }}'">
+                    <div class="row">
+                        <div class="col-3">{{ game.white }} <span class="blue-dim" style="font-weight: bold;">{{ game.white_elo }}</span></div>
+                        <div class="col-3">{{ game.black }} <span class="blue-dim" style="font-weight: bold;">{{ game.black_elo }}</span></div>
+                        <div class="col-3">
+                            {% if game.color %}
+                                {% if game.result == game.color %}
+                                    <medium class="green">Win</medium>
+                                {% elif game.result == 0 %}
+                                    <medium>Draw</medium>
+                                {% else %}
+                                    <medium class="red">Lose</medium>
+                                {% endif %}
+                            {% else %}
+                                <medium>Unknown</medium>
+                            {% endif %}
+                        </div>
+                        {% if current_user.is_authenticated %}
+                            {% if current_user.username == user.username %}
+                                <div class="col-2">{{ game.date.strftime('%d-%m-%Y') }}
+                            {% else %}
+                                <div class="col-3">{{ game.date.strftime('%d-%m-%Y') }}
+                            {% endif %}
+                        {% else %}
+                            <div class="col-3">{{ game.date.strftime('%d-%m-%Y') }}
+                        {% endif %}
+                        </div>
+                        {% if current_user.is_authenticated %}
+                        {% if current_user.username == user.username %}
+                        <div class="col-1">
+                            <form action="{{ url_for('remove_game_page', id=game.id) }}" method="post">
+                                <button type="submit" class="btn btn-link" style="padding: 0;">
+                                    <i class="fas fa-times-circle" style="font-size: 1.5rem;"></i>
+                                </button>
+                            </form>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+                    </div>
+                </li>
+                    </div>
+                </div>
+                {% endfor %}
+    </ul>
+</div>
 
 
 {% endblock %}

@@ -40,21 +40,6 @@ Search
 
         {% endfor %}
     </ul>
-    <!-- <ul class="list-group my-box">
-        {% for index in range(len) %}
-        <a href="{{ url_for('profile_page', username=users[index].username) }}"
-            class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-                <img src="{{ users[index].avatar(60) }}" class="img-rounded">
-                <h5 class="mb-1">{{ users[index].username }}</h5>
-                <small>Last seen: {{ users[index].last_seen.strftime('%d-%m-%Y') }}</small>
-                <small>Elo: {{ elos[index] }}</small>
-            </div>
-        </a>
-        {% endfor %}
-    </ul> -->
-
-
     {% endif %}
 </div>
 
