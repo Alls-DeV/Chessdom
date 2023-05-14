@@ -14,6 +14,7 @@ Register
                 <form method="POST" autocomplete="off">
                     {{ form.hidden_tag() }}
                     <div class="form-group">
+                        <i class="fa fa-user" aria-hidden="true" style="margin-right: 5px;"></i>
                         {{ form.username.label(class="form-control-label") }}
                         {{ form.username(class="form-control") }}
                         {% for error in form.username.errors %}
@@ -21,6 +22,7 @@ Register
                         {% endfor %}
                     </div>
                     <div class="form-group">
+                        <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 5px;"></i>
                         {{ form.email.label(class="form-control-label") }}
                         {{ form.email(class="form-control") }}
                         {% for error in form.email.errors %}
@@ -28,6 +30,7 @@ Register
                         {% endfor %}
                     </div>
                     <div class="form-group">
+                        <i class="fa fa-lock" aria-hidden="true" style="margin-right: 5px;"></i>
                         {{ form.password.label(class="form-control-label") }}
                         {{ form.password(class="form-control") }}
                         {% for error in form.password.errors %}
@@ -35,6 +38,7 @@ Register
                         {% endfor %}
                     </div>
                     <div class="form-group">
+                        <i class="fa fa-lock" aria-hidden="true" style="margin-right: 5px;"></i>
                         {{ form.confirm_password.label(class="form-control-label") }}
                         {{ form.confirm_password(class="form-control") }}
                         {% for error in form.confirm_password.errors %}

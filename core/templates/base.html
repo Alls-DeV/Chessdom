@@ -23,7 +23,6 @@
 </head>
 
 <body>
-    {% from "macros/svgs.html" import moon, sun %}
     <nav class="navbar navbar-expand-md my-nav">
         <img src="{{ url_for('static', filename='images/chessdom.png') }}" alt="Error">
         <a class="navbar-brand" href="{{ url_for('home_page') }}">CHESSDOM</a>
@@ -67,12 +66,12 @@
                 </li>
             </ul>
             {% endif %}
-            <a href="{{ url_for('toggle_theme', current_page=request.path) }}" class="nav__link">
+            <a href="{{ url_for('toggle_theme', current_page=request.path) }}" class="nav__link" style="margin-left: 10px;">
                 <span class="nav__item">
                     {% if session.get('theme') == 'dark' %}
-                    {{ sun('nav__icon') }}
+                    <i class="fas fa-sun" style="font-size: 1.5rem; margin-top: 4px;"></i>
                     {% else %}
-                    {{ moon('nav__icon') }}
+                    <i class="fas fa-moon" style="font-size: 1.5rem; margin-top: 4px;"></i>
                     {% endif %}
                 </span>
             </a>
