@@ -186,26 +186,24 @@ def profile_page(username):
     if not user:
         flash('User not found!', category='danger')
         return redirect(url_for('home_page'))
-    editable = current_user.is_authenticated and current_user.username == username
     games = Game.query.filter_by(id_player=user.id).all()
     is_friend = False
     if current_user.is_authenticated:
-        is_friend = Friend.query.filter_by(id_user=current_user.id, id_friend=user.id).first()
-    # TODO risolvi boh qualcosa
+        is_friend = Friend.query.filter_by(id_user=current_user.id, id_friend=user.id).count() > 0
+
     number_followers = Friend.query.filter_by(id_friend=user.id).count()
-    # print(f'people that follow {user.username}: {number_followers}')
-    number_following = Friend.query.filter_by(id_user=current_user.id).count()
+    number_following = Friend.query.filter_by(id_user=user.id).count()
 
     puzzle_stats = PuzzleStats.query.filter_by(id_user=user.id).first()
     if puzzle_stats is None:
-        puzzle_stats = PuzzleStats(id_user=current_user.id)
+        puzzle_stats = PuzzleStats(id_user=user.id)
         db.session.add(puzzle_stats)
         db.session.commit()
     elo = puzzle_stats.elo 
     solved = puzzle_stats.solved
     attempted = puzzle_stats.attempted
 
-    return render_template('profile.html', user=user, editable=editable, games=games, is_friend=is_friend, number_followers=number_followers, number_following=number_following, elo=elo, solved=solved, attempted=attempted)
+    return render_template('profile.html', user=user, games=games, is_friend=is_friend, number_followers=number_followers, number_following=number_following, elo=elo, solved=solved, attempted=attempted)
 
 @login_required
 @app.route('/friend/<username>')
@@ -416,12 +414,10 @@ def preference_page(username):
         flash('You can\'t access this page!', category='danger')
         return redirect(url_for('home_page'))
 
-    form = PreferenceForm()
     user = User.query.filter_by(username=username).first()
 
     piece_set, white_color, black_color = get_preferences()
-    form.piece_set.default = piece_set
-    form.about_me.default = user.about_me
+    form = PreferenceForm(piece_set=piece_set, white_color=white_color, black_color=black_color, about_me=user.about_me)
 
     if form.validate_on_submit():
         # if preference already exists update it
@@ -444,7 +440,7 @@ def preference_page(username):
         db.session.commit()
 
         flash('Success! You have changed your preferences', category='success')
-        return redirect(url_for('preference_page', username=username))
+        return redirect(url_for('profile_page', username=username))
 
     return render_template('preference.html', form=form, piece_set=piece_set, white_color=white_color, black_color=black_color)
 

@@ -23,9 +23,10 @@
 </head>
 
 <body>
+    <!-- TODO quando ingrandisci non e' visibile il bottone -->
     <nav class="navbar navbar-expand-md my-nav">
-        <img src="{{ url_for('static', filename='images/chessdom.png') }}" alt="Error">
-        <a class="navbar-brand" href="{{ url_for('home_page') }}">CHESSDOM</a>
+        <i class="fa fa-chess" aria-hidden="true" style="margin-right: 15px; font-size: 3rem;"></i>
+        <a class="navbar-brand" href="{{ url_for('home_page') }}" style="font-weight: bold; font-size: 2.5rem;">CHESSDOM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,7 +70,7 @@
             <a href="{{ url_for('toggle_theme', current_page=request.path) }}" class="nav__link" style="margin-left: 10px;">
                 <span class="nav__item">
                     {% if session.get('theme') == 'dark' %}
-                    <i class="fas fa-sun" style="font-size: 1.5rem; margin-top: 4px;"></i>
+                    <i class="fa-solid fa-sun" style="font-size: 1.5rem; margin-top: 4px;"></i>
                     {% else %}
                     <i class="fas fa-moon" style="font-size: 1.5rem; margin-top: 4px;"></i>
                     {% endif %}

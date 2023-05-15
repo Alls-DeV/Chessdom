@@ -5,29 +5,33 @@ Leaderboard
 
 {% block content %}
 
-<table class=" table table-striped" style="color: white">
-    <thead>
-        <tr>
-            <th scope="col">User</th>
-            <th scope="col">Elo</th>
-            <th scope="col">Problem solved</th>
-            <th scope="col">Problem attempted</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="container my-form">
+    <ul class="list-group" style="text-align: center;">
+        <li class="list-group-item my-style">
+            <div class="row">
+                <div class="col-3">USER</div>
+                <div class="col-3">ELO</div>
+                <div class="col-3">SOLVED</div>
+                <div class="col-3">ATTEMPTED</div>
+            </div>
+        </li>
+    </ul>
+    <ul class="list-group" style="text-align: center;">
         {% for i in range(size) %}
-        <tr>
-            <td>
-                <img src="{{ users[i].avatar(50) }}" class="img-rounded">
-                <a href="{{ url_for('profile_page', username=users[i].username) }}">{{ users[i].username }}</a>
-            </td>
-            <td>{{ users_stats[i].elo }}</td>
-            <td>{{ users_stats[i].solved }}</td>
-            <td>{{ users_stats[i].attempted }}</td>
-        </tr>
+        <li class="list-group-item"
+            onclick="window.location.href='{{ url_for('profile_page', username=users[i].username) }}'">
+            <div class="row">
+                <div class="col-3" style="margin-top: auto; margin-bottom: auto;">
+                    <img src="{{ users[i].avatar(50) }}" class="img-fluid rounded-circle" style="margin-right: 10px;">{{ users[i].username }}
+                </div>
+                <div class="col-3" style="margin-top: auto; margin-bottom: auto;">{{ users_stats[i].elo }}</div>
+                <div class="col-3" style="margin-top: auto; margin-bottom: auto;">{{ users_stats[i].solved }}</span></div>
+                <div class="col-3" style="margin-top: auto; margin-bottom: auto;">{{ users_stats[i].attempted }}</div>
+            </div>
+        </li>
         {% endfor %}
-    </tbody>
-</table>
+    </ul>
+</div>
 
 
 {% endblock %}

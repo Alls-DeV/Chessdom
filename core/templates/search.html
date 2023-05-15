@@ -27,12 +27,12 @@ Search
                 <div class="col-2">
                     <img src="{{ users[index].avatar(60) }}" class="img-fluid rounded-circle">
                 </div>
-                <div class="col-7">
+                <div class="col-8">
                     <a>{{ users[index].username}}</a>
                     <br>
                     <small>Last seen: {{ users[index].last_seen.strftime('%d-%m-%Y') }}</small>
                 </div>
-                <div class="col-3" style="margin-top: auto; margin-bottom: auto;">
+                <div class="col-2" style="margin-top: auto; margin-bottom: auto;">
                     <medium>Elo:</medium> {{ elos[index] }}
                 </div>
             </div>

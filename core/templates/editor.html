@@ -160,11 +160,11 @@ Editor
                     <div class="my-title">Opening</div>
                     {{ form.position(id="fen", class="form-control", onclick="resetBoard()") }}
                 </div>
-                <div class="form-group">
-                    <button class="btn btn-outline-primary" onclick="resetBoard()">RESET POSITION</button>
-                    <button class="btn btn-outline-primary" onclick="clearBoard()">CLEAR BOARD</button>
-                </div>
             </form>
+            <div class="form-group">
+                <button class="btn btn-outline-primary" onclick="resetBoard()">RESET POSITION</button>
+                <button class="btn btn-outline-primary" onclick="clearBoard();">CLEAR BOARD</button>
+            </div>
         </div>
         <input type="text" id="realFen" readonly
             style="width: 75ch; border-bottom: 0px; padding: 5px; text-align: center; margin-top: 10px;">

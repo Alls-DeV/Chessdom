@@ -65,10 +65,10 @@ class Friend(db.Model):
     id_friend = db.Column(db.Integer(), db.ForeignKey('users.id'))
 
     def __repr__(self) -> str:
-        return f'Friend {self.id}\nUser: {self.id_user}\nFriend: {self.id_friend}\n'
+        return f'{self.id_user} segue {self.id_friend}\n'
     
     def __str__(self) -> str:
-        return f'Friend {self.id}\nUser: {self.id_user}\nFriend: {self.id_friend}\n'
+        return f'{self.id_user} segue {self.id_friend}\n'
 
 class Preference(db.Model):
     __tablename__ = 'preferences'
