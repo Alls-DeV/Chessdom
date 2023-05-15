@@ -5,99 +5,128 @@
 
 {% block content %}
 
-<div class="containerr">
-    <div class="player-name">{{ game.black }}</div>
-    <div class="chessboard">
-        <div class="row">
-            <div id="a8"></div>
-            <div id="b8"></div>
-            <div id="c8"></div>
-            <div id="d8"></div>
-            <div id="e8"></div>
-            <div id="f8"></div>
-            <div id="g8"></div>
-            <div id="h8"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-8" style="margin-top: 50px;">
+            <div class="containerr">
+                <div class="chessboard">
+                    <div class="row">
+                        <div id="a8"></div>
+                        <div id="b8"></div>
+                        <div id="c8"></div>
+                        <div id="d8"></div>
+                        <div id="e8"></div>
+                        <div id="f8"></div>
+                        <div id="g8"></div>
+                        <div id="h8"></div>
+                    </div>
+                    <div class="row">
+                        <div id="a7"></div>
+                        <div id="b7"></div>
+                        <div id="c7"></div>
+                        <div id="d7"></div>
+                        <div id="e7"></div>
+                        <div id="f7"></div>
+                        <div id="g7"></div>
+                        <div id="h7"></div>
+                    </div>
+                    <div class="row">
+                        <div id="a6"></div>
+                        <div id="b6"></div>
+                        <div id="c6"></div>
+                        <div id="d6"></div>
+                        <div id="e6"></div>
+                        <div id="f6"></div>
+                        <div id="g6"></div>
+                        <div id="h6"></div>
+                    </div>
+                    <div class="row">
+                        <div id="a5"></div>
+                        <div id="b5"></div>
+                        <div id="c5"></div>
+                        <div id="d5"></div>
+                        <div id="e5"></div>
+                        <div id="f5"></div>
+                        <div id="g5"></div>
+                        <div id="h5"></div>
+                    </div>
+                    <div class="row">
+                        <div id="a4"></div>
+                        <div id="b4"></div>
+                        <div id="c4"></div>
+                        <div id="d4"></div>
+                        <div id="e4"></div>
+                        <div id="f4"></div>
+                        <div id="g4"></div>
+                        <div id="h4"></div>
+                    </div>
+                    <div class="row">
+                        <div id="a3"></div>
+                        <div id="b3"></div>
+                        <div id="c3"></div>
+                        <div id="d3"></div>
+                        <div id="e3"></div>
+                        <div id="f3"></div>
+                        <div id="g3"></div>
+                        <div id="h3"></div>
+                    </div>
+                    <div class="row">
+                        <div id="a2"></div>
+                        <div id="b2"></div>
+                        <div id="c2"></div>
+                        <div id="d2"></div>
+                        <div id="e2"></div>
+                        <div id="f2"></div>
+                        <div id="g2"></div>
+                        <div id="h2"></div>
+                    </div>
+                    <div class="row">
+                        <div id="a1"></div>
+                        <div id="b1"></div>
+                        <div id="c1"></div>
+                        <div id="d1"></div>
+                        <div id="e1"></div>
+                        <div id="f1"></div>
+                        <div id="g1"></div>
+                        <div id="h1"></div>
+                    </div>
+                </div>
+            </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <button id="first" class="btn btn-outline-primary" onclick="firstFen()">First Move</button>
         </div>
-        <div class="row">
-            <div id="a7"></div>
-            <div id="b7"></div>
-            <div id="c7"></div>
-            <div id="d7"></div>
-            <div id="e7"></div>
-            <div id="f7"></div>
-            <div id="g7"></div>
-            <div id="h7"></div>
+        <div class="col-2">
+            <button id="previous" class="btn btn-outline-primary" onclick="prevFen()">Previous Move</button>
         </div>
-        <div class="row">
-            <div id="a6"></div>
-            <div id="b6"></div>
-            <div id="c6"></div>
-            <div id="d6"></div>
-            <div id="e6"></div>
-            <div id="f6"></div>
-            <div id="g6"></div>
-            <div id="h6"></div>
+        <div class="col-2">
+            <button id="next" class="btn btn-outline-primary" onclick="nextFen()">Next Move</button>
         </div>
-        <div class="row">
-            <div id="a5"></div>
-            <div id="b5"></div>
-            <div id="c5"></div>
-            <div id="d5"></div>
-            <div id="e5"></div>
-            <div id="f5"></div>
-            <div id="g5"></div>
-            <div id="h5"></div>
-        </div>
-        <div class="row">
-            <div id="a4"></div>
-            <div id="b4"></div>
-            <div id="c4"></div>
-            <div id="d4"></div>
-            <div id="e4"></div>
-            <div id="f4"></div>
-            <div id="g4"></div>
-            <div id="h4"></div>
-        </div>
-        <div class="row">
-            <div id="a3"></div>
-            <div id="b3"></div>
-            <div id="c3"></div>
-            <div id="d3"></div>
-            <div id="e3"></div>
-            <div id="f3"></div>
-            <div id="g3"></div>
-            <div id="h3"></div>
-        </div>
-        <div class="row">
-            <div id="a2"></div>
-            <div id="b2"></div>
-            <div id="c2"></div>
-            <div id="d2"></div>
-            <div id="e2"></div>
-            <div id="f2"></div>
-            <div id="g2"></div>
-            <div id="h2"></div>
-        </div>
-        <div class="row">
-            <div id="a1"></div>
-            <div id="b1"></div>
-            <div id="c1"></div>
-            <div id="d1"></div>
-            <div id="e1"></div>
-            <div id="f1"></div>
-            <div id="g1"></div>
-            <div id="h1"></div>
+        <div class="col-2">
+            <button id="last" class="btn btn-outline-primary" onclick="lastFen()">Last Move</button>
         </div>
     </div>
-    <div class="player-name">{{ game.white }}</div>
-    <!-- add 4 button in a line, first move, previous move, next move, last move -->
-    <div class="button">
-        <button id="first" class="btn btn-primary" onclick="firstFen()">First Move</button>
-        <button id="previous" class="btn btn-primary" onclick="prevFen()">Previous Move</button>
-        <span id="text"></span>
-        <button id="next" class="btn btn-primary" onclick="nextFen()">Next Move</button>
-        <button id="last" class="btn btn-primary" onclick="lastFen()">Last Move</button>
+        </div>
+
+        <div class="col-4 my-box">
+            <div class="form-group"></div>
+            <div class="form-group">
+                <img src="{{ url_for('static', filename='images/piece_set/alpha/k.png') }}" alt="Black">
+                <div class="">{{ game.black }}</div>
+            </div>
+            <div class="my-title">VS</div>
+            <br>
+            <div class="form-group">
+                <img src="{{ url_for('static', filename='images/piece_set/alpha/K.png') }}" alt="Black">
+                <div class="">{{ game.white }}</div>
+            </div>
+            <br>
+            <br>
+            <span id="text" class="my-title"></span>
+        </div>
     </div>
+
 </div>
 
 {% endblock %}

@@ -47,19 +47,6 @@ body {
     background-color: var(--red);
 }
 
-.player-name {
-    width: 100%;
-    text-align: center;
-}
-
-.player-name:first-child {
-    margin-top: auto;
-}
-
-.player-name:last-child {
-    margin-bottom: auto;
-}
-
 input[type="color"] {
     border: none;
     width: 100%;
