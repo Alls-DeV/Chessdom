@@ -18,7 +18,10 @@ Search
             {{ form.submit(class="btn btn-outline-primary", style="font-size: 1.5rem;") }}
         </div>
     </form>
-    {% if users %}
+    {% if users == -1 %}
+        <br>
+        <div class="my-title" style="color: var(--red)">User not found!</div>
+    {% elif users %}
     <ul class="list-group" style="text-align: center;">
         {% for index in range(len) %}
         <li class="list-group-item"
@@ -37,7 +40,6 @@ Search
                 </div>
             </div>
         </li>
-
         {% endfor %}
     </ul>
     {% endif %}

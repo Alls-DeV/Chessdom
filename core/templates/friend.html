@@ -4,33 +4,37 @@
 {% endblock %}
 
 {% block content %}
-<table class=" table table-striped" style="color: white">
-    <thead>
-        <tr>
-            <th scope="col">Username</th>
-            <!-- <th scope="col">Email</th> -->
-            <th scope="col">Winrate</th>
-            <th scope="col">Games imported</th>
-            <th scope="col">Delete</th>
-        </tr>
-    </thead>
+<div class="container" style="margin-top: 50px;">
+    {% if len == 0 %}
+        <br>
+        <div class="my-title" style="color: var(--red)">You are not following anyone!</div>
+    {% else %}
+    <ul class="list-group" style="text-align: center;">
+        {% for index in range(len) %}
+        <li class="list-group-item"
+            onclick="window.location.href='{{ url_for('profile_page', username=users[index].username) }}'">
+            <div class="row">
+                <div class="col-2">
+                    <img src="{{ users[index].avatar(60) }}" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-8">
+                    <a>{{ users[index].username}}</a>
+                    <br>
+                    <small>Last seen: {{ users[index].last_seen.strftime('%d-%m-%Y') }}</small>
+                </div>
+                <div class="col-2" style="margin-top: auto; margin-bottom: auto;">
+                    <medium>Elo:</medium> {{ elos[index] }}
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
 
-    {% for friend in users %}
-    <tbody>
-        <tr>
-            <td><a href="{{ url_for('profile_page', username=friend[0].username) }}">{{ friend[0].username }}</a></td>
-            <td>{{ friend[1] }}</td>
-            <td>{{ friend[2] }}</td>
-            <td>
-                <form action="{{ url_for('remove_friend_page', username=friend[0].username) }}" method="post">
-                    <button type="submit" class="btn btn-danger">Unfollow</button>
-                </form>
-            </td>
-        </tr>
-    </tbody>
-    {% endfor %}
+</div>
 
-</table>
+
+
 {% endblock %}
 
 {% block scripts %}

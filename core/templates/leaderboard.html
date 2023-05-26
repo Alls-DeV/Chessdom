@@ -9,7 +9,8 @@ Leaderboard
     <ul class="list-group" style="text-align: center;">
         <li class="list-group-item my-style">
             <div class="row">
-                <div class="col-3">USER</div>
+                <div class="col-1"></div>
+                <div class="col-2">USER</div>
                 <div class="col-3">ELO</div>
                 <div class="col-3">SOLVED</div>
                 <div class="col-3">ATTEMPTED</div>
@@ -21,8 +22,11 @@ Leaderboard
         <li class="list-group-item"
             onclick="window.location.href='{{ url_for('profile_page', username=users[i].username) }}'">
             <div class="row">
-                <div class="col-3" style="margin-top: auto; margin-bottom: auto;">
-                    <img src="{{ users[i].avatar(50) }}" class="img-fluid rounded-circle" style="margin-right: 10px;">{{ users[i].username }}
+                <div class="col-1" style="margin-top: auto; margin-bottom: auto;">
+                    <img src="{{ users[i].avatar(50) }}" class="img-fluid rounded-circle" style="margin-right: 10px;">
+                </div>
+                <div class="col-2" style="margin-top: auto; margin-bottom: auto;">
+                    {{ users[i].username }}
                 </div>
                 <div class="col-3" style="margin-top: auto; margin-bottom: auto;">{{ users_stats[i].elo }}</div>
                 <div class="col-3" style="margin-top: auto; margin-bottom: auto;">{{ users_stats[i].solved }}</span></div>

@@ -1,6 +1,6 @@
 initializeBoard();
 
-// If I press esc key, TODO (or outside the board), deselect the piece
+// If I press esc key deselect the piece
 $(document).keyup(function (e) {
     if (e.keyCode === 27) {
         $("#" + startCellIdG).removeClass("selected");
@@ -104,7 +104,7 @@ function clearBoard() {
         if (extra.hasOwnProperty(key)) {
             let piece = extra[key];
             if (piece === "trash") {
-                $("#" + key).html("<img src='/static/images/trash.png' style='position: relative; top: 3px; left: 5px;'>");
+                $("#" + key).html("<i class='fas fa-trash-alt red' style='font-size:50px;'></i>");
             } else {
                 $("#" + key).html("<img src='/static/images/piece_set/" + piece_set + "/" + piece + ".png'>");
             }

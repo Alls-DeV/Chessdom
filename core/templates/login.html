@@ -9,15 +9,6 @@ Login
     <div class="row">
         <div class="col-lg-3 col-md-2"></div>
         <div class="col-lg-6 col-md-8 my-box">
-
-            <!-- <div class="col-lg-12 my-title">
-                SIGN IN
-            </div> -->
-
-            <!-- <div class="col-lg-12 my-key">
-                <i class="fa fa-key" aria-hidden="true"></i>
-            </div> -->
-
             <div class="col-lg-12 my-form">
                 <form method="POST" autocomplete="off">
                     {{ form.hidden_tag() }}
@@ -30,6 +21,9 @@ Login
                         <i class="fa fa-lock" aria-hidden="true" style="margin-right: 5px;"></i>
                         {{ form.password.label(class="form-control-label") }}
                         {{ form.password(class="form-control") }}
+                        {% for error in form.password.errors %}
+                            <span class="red">{{ error }}</span>
+                        {% endfor %}
                     </div>
 
                     <div class="col-lg-12 mybttm">
@@ -44,7 +38,6 @@ Login
                 </form>
             </div>
         </div>
-        <!-- TODO controlla se necessario -->
         <div class="col-lg-3 col-md-2"></div>
     </div>
 </div>

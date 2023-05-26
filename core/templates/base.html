@@ -15,7 +15,6 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
-    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"> -->
     <title>
         {% block title %}
         {% endblock %}
@@ -23,15 +22,14 @@
 </head>
 
 <body>
-    <!-- TODO quando ingrandisci non e' visibile il bottone -->
     <nav class="navbar navbar-expand-md my-nav">
         <i class="fa fa-chess" aria-hidden="true" style="margin-right: 15px; font-size: 3rem;"></i>
         <a class="navbar-brand" href="{{ url_for('home_page') }}" style="font-weight: bold; font-size: 2.5rem;">CHESSDOM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="fa fa-bars fg" style="font-size: 2rem;"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center;">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('editor_page') }}">Editor</a>
@@ -52,7 +50,6 @@
                     <a class="nav-link" href="{{ url_for('profile_page', username=current_user.username) }}">{{
                         current_user.username }}</a>
                 </li>
-                <!-- on click use function popup in script.js -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('logout_page') }}">Logout</a>
                 </li>
@@ -80,7 +77,6 @@
         </div>
     </nav>
 
-    <!-- TODO remove the following lines if useless -->
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
     {% for category, message in messages %}

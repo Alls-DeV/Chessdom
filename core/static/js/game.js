@@ -44,5 +44,3 @@ function lastFen() {
     loadFen();
     $(text).text(String(index + 1) + " / " + String(fenList.length));
 }
-
-// TODO aggiungi una tabella con le mosse 

@@ -3,7 +3,7 @@ document.documentElement.style.setProperty('--black-color', black_color);
 
 function initializeBoard() {
     // Loop through all the div in the chessboard
-    $(".containerr div").each(function (index, value) {
+    $(".my-container div").each(function (index, value) {
         // Get the ID of the cell
         let cellId = $(this).attr("id");
         if (cellId !== undefined && cellId.length === 2) {
@@ -139,5 +139,3 @@ function clearBoard() {
     pieces = {};
     $(".cell").html("");
 }
-
-

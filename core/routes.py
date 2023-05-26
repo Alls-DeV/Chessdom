@@ -3,7 +3,7 @@ import chess
 import random
 
 from core import app
-from flask import render_template, redirect, send_from_directory, url_for, flash, request, session
+from flask import render_template, redirect, url_for, flash, request, session
 from core import db
 from core.models import User, Game, Friend, Preference, Puzzle, PuzzleAttempted, PuzzleStats
 from core.forms import RegisterForm, LoginForm, SearchForm, GameForm, EditorForm, PreferenceForm, PuzzleForm
@@ -90,28 +90,23 @@ def home_page():
         delta_elo = 0
 
     form = PuzzleForm()
-    
     if current_user.is_authenticated and form.validate_on_submit():
         result = form.result.data
         puzzle_attempted = PuzzleAttempted(id_user=current_user.id, id_puzzle=puzzle.id, result=result)
         puzzle_stats.attempted += 1
-
-        print(delta_elo)
-        if result == 1:
+        if result > 0:
             puzzle_stats.solved += 1
-            puzzle_stats.elo += delta_elo
-        elif result == -1:
-            puzzle_stats.elo -= delta_elo
-        
+        puzzle_stats.elo += form.result.data
+
         db.session.add(puzzle_attempted)
         db.session.commit()
-
     
     return render_template('home.html', piece_set=piece_set, white_color=white_color, black_color=black_color, fen_list=fen_list, check_list=check_list, rating=puzzle.rating, opening=puzzle.opening, themes=puzzle.themes, color=color, form=form, delta_elo=delta_elo)
 
 @app.route('/editor')
 def editor_page():
     piece_set, white_color, black_color = get_preferences()
+
     return render_template('editor.html', form=EditorForm(), piece_set=piece_set, white_color=white_color, black_color=black_color)
     
 @app.route('/register', methods=['GET', 'POST'])
@@ -126,12 +121,8 @@ def register_page():
         db.session.add(user_to_create)
         db.session.commit()
         login_user(user_to_create)
-        flash(f'Success! You are registered and logged in as {user_to_create.username}', category='success')
         return redirect(url_for('home_page'))
-    # TODO controlla
-    # if form.errors != {}:
-    #     for err_msg in form.errors.values():
-    #         flash(err_msg[0], category='danger')
+
     return render_template('register.html', form=form)
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -144,19 +135,18 @@ def login_page():
             attempted_user = User.query.filter_by(username=form.username.data).first()
         if attempted_user and attempted_user.check_password_correction(attempted_password=form.password.data):
             login_user(attempted_user)
-            flash(f'Success! You are logged in as {attempted_user.username}', category='success')
             return redirect(url_for('home_page'))
         else:
             if '@' in form.username.data:
-                flash('Email and password are not match! Please try again', category='danger')
+                form.password.errors.append('Email and password are not match! Please try again')
             else:
-                flash('Username and password are not match! Please try again', category='danger')
+                form.password.errors.append('Username and password are not match! Please try again')
+
     return render_template('login.html', form=form)
 
 @app.route('/logout')
 def logout_page():
     logout_user()
-    flash('You have been logged out!', category='info')
     return redirect(url_for('home_page'))
 
 @app.route('/search', methods=['GET', 'POST'])
@@ -169,13 +159,16 @@ def search_page():
             pref = form.search.data.split('@')[0]
             suff = form.search.data.split('@')[1]
             # search all the users that has for the form.search.data as subsequences
-            users = User.query.filter(User.username.like('%' + pref + '%'), User.email.like('%' + suff + '%'))
+            users = User.query.filter(User.email.like('%' + pref + '%'), User.email.like('%' + suff + '%'))
         else:
             # search all the users that has for the form.search.data as subsequences
             users = User.query.filter(User.username.like('%' + form.search.data + '%'))
+        print("miao", users)
         elos = []
         for user in users:
             elos.append(PuzzleStats.query.filter_by(id_user=user.id).first().elo)
+        if users.count() == 0:
+            users = -1
         form.search.data = ''
     
     return render_template('search.html', form=form, users=users, elos=elos, len=len(elos if elos else []))
@@ -216,20 +209,12 @@ def friend_page(username):
         return redirect(url_for('home_page'))
     friends = Friend.query.filter_by(id_user=current_user.id).all()
     users = []
+    elos = []
     for friend in friends:
-        # user, winrate, number of games
-        # the game won are the games where color is equal to result
-        games = Game.query.filter_by(id_player=friend.id_friend).all()
-        won = 0
-        for game in games:
-            if game.color == game.result:
-                won += 1
-        if len(games) != 0:
-            users.append((User.query.filter_by(id=friend.id_friend).first(), str(won / len(games)) + "%", len(games)))
-        else:
-            users.append((User.query.filter_by(id=friend.id_friend).first(), "?", 0))
+        users.append(User.query.filter_by(id=friend.id_friend).first())
+        elos.append(PuzzleStats.query.filter_by(id_user=friend.id_friend).first().elo)
 
-    return render_template('friend.html', username=username, users=users)
+    return render_template('friend.html', username=username, users=users, elos=elos, len=len(elos if elos else []))
 
 @login_required
 @app.route('/add_friend/<username>', methods=['GET', 'POST'])
@@ -243,8 +228,6 @@ def add_friend_page(username):
     )
     db.session.add(friend)
     db.session.commit()
-    flash('Friend added!', category='success')
-    # profile page of the user
     return redirect(url_for('profile_page', username=username))
 
 @login_required
@@ -256,7 +239,6 @@ def remove_friend_page(username):
     friend = Friend.query.filter_by(id_user=current_user.id, id_friend=User.query.filter_by(username=username).first().id).first()
     db.session.delete(friend)
     db.session.commit()
-    flash('Friend removed!', category='success')
     return redirect(url_for('profile_page', username=username))
 
 def validate_moves(moves):
@@ -363,7 +345,6 @@ def import_page():
                 return redirect(url_for('import_page'))
             else:
                 form.file.errors.append('Invalid moves')
-
         else:
             form.white.errors.append('This field is required')
             form.black.errors.append('This field is required')
@@ -404,7 +385,6 @@ def remove_game_page(id):
         return redirect(url_for('home_page'))
     db.session.delete(game)
     db.session.commit()
-    flash('Success! You have deleted a game', category='success')
     return redirect(url_for('profile_page', username=current_user.username))
 
 @login_required
@@ -436,10 +416,7 @@ def preference_page(username):
             db.session.add(preference_to_create)
 
         user.about_me = form.about_me.data
-
         db.session.commit()
-
-        flash('Success! You have changed your preferences', category='success')
         return redirect(url_for('profile_page', username=username))
 
     return render_template('preference.html', form=form, piece_set=piece_set, white_color=white_color, black_color=black_color)

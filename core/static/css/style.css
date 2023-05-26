@@ -3,7 +3,7 @@ body {
     color: var(--fg);
 }
 
-.containerr {
+.my-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body {
 }
 
 .chessboard>.row,
-.containerr>.row {
+.my-container>.row {
     height: 64px;
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +60,10 @@ input[type="color"] {
 
 .my-nav a {
     color: var(--fg);
+}
+
+.navbar-toggler {
+    border-color: var(--orange-dim);
 }
 
 a {

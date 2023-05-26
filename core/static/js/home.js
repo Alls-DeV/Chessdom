@@ -25,7 +25,7 @@ $(".cell").click(function () {
                 document.getElementById("text").textContent = "That's not the move!";
                 document.getElementById("text").style.color = "var(--red)";
                 if (hints === 0) {
-                    document.getElementById("result").value = -1;
+                    document.getElementById("result").value = -delta_elo;
                 }
                 setTimeout(function () { loadFen(); }, 1000);
             } else {
@@ -56,6 +56,9 @@ $(".cell").click(function () {
                         document.getElementById("text").textContent = "Puzzle complete!"
                     } else {
                         document.getElementById("text").textContent = "You " + ((errors === 0) ? "win " : "lose ") + String(delta_elo) + " Elo!";
+                        if (hints === 0 && errors === 0) {
+                            document.getElementById("result").value = delta_elo;
+                        }
                     }
                     if (errors === 0) {
                         document.getElementById("text").style.color = "var(--green)";
@@ -78,7 +81,6 @@ $(".cell").click(function () {
             if (getPiece(cellId) !== null) {
                 startCellIdG = cellId;
                 // Add the selected class to the cell
-                // TODO puoi fare in modo che toglie la classe check per mettere quela seelzionato e poi la rimette
                 $(this).addClass("selected");
             }
         }

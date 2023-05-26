@@ -11,11 +11,3 @@ db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 from core import routes
-
-'''
-TODO
-debugga le preferenze biografia e sul set dei pezzi
-chiedi agli altri il bug su clear board
-aggiungere colore accent per il sito
-controlla le notifiche popup
-'''
