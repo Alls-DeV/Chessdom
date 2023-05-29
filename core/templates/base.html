@@ -8,9 +8,9 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     {% if session.get('theme') == 'dark' %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css') }}">
     {% else %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/light.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/light.css') }}">
     {% endif %}
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">

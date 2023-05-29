@@ -133,14 +133,21 @@ def login_page():
             attempted_user = User.query.filter_by(email=form.username.data).first()
         else:
             attempted_user = User.query.filter_by(username=form.username.data).first()
-        if attempted_user and attempted_user.check_password_correction(attempted_password=form.password.data):
-            login_user(attempted_user)
-            return redirect(url_for('home_page'))
+        
+        if attempted_user:
+            if attempted_user.check_password_correction(attempted_password=form.password.data):
+                login_user(attempted_user)
+                return redirect(url_for('home_page'))
+            elif '@' in form.username.data:
+                form.password.errors.append('Email and password do not match! Please try again.')
+            else:
+                form.password.errors.append('Username and password do not match! Please try again.')
+
         else:
             if '@' in form.username.data:
-                form.password.errors.append('Email and password are not match! Please try again')
+                form.username.errors.append('Email does not exist! Please try again.')
             else:
-                form.password.errors.append('Username and password are not match! Please try again')
+                form.username.errors.append('Username does not exist! Please try again.')
 
     return render_template('login.html', form=form)
 
