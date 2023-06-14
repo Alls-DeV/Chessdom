@@ -1,5 +1,6 @@
 <i class="fa fa-chess"></i>
 <br>
+<h1>
 Chessdom 
 </h1>
 <h3 align="center">👑 Rule the board with Chessdom!</h3>
