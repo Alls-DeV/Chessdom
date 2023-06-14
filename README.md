@@ -1,11 +1,8 @@
-
-<div align="center">
-<h1 align="center">
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
+<i class="fa fa-chess"></i>
 <br>
-Chessdom
+Chessdom 
 </h1>
-<h3 align="center">📍 Rule the board with Chessdom on GitHub-checkmate the competition!</h3>
+<h3 align="center">👑 Rule the board with Chessdom!</h3>
 <h3 align="center">⚙️ Developed with the software and tools below:</h3>
 
 <p align="center">
@@ -14,7 +11,6 @@ Chessdom
 <img src="https://img.shields.io/badge/Jinja-B41717.svg?style=for-the-badge&logo=Jinja&logoColor=white" alt="Jinja" />
 <img src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/Flask-000000.svg?style=for-the-badge&logo=Flask&logoColor=white" alt="Flask" />
-<img src="https://img.shields.io/badge/Markdown-000000.svg?style=for-the-badge&logo=Markdown&logoColor=white" alt="Markdown" />
 </p>
 </div>
 
@@ -30,14 +26,13 @@ Chessdom
 - [🗺 Roadmap](#-roadmap)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
-- [👏 Acknowledgments](#-acknowledgments)
 
 ---
 
 
 ## 📍 Overview
 
-Chessdom is a comprehensive chess web application built with Flask. It provides features such as user authentication and storage, various dynamic forms with data validation for user input, a leaderboard to display user performance, and a user-friendly interface for playing and recording chess games. Chessdom allows its users to import games, navigate through their moves, and customize their game preferences. The project's goal is to offer users a platform to improve their skillset with strong AI integration.
+Chessdom is a comprehensive chess web application built with Flask. It provides features such as user authentication and storage of games, puzzles for training tactics, a leaderboard to display rankings of the ELO, and a user-friendly interface for recording chess games. Chessdom allows its users to import games, navigate through their moves, and customize their board preferences. The project's goal is to offer users a platform to improve their skillset in tactics and strategy, as well as to provide a space for them to connect with other chess players.
 
 ---
 
@@ -46,22 +41,13 @@ Chessdom is a comprehensive chess web application built with Flask. It provides 
 Feature | Description |
 |---|---|
 | **🏗 Structure and Organization** | The codebase is well-organized and follows a standard modular structure, with clear separation of concerns between the Flask app and its various components such as models and forms. The directories include "core," "static," and "templates" for keeping their respective code files, respectively. |
-| **📝 Code Documentation** | The code is well-documented with elaborate file summaries providing a good understanding of the functionality of each file in the repository. However, certain essential files like "core/routes.py" failed to generate availing of the'HTTP 400 Bad Request' error. |
 | **🧩 Dependency Management** | Dependencies are managed through a virtual environment separated from the central codebase and can be easily installed using the requirements.txt file available. |
 | **♻️ Modularity and Reusability** | The code achieves a high level of reusability, especially with the usage of inheritance. The templates come with a "base.html" file that all other templates then extend which increases code reusability. |
-| **✔️ Testing and Quality Assurance** | No specific testing code is identified or added as part of the repository available related to automated testing, increasing the risk of issues popping up with later alterations that could lead to delivery of faulty output. |
-| **⚡️ Performance and Optimization** | Minimizing extraneous data usage and efficient querying through database joins are seen as efficient along with endpoints that directly serve static assets in corresponding routes add to better user experience. |
 | **🔒 Security Measures** | Certain limitations linked as requesting User data triggered SQL injection, data attached with debugging has imparted security risks. Password fields are salted and hashed, transporting passwords in non-encrypted transmission renders a security breach risk in practice. |
 | **🔄 Version Control and Collaboration** | Version controlled with Git that maintains record of all modifications – commits performed. Detailed commit logs provide an insight into development progress and encourages team integration. |-Only these following columns that contains the analysis needed due to lack of information on other features.
 
-| Feature | Description |
-|---|---|
-| **🔌 External Integrations** | Certain code features of the
-
 ---
 
-
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-github-open.svg" width="80" />
 
 ## 📂 Project Structure
 
@@ -115,8 +101,6 @@ repo
 
 ---
 
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-src-open.svg" width="80" />
-
 ## 🧩 Modules
 
 <details closed><summary>Core</summary>
@@ -124,9 +108,8 @@ repo
 | File      | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Module         |
 |:----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------|
 | forms.py  | The provided code snippet contains various FlaskForms that define fields and validators for user input in a Flask application. The RegisterForm, LoginForm, SearchForm, GameForm, EditorForm and PreferenceForm contain a range of text inputs, select fields, password and file fields accompanied by data validation logic to ensure correct data types and input formats. The views utilizing these forms implement the backend logic required for desired website functionality.               | core/forms.py  |
-| models.py | The code represents a Flask app with a database containing several tables (User, Game, Friend, Preference, Puzzle, PuzzleAttempted, PuzzleStats). The User table has methods for setting and checking password hashes. Other tables represent data about users, games, puzzles. Functions are defined for loading users, setting user avatars, and formatting model objects as strings. The code is designed to allow for user authentication and storage associated with a chess web application. | core/models.py |
-| routes.py | Error generating file summary. Exception: Client error '400 Bad Request' for url 'https://api.openai.com/v1/chat/completions'                                                                                                                                                                                                                                                                                                                                                                      | core/routes.py |
-|           | For more information check: https://httpstatuses.com/400                                                                                                                                                                                                                                                                                                                                                                                                                                           |                |
+| models.py | The code represents a Flask app with a database containing several tables (User, Game, Friend, Preference, Puzzle, PuzzleAttempted, PuzzleStats). The User table has methods for setting and checking password hashes. Other tables represent data about users, games, puzzles. Functions are defined for loading users, setting user avatars, and formatting model objects as strings. | core/models.py |
+| routes.py | The routes.py file represents the core of the website, defining how the various pages and features interact with the user and handle requests and responses. The main features of the file are: management of the main pages, user authentication, user interaction, viewing and editing matches, management of preferences and rankings, and user search. | core/routes.py |
 
 </details>
 
@@ -134,7 +117,7 @@ repo
 
 | File   | Summary                                                                                                                                                                                                                                                                                 | Module   |
 |:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|
-| app.py | This code initializes the Flask application from a core module and runs it in debug mode. Flask is a Python web framework used for developing web applications. The debug parameter allows for more detailed error messages to be displayed in the event of any faults within the code. | app.py   |
+| app.py | This code initializes the Flask application from a core module and runs it in debug mode. | app.py   |
 
 </details>
 
@@ -164,9 +147,7 @@ repo
 ### ✅ Prerequisites
 
 Before you begin, ensure that you have the following prerequisites installed:
-> - [📌  PREREQUISITE-1]
-> - [📌  PREREQUISITE-2]
-> - ...
+> - Python 3.11 or higher
 
 ### 🖥 Installation
 
@@ -182,29 +163,14 @@ cd Chessdom
 
 3. Install the dependencies:
 ```sh
-[📌  INSERT-DESCRIPTION]
+pip install -r requirements.txt
 ```
 
 ### 🤖 Using Chessdom
 
 ```sh
-[📌  INSERT-DESCRIPTION]
+python app.py
 ```
-
-### 🧪 Running Tests
-```sh
-[📌  INSERT-DESCRIPTION]
-```
-
----
-
-
-## 🗺 Roadmap
-
-> - [X] [📌  Task 1: Implement X]
-> - [ ] [📌  Task 2: Refactor Y]
-> - [ ] [📌  Task 3: Optimize Z]
-> - [ ] ...
 
 
 ---
@@ -235,12 +201,6 @@ The project maintainers will review your changes and provide feedback or merge t
 
 ## 📄 License
 
-This project is licensed under the `[📌  INSERT-LICENSE-TYPE]` License. See the [LICENSE](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) file for additional info.
-
----
-
-## 👏 Acknowledgments
-
-> - [📌  List any resources, contributors, inspiration, etc.]
+This project is licensed under the MIT License.
 
 ---
