@@ -121,6 +121,14 @@ def register_page():
         db.session.add(user_to_create)
         db.session.commit()
         login_user(user_to_create)
+
+        user = User.query.filter_by(email=form.email.data).first()
+        puzzle_stats = PuzzleStats.query.filter_by(id_user=user.id).first()
+        if puzzle_stats is None:
+            puzzle_stats = PuzzleStats(id_user=user.id)
+            db.session.add(puzzle_stats)
+            db.session.commit()
+
         return redirect(url_for('home_page'))
 
     return render_template('register.html', form=form)
@@ -195,10 +203,6 @@ def profile_page(username):
     number_following = Friend.query.filter_by(id_user=user.id).count()
 
     puzzle_stats = PuzzleStats.query.filter_by(id_user=user.id).first()
-    if puzzle_stats is None:
-        puzzle_stats = PuzzleStats(id_user=user.id)
-        db.session.add(puzzle_stats)
-        db.session.commit()
     elo = puzzle_stats.elo 
     solved = puzzle_stats.solved
     attempted = puzzle_stats.attempted
